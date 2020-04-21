@@ -311,6 +311,15 @@
 @font-face {
   font-family: 'arla-c';
   src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
+.sub-question-container {
+  display: flex;
+  align-items: center; }
+
+.question-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
@@ -515,7 +524,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'arla-c', sans-serif;
+  font-family: "arla-c", sans-serif;
   overflow-x: hidden; }
 
 .hill-background {
@@ -523,6 +532,10 @@ body {
   bottom: 0;
   pointer-events: none;
   width: 100%; }
+
+body {
+  font-family: "arla-c", sans-serif;
+  overflow-x: hidden; }
 
 section {
   width: 100%;
