@@ -9,42 +9,7 @@
 
 
 
-/* ---------- general styling ---------- */
-html {
-    color: $green;
-    font-family: 'arla-c', sans-serif; 
-    height: 100%;   
-    text-align: center;
-    width: 100%; 
-    font-weight: 200;
-  }
+.hide{
+  display: none;
+} 
   
-  body {
-    margin: 0;
-    overflow-x: hidden; 
-  }
-  
-  h1 {
-    font-size: 2em;
-    font-weight: 300;
-    letter-spacing: 3px;
-  }
-
-  h2 {
-    color: blue;    
-  }
-  
-  h3 {
-    font-weight: 400; 
-    letter-spacing: 2px;
-  }
-  
-  #hills{
-    width: 100%;
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    img{
-      width: 100%;
-    }
-  }  
