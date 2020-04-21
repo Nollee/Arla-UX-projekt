@@ -208,6 +208,15 @@
 @font-face {
   font-family: 'arla-c';
   src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
+.sub-question-container {
+  display: flex;
+  align-items: center; }
+
+.question-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
