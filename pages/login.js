@@ -9,7 +9,7 @@ export default class LoginPage {
       <div class="login-wrapper">
       <img src="../images/login-logo.svg" alt="logo">
       <div class="login-h1">
-      <h1>Farm pin</h1>
+      <h1 id="h1-login">Farm pin</h1>
       </div>
       <div class="login-code">
       <input type="text" class="code-number" placeholder="2" maxlength="1">

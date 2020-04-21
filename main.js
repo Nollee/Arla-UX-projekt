@@ -8,6 +8,7 @@ import YourPage from "./pages/yourpage.js";
 
 import QuestionPage from "./pages/questions.js";
 import WelcomePage from "./pages/welcome.js";
+import HowToPage from "./pages/howto.js"
 
 // Declare and init
 let navbar = new NavBar();
@@ -19,6 +20,8 @@ let yourPage = new YourPage();
  
 let questionPage = new QuestionPage();
 let welcomePage = new WelcomePage();
+let howtoPage = new HowToPage();
+
 
 
 // init services

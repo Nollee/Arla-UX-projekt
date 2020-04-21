@@ -1,0 +1,27 @@
+.howto-icon-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+height: 25vh;
+
+    .icon-top, .icon-bot{
+        display: flex;
+        flex-direction: column;
+        width: 12%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .icon-top{
+        justify-content: flex-start;
+    }
+    .icon-bot{
+        justify-content: flex-end;
+    }
+
+}
+
+.back{
+    transform: rotate(180deg);
+}

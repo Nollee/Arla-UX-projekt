@@ -7,6 +7,8 @@
 @import "_question";
 @import "_loader";
 @import "_login";
+@import "_howto";
+
 
 * {
   margin: 0;
@@ -36,6 +38,8 @@ section {
 }  
  
 nav{
+  position: absolute;
+  top: 20;
   @extend %center; 
   justify-content: space-between;
   width: 100%; 
