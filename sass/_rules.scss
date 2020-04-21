@@ -29,6 +29,11 @@ $light-gray: #EBEBEC;
     margin-right: auto; 
 } 
 
+%shadow {
+    -webkit-filter: drop-shadow( 3px 3px 2px $gray);
+                    filter: drop-shadow( 3px 3px 2px $gray);
+}
+
 
 
 
