@@ -9,7 +9,7 @@ export default class QuestionPage {
         <header class="topbar">
           <h2>questions</h2>
         </header>
-        <section class="question-section">
+        <div class="question-section">
           <div class="question-container">
             <div>
             <h2 class="question">5. Hvor mange kvæg har du på din gård?</h2>
@@ -50,7 +50,7 @@ export default class QuestionPage {
           <div class="question-img">
             <img src="./images/cow-icon.svg">
           </div>
-        </section>
+        </div>
 
       </section>
     
