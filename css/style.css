@@ -1,24 +1,248 @@
 /* IMPORTS */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
+/* Fonts */
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Blk.eot");
+  src: url("../fonts/ArlaIF_W_Blk.woff") format("woff"), url("../fonts/ArlaIF_W_Blk.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: bold;
+  src: url("../fonts/ArlaIF_W_Bd.eot");
+  src: url("../fonts/ArlaIF_W_Bd.woff") format("woff"), url("../fonts/ArlaIF_W_Bd.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-style: italic;
+  src: url("../fonts/ArlaIF_W_It.eot");
+  src: url("../fonts/ArlaIF_W_It.woff") format("woff"), url("../fonts/ArlaIF_W_It.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: lighter;
+  src: url("../fonts/ArlaIF_W_Lt.eot");
+  src: url("../fonts/ArlaIF_W_Lt.woff") format("woff"), url("../fonts/ArlaIF_W_Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  src: url("../fonts/ArlaIF_W_Rg.eot");
+  src: url("../fonts/ArlaIF_W_Rg.woff") format("woff"), url("../fonts/ArlaIF_W_Rg.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla';
+  font-weight: 100;
+  src: url("../fonts/ArlaIF_W_Th.eot");
+  src: url("../fonts/ArlaIF_W_Th.woff") format("woff"), url("../fonts/ArlaIF_W_Th.ttf") format("truetype"); }
+@font-face {
+  font-family: 'arla-c';
+  src: url("../fonts/ArlaIFCondensed_Bd.otf") format("opentype"); }
 #loader {
   position: fixed;
   left: 0px;
@@ -60,15 +284,16 @@
     transform: rotate(360deg); } }
 /* ---------- general styling ---------- */
 html {
-  color: var(--text-color-dark);
-  font-family: Helvetica, Arial, sans-serif;
+  color: #4BB131;
+  font-family: 'arla-c', sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
   font-weight: 200; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 2em;
