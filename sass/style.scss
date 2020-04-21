@@ -9,41 +9,4 @@
 
 
 
-/* ---------- general styling ---------- */
-html {
-    color: var(--text-color-dark);
-    font-family: Helvetica, Arial, sans-serif;
-    height: 100%;
-    text-align: center;
-    width: 100%;
-    font-weight: 200;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  h1 {
-    font-size: 2em;
-    font-weight: 300;
-    letter-spacing: 3px;
-  }
-
-  h2 {
-    color: blue;    
-  }
-  
-  h3 {
-    font-weight: 400; 
-    letter-spacing: 2px;
-  }
-  
-  #hills{
-    width: 100%;
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    img{
-      width: 100%;
-    }
-  }  
+ 
