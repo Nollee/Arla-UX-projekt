@@ -10,6 +10,7 @@ export default class NavBar {
         <a href="#about">About</a>
         <a href="#clients">Clients</a>
         <a href="#contact">Contact</a>
+        <a href="#yourpage">Din side</a> 
       </nav>
     `;
   }
