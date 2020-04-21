@@ -61,7 +61,7 @@ export default class HowToPage {
         <p>Tilbage</p>        
       </a>
 
-      <a class="start-btn" href="#howto">
+      <a class="start-btn" href="#yourpage">
       <p>Start</p>        
     </a>
 
