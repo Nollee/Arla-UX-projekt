@@ -290,6 +290,10 @@
     }
   }
 */
+body {
+  font-family: 'arla-c', sans-serif;
+  overflow-x: hidden; }
+
 .hide {
   display: none; }
 
