@@ -166,8 +166,13 @@
   flex-direction: column; }
   #yourpage__content p {
     color: gray; }
-  #yourpage__content--farming {
-    flex-direction: row; }
+  #yourpage__content--farming, #yourpage__content--questions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../images/line.svg);
+    background-repeat: no-repeat;
+    background-position: bottom; }
 
 /* IMPORT RULES */
 /* color variables */
