@@ -17,10 +17,10 @@
 }
 
 body {
-  font-family: 'arla-c', sans-serif; 
-  overflow-x: hidden; 
+  font-family: "arla-c", sans-serif;
+  overflow-x: hidden;
 }
- 
+
 .hill-background {
   position: absolute;
   bottom: 0;
@@ -28,12 +28,17 @@ body {
   width: 100%;
 }
 
-section {
-  width: 100%;
-  height: 100vh;   
+body {
+  font-family: "arla-c", sans-serif;
+  overflow-x: hidden;
 }
 
-.hide{
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.hide {
   display: none;
 }  
  
@@ -42,14 +47,13 @@ nav{
   top: 20;
   @extend %center; 
   justify-content: space-between;
-  width: 100%; 
+  width: 100%;
   img {
     width: 120px;
     height: auto;
   }
-} 
+}
 
-a{
+a {
   text-decoration: none;
 }
-  

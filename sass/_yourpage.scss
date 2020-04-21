@@ -7,11 +7,16 @@
         height: 100vh; 
         @extend %center; 
         flex-direction: column;  
-        p {
+        p { 
             color: gray;
         }
-        &--farming {
-            flex-direction: row;  
-        } 
-    }  
+        &--farming, &--questions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;  
+            background-image: url(../images/line.svg); 
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }  
+    }   
 }  

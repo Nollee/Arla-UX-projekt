@@ -1,3 +1,17 @@
 /* IMPORT RULES */
-@import "_rules"; 
-//////////////////  
+@import "_rules";
+//////////////////
+
+.sub-question-container {
+  display: flex;
+  align-items: center;
+}
+
+.question-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-indicators {
+}
