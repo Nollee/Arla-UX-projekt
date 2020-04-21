@@ -3,44 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SPA Template Plain</title>
+  <title>SPA Template Module Pages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Get started with HTML, CSS and JavaScript">
-  <meta name="author" content="Fento">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Single Page Application">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 </head>
 
-<body onhashchange="pageChange()">
-  <!-- tabbar navigation -->
-  <nav class="tabbar">
-    <a href="#intro">Intro</a>
-    <a href="#login">Login</a>
-  </nav>
-
-  <!-- pages -->
-  <!-- home page -->
-  <section id="login" class="page">
-</section>
-
-<section id="intro" class="page">
-</section>
-
-  
-
-  <!-- loader  -->
-  <div id="loader">
-    <div class="spinner"></div>
-  </div>
-
-
-  <!-- pages js file -->
-  <script src="js/pages.js" type="module"></script>
+<body>
+  <main id="app"></main>
   <!-- main js file -->
-  <script src="js/main.js"></script>
-    <!-- SPA functionality  -->
-  <script src="js/spa.js"></script>
-
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>
