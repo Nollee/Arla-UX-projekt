@@ -36,8 +36,6 @@ section {
 }  
  
 nav{
-  position: absolute;
-  top: 20;
   @extend %center; 
   justify-content: space-between;
   width: 100%; 
@@ -47,4 +45,7 @@ nav{
   }
 } 
 
+a{
+  text-decoration: none;
+}
   
