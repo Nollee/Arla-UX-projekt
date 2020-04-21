@@ -6,6 +6,7 @@ export default class NavBar {
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
       <nav class="tabbar">
+      <a href="#yourpage"><img src="../images/arla_logo.svg" alt="arla logo"></a>  
         <a href="#login">Login</a>
         <a href="#about">About</a>
         <a href="#clients">Clients</a>
