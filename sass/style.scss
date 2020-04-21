@@ -7,6 +7,8 @@
 @import "_question";
 @import "_loader";
 @import "_login";
+@import "_howto";
+
 
 * {
   margin: 0;
@@ -38,10 +40,12 @@ section {
 
 .hide {
   display: none;
-}
-
-nav {
-  @extend %center;
+}  
+ 
+nav{
+  position: absolute;
+  top: 20;
+  @extend %center; 
   justify-content: space-between;
   width: 100%;
   img {

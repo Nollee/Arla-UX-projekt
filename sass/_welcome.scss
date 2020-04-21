@@ -1,3 +1,118 @@
-/* IMPORT RULES */
-@import "_rules"; 
-////////////////// 
+
+.welcome-wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 15vh;
+    z-index: 20;
+    position: relative;
+    .welcome-h1{
+        background-image: url(../images/line.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 40%;
+        h1{
+            font-size: 45px;
+            color: $dark-green;
+        }
+    }
+    p{
+        margin-top: 4vh;
+        margin-bottom: 8vh;
+        color: $dark-gray;
+        font-size: 25px;
+    }
+}
+
+.welcome-icon-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .welcome-icons{
+        width: 40%;
+    }
+    .arrow{
+        width: 10%;
+    }
+}
+
+.next-btn, .back-btn, .start-btn{
+    position: absolute;
+    bottom: 10vh;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px $dark-gray solid;
+    color: $dark-gray;
+    z-index: 20;
+    padding: 25px 25px;
+    svg{
+        width: 15%;
+        margin-left: 10%;
+        stroke: $dark-gray;
+    }
+    p{
+        font-size: 28px;
+    }
+}
+
+.back-btn{
+    justify-content: flex-start;
+    right: 25%;
+    svg{
+        margin-right: 10%;
+    }
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.next-btn{
+    justify-content: flex-end;
+    right: 5%;
+    svg{
+        margin-left: 20%;
+        -webkit-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+    }
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.start-btn{
+    right: 5%;
+    justify-content: center;
+    background-color: $orange;
+    color: white;
+    border-color: $orange;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.next-btn:hover, .back-btn:hover{
+    border-color: $orange;
+    color: $orange;
+    svg{
+        stroke: orange;
+        -webkit-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+    }
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.start-btn:hover{
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
