@@ -1,3 +1,13 @@
+/* IMPORTS */
+@import "_rules";  
+@import "_welcome"; 
+@import "_intro"; 
+@import "_chart.scss";
+@import "_yourpage.scss"; 
+@import "_question.scss"; 
+
+
+
 /* ---------- general styling ---------- */
 html {
     color: var(--text-color-dark);
@@ -16,6 +26,10 @@ html {
     font-size: 2em;
     font-weight: 300;
     letter-spacing: 3px;
+  }
+
+  h2 {
+    color: blue;    
   }
   
   h3 {
