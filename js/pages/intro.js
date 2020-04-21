@@ -4,10 +4,8 @@ export default class IntroPage {
     }
   
     template() {
-      document.getElementById('content').innerHTML += /* html */ `
-      <section id="intro" class="page">
+      document.getElementById('intro').innerHTML += /* html */ `
       <h1>Intro</h1>
-      </section>
       `
     
     }

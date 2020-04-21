@@ -4,10 +4,8 @@ export default class LoginPage {
     }
   
     template() {
-      document.getElementById('content').innerHTML += /* html */ `
-      <section id="login" class="page">
+      document.getElementById('login').innerHTML += /* html */ `
       <h1>login</h1>
-      </section>
       `
     
     }
