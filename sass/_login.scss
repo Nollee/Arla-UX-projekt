@@ -33,7 +33,7 @@
         width: auto;
         text-align: center;
         color: $dark-green;
-        font-size: 35px;
+        font-size: 40px;
     }
 }
     .login-code{
@@ -60,6 +60,15 @@
         margin-top: 6vh;
     }
 
+}
+
+#login-btn:hover{
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
 }
 
 .remove{
