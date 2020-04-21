@@ -1,19 +1,34 @@
 /* IMPORTS */
-@import "_rules";  
-@import "_welcome"; 
-@import "_intro"; 
+@import "_rules";
+@import "_welcome";
+@import "_intro";
 @import "_chart";
-@import "_yourpage"; 
-@import "_question"; 
+@import "_yourpage";
+@import "_question";
 @import "_loader";
 @import "_login";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
 
 *{
   margin: 0;
   padding: 0;
 }
 
+.hill-background {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+}
 body {
   font-family: 'arla-c', sans-serif; 
   overflow-x: hidden; 
