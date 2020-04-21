@@ -306,6 +306,10 @@
 .hide {
   display: none; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 .hill-background {
   position: absolute;
   bottom: 0;
@@ -322,5 +326,9 @@ section {
 
 .hide {
   display: none; }
+
+nav {
+  position: absolute;
+  top: 20; }
 
 /*# sourceMappingURL=style.css.map */
