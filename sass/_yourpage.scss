@@ -42,14 +42,19 @@
                 }
             }    
         }
-        &--farming {
+        &--farming { 
             &__tabs {
-                width: 50%;
+                /* width: 40%; */
                 @extend %center; 
                 justify-content: space-between !important;
                 a {
                     text-align: center;
-                    margin-bottom: 2vh;
+                    margin-bottom: 2vh; 
+                    margin-right: 3vw;
+                    p {
+                        font-size: 1.5em;
+                        margin-top: 10px;
+                    }
                 }
                 img {
                     width: 10vw;
@@ -83,3 +88,20 @@
         } 
     }   
 }  
+
+#yourpage__content--farming--wrapper {
+    width: 100%;
+    /* @extend %center; 
+    /* align-items: center; */
+    justify-content: space-between !important;
+}
+
+
+.chart-container { 
+    width:30vw !important;
+  height:250px !important;  
+    margin-left: 12%;  
+    text-align: center;
+    
+}
+
