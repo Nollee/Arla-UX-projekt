@@ -13,6 +13,7 @@ export default class NavBar {
         <a href="#contact">Contact</a>
         <a href="#yourpage">Din side</a> 
         <a href="#questions">Questions</a> 
+        <a href="#prize">Præmie</a> 
       </nav>
     `;
   }

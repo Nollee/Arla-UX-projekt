@@ -4,13 +4,13 @@ import AboutPage from "./pages/about.js";
 import ClientsPage from "./pages/clients.js";
 import _spaService from "./services/spa.js";
 import YourPage from "./pages/yourpage.js"; 
-
 import QuestionPage from "./pages/questions.js";
 import WelcomePage from "./pages/welcome.js";
-import HowToPage from "./pages/howto.js"
-import ThankYouPage from "./pages/thankyou.js"
-import HelpPage from "./pages/help.js"
-import DataPage from "./pages/yourdata.js"
+import HowToPage from "./pages/howto.js";
+import PrizePage from "./pages/prize.js";
+import ThankYouPage from "./pages/thankyou.js";
+import HelpPage from "./pages/help.js";
+import DataPage from "./pages/yourdata.js";
 
 
 
@@ -21,12 +21,12 @@ let loginPage = new LoginPage();
 let aboutPage = new AboutPage();
 let clientsPage = new ClientsPage();
 let yourPage = new YourPage();  
-let thankyoupage = new ThankYouPage();
-let helppage = new HelpPage();
- 
 let questionPage = new QuestionPage();
 let welcomePage = new WelcomePage();
 let howtoPage = new HowToPage();
+let prizePage = new PrizePage();
+let thankyoupage = new ThankYouPage();
+let helppage = new HelpPage();
 let dataPage = new DataPage();
 
 
@@ -35,6 +35,25 @@ let dataPage = new DataPage();
 _spaService.init();
 
 
+
+// Question navigation
+
+const closeButton = document.querySelector(".q-close-button");
+const openButton = document.querySelector(".q-open-button");
+
+const overlay = document.querySelector(".overlay");
+
+const list = document.querySelector(".question-list");
+
+closeButton.addEventListener('click', closeList);
+openButton.addEventListener('click', closeList);
+overlay.addEventListener('click', closeList);
+
+
+function closeList(){
+    list.classList.toggle('fade-out');
+    overlay.classList.toggle('overlay-show');
+}
 
 /* chart */
 // 1: data
