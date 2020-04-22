@@ -16,7 +16,7 @@ export default class DataPage {
         <img src="images/icons/dyrefoder.svg" alt="dyrefoder">
         </div>
         <div class="data-category" onclick="elecData()">
-        <h3>Elektricitet</h3>
+        <h3>Energi</h3>
         <img src="images/icons/elektricitet.svg" alt="elektricitet">
         </div>
         <div class="data-category" onclick="cowData()">
@@ -60,29 +60,29 @@ export default class DataPage {
         <div class="data-category last-nav-cat" onclick="remove(); numOfCows()">
         <h3>Køer</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove()">
+        <div class="data-category last-nav-cat" onclick="remove(); numOfBulls()">
         <h3>Tyrer</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove()">
+        <div class="data-category last-nav-cat" onclick="remove(); numOfCalves()">
         <h3>Kalve</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove()">
+        <div class="data-category last-nav-cat" onclick="remove(); numOfCattles()">
         <h3>Alle kvæg</h3>
         </div>
         </div>
 
         <!-- HELBRED NAV -->
         <div class="data-nav last-nav helbred-nav">
-        <div class="data-category last-nav-cat" onclick="remove()">
-        <h3>Sygdom</h3>
+        <div class="data-category last-nav-cat" onclick="remove(); sickness()">
+        <h3>Antal syge</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove()">
+        <div class="data-category last-nav-cat" onclick="remove(); diet()">
         <h3>Kost</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove()">
+        <div class="data-category last-nav-cat" onclick="remove(); mood()">
         <h3>Humør</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove()">
+        <div class="data-category last-nav-cat" onclick="remove(); dead() ">
         <h3>Afdøde</h3>
         </div>
         </div>

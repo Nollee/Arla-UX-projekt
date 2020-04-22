@@ -34,3 +34,42 @@ function remove(){
     }
 }
 
+
+/* ===================================== ANTAL ========================================= */
+function numOfCows(){
+    document.getElementById("data-heading").innerHTML ="Antal køer"
+}
+
+function numOfBulls(){
+    document.getElementById("data-heading").innerHTML ="Antal Tyrer"
+}
+
+function numOfCalves(){
+    document.getElementById("data-heading").innerHTML ="Antal Kalve"
+}
+
+function numOfCattles(){
+    document.getElementById("data-heading").innerHTML ="Alle kvæg"
+}
+
+
+/* ===================================== HELBRED ========================================= */
+
+function sickness(){
+    document.getElementById("data-heading").innerHTML ="Antal syge kvæg"
+}
+
+function diet(){
+    document.getElementById("data-heading").innerHTML ="kvægenes kost"
+}
+
+function mood(){
+    document.getElementById("data-heading").innerHTML ="kvægenes humør"
+}
+
+function dead(){
+    document.getElementById("data-heading").innerHTML ="Antal døde køer"
+}
+
+
+
