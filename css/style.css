@@ -187,11 +187,15 @@
         margin-left: 20px;
         margin-right: 10px; }
   #yourpage__content--farming__tabs {
-    width: 50%;
+    /* width: 40%; */
     justify-content: space-between !important; }
     #yourpage__content--farming__tabs a {
       text-align: center;
-      margin-bottom: 2vh; }
+      margin-bottom: 2vh;
+      margin-right: 3vw; }
+      #yourpage__content--farming__tabs a p {
+        font-size: 1.5em;
+        margin-top: 10px; }
     #yourpage__content--farming__tabs img {
       width: 10vw;
       height: auto;
@@ -209,6 +213,18 @@
       transition: ease .4s; }
     #yourpage__content--questions__tabs img:hover {
       transform: scale(1.1); }
+
+#yourpage__content--farming--wrapper {
+  width: 100%;
+  /* @extend %center; 
+  /* align-items: center; */
+  justify-content: space-between !important; }
+
+.chart-container {
+  width: 30vw !important;
+  height: 250px !important;
+  margin-left: 12%;
+  text-align: center; }
 
 .question-indicator {
   display: flex;

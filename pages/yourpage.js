@@ -17,6 +17,8 @@ export default class YourPage {
          <div id="yourpage__content--farming__header">
          <h2>Dit landbrug</h2> <img src="../images/light-bulb.svg" alt="lyspære ikon"><p>Du har 15 km2 pr ko</p>
          </div> 
+
+         <div id="yourpage__content--farming--wrapper">
          <!--farming tabs --->
          <div id="yourpage__content--farming__tabs">
          <a href="#"><img src="../images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
@@ -24,12 +26,19 @@ export default class YourPage {
          <a href="#"><img src="../images/data.svg" alt="ikon af data"><p>Data</p></a>
 
          <a href="#"><img src="../images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
-
-         <a href="#"></a>  
-
-         </div> 
+        
+         <div class="chart-container"> 
+         <canvas id="chartContainer"></canvas>
+         <p>Du har 3 køer flere end sidste år</p>  
+        </div>   
+ 
+         </div>   
+         
+        </div> 
          <!------------------>   
          
+          
+
          </div> 
          <!------------------------------>
          
