@@ -13,7 +13,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-#yourpage__content--farming__tabs img:hover, #yourpage__content--questions__tabs img:hover {
+#yourpage__content--farming__tabs img:hover, #yourpage__content--questions__tabs img:hover, .ty-option:hover img {
   -webkit-filter: drop-shadow(3px 3px 2px rgba(111, 111, 111, 0.5));
   filter: drop-shadow(3px 3px 2px rgba(111, 111, 111, 0.5)); }
 
@@ -101,26 +101,26 @@
 .back-btn {
   justify-content: flex-start;
   right: 25%;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
   .back-btn svg {
     margin-right: 10%;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in; }
 
 .next-btn {
   justify-content: flex-end;
   right: 5%;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
   .next-btn svg {
     margin-left: 20%;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in; }
 
 .start-btn {
   right: 5%;
@@ -128,29 +128,32 @@
   background-color: #FF9837;
   color: white;
   border-color: #FF9837;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
 
 .next-btn:hover, .back-btn:hover {
   border-color: #FF9837;
   color: #FF9837;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
   .next-btn:hover svg, .back-btn:hover svg {
     stroke: orange;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in; }
 
 .start-btn:hover {
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
   transform: scale(1.02);
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
 
 #yourpage-wrapper {
   width: 100%;
@@ -393,7 +396,10 @@
     background-color: #FF9837;
     padding: 10px 20px;
     font-size: 35px;
-    margin-top: 6vh; }
+    margin-top: 6vh;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }
 
 #login-btn:hover {
   -webkit-transform: scale(1.02);
@@ -425,6 +431,53 @@
 
 .back {
   transform: rotate(180deg); }
+
+.thankyou-wrapper {
+  width: 70%;
+  margin: auto;
+  padding-top: 140px;
+  max-width: 1000px; }
+  .thankyou-wrapper h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #006C3A;
+    margin-bottom: 8vh; }
+
+.ty-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.ty-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  width: 20%; }
+  .ty-option h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #6F6F6F; }
+  .ty-option img {
+    width: 100%;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in; }
+
+.ty-option:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
+  .ty-option:hover img {
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in; }
 
 * {
   margin: 0;

@@ -54,6 +54,9 @@
         padding: 10px 20px;
         font-size: 35px;
         margin-top: 6vh;
+        -webkit-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
     }
 
 }
