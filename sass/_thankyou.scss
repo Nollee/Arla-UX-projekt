@@ -2,6 +2,7 @@
     width: 70%;
     margin: auto;
     padding-top: 140px;
+    max-width: 1000px;
 
     h1{
         text-align: center;
@@ -24,11 +25,19 @@
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
+    width: 20%;
     h3{
         text-align: center;
         margin-top: 20px;
         font-size: 25px;
         color: $dark-gray;
+    }
+
+    img{
+        width: 100%;
+        -webkit-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
     }
 }
 
@@ -39,4 +48,10 @@
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
+    img{
+        @extend %shadow;
+        -webkit-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+    }
 }
