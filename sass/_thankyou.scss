@@ -1,0 +1,42 @@
+.thankyou-wrapper{
+    width: 70%;
+    margin: auto;
+    padding-top: 140px;
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+        color: $dark-green;
+        margin-bottom: 8vh;
+    }
+}
+
+.ty-options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ty-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    h3{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+        color: $dark-gray;
+    }
+}
+
+.ty-option:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
