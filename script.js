@@ -38,15 +38,35 @@ const firebaseConfig = {
     console.log(calvesInput.value);
   
     let newNumberAnswer = {
-      numOfCows: cowsInput.value,
+      numOfCalves: calvesInput.value,
       numOfBulls: bullsInput.value,
-      numOfCalves: calvesInput.value
+      numOfCows: cowsInput.value
+
 
     };
   
-    dataRef.add(newNumberAnswer);
+    dataRef.doc("Hvor mange kvæg").set(newNumberAnswer);
 
   }
+/* 
+  let selectedUserId = "";
+
+
+  function selectData(id, cows, bulls, calves) {
+    // references to the input fields
+    let cowsInput = document.querySelector('#cows');
+    let bullsInput = document.querySelector('#bulls');
+    let calvesInput = document.querySelector('#calves');
+    cowsInput.value = cows;
+    bullsInput.value = bulls;
+    calvesInput.value = calves;
+    selectedUserId = id;
+
+    console.log(cows);
+    
+  } */
+
+
 
 
 

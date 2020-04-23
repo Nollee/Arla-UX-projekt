@@ -7,7 +7,7 @@ export default class QuestionPage {
     document.querySelector("#app").innerHTML += /*html*/ `
     <section id="questions" class="page questions">
   
-    <div class="question-section">
+    <div onload="selectData()" class="question-section">
 
       <div class="question-container">
 
