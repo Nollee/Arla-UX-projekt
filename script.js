@@ -25,7 +25,6 @@ const firebaseConfig = {
       data.id = doc.id;
       datas.push(data);
     });
-    appendUsers(data);
   });
 
 
@@ -211,19 +210,4 @@ const list = document.querySelector(".question-list");
 
 /* ================================= DROPDOWN ============================*/
 
-let acc = document.getElementsByClassName("dropdown");
-let i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("dropping");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-    console.log("test123");
-    
-  });
-};
