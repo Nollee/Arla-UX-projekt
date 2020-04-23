@@ -29,6 +29,22 @@ const firebaseConfig = {
   });
 
 
+ /*  function createUser() {
+    // references to the input fields
+    let nameInput = document.querySelector('#name');
+    let mailInput = document.querySelector('#mail');
+    console.log(nameInput.value);
+    console.log(mailInput.value);
+  
+    let newUser = {
+      name: nameInput.value,
+      mail: mailInput.value
+    };
+  
+    userRef.add(newUser);
+  }
+ */
+
 
 
 
@@ -188,6 +204,26 @@ const overlay = document.querySelector(".overlay");
 const list = document.querySelector(".question-list");
 
 
-closeButton.addEventListener('click', closeList);
-openButton.addEventListener('click', closeList);
-overlay.addEventListener('click', closeList);    */
+/* const helpBox */ 
+
+
+
+
+/* ================================= DROPDOWN ============================*/
+
+let acc = document.getElementsByClassName("dropdown");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("dropping");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    console.log("test123");
+    
+  });
+};
