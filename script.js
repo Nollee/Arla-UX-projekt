@@ -1,14 +1,20 @@
 
 function cowData(){
-    document.querySelector(".cow-nav").classList.add('next');
-    document.querySelector(".last-nav").classList.add('next');
+    document.querySelector(".cow-nav").classList.toggle('next');
+    let lastNav = document.querySelectorAll(".last-nav");
+    for (let nav of lastNav){
+        nav.classList.remove('last');
+        nav.classList.toggle('next');
+    }
+
+
 
 };
 
 
 function antalData(){
-  document.querySelector(".antal-nav").style.zIndex = 15;
-    document.querySelector(".helbred-nav").style.zIndex = 10;
+  document.querySelector(".antal-nav").classList.add("one-up");
+    document.querySelector(".helbred-nav").classList.remove("one-up");
 
 }
 
@@ -20,18 +26,38 @@ function lastData(){
 };
 
 function helbredData(){
-    document.querySelector(".antal-nav").style.zIndex = 10;
-    document.querySelector(".helbred-nav").style.zIndex = 15;
+    document.querySelector(".antal-nav").classList.remove("one-up");
+    document.querySelector(".helbred-nav").classList.add("one-up");
 
 }
 
 function remove(){
-    let elements = document.querySelectorAll("div");
+    let elements = document.querySelectorAll(".data-nav");
+    document.querySelector(".helbred-nav").classList.remove("one-up");
+    document.querySelector(".antal-nav").classList.remove("one-up");
+    document.querySelector(".nav-close").style.left = "-50%";
+    document.querySelector(".nav-overlay").style.display = "none";
+
 
     for (let element of elements){
         element.classList.remove("last")
         element.classList.remove("next")
+        element.classList.add("zero")
     }
+}
+
+function firstNav(){
+    let allData = document.querySelectorAll('.data-nav')
+
+    for (let data of allData){
+        data.classList.remove("zero")
+        data.classList.add("first")
+        data.classList.remove("next")
+    }
+    document.querySelector(".nav-close").style.left = "5%";
+    document.querySelector(".nav-overlay").style.display = "block";
+
+
 }
 
 
