@@ -21,7 +21,7 @@ export default class DataPage {
         </div>
         <div class="data-category" onclick="cowData()">
         <h3>Køer</h3>
-        <img src="images/icons/cows.svg" alt="dyrefoder">
+        <img src="images/icons/cows.svg" alt="køer">
 
         </div>
         <div class="data-category" onclick="resData()">
@@ -86,16 +86,18 @@ export default class DataPage {
         <h3>Afdøde</h3>
         </div>
         </div>
+
+        <img class="nav-close" src="images/close.svg" alt="luk" onclick="remove()">
         
 
         <div class="data-content">
         <h1>Dine data</h1>
         <canvas></canvas>
-        <div class="data-header">
+        <div class="data-header" onclick="firstNav()">
         <h2 id="data-heading">Vælg data</h2>
         </div>
         </div>
-        
+        <span class="nav-overlay" onclick="remove()"></span>
         </section>
       `;
     }
