@@ -1,0 +1,38 @@
+/* IMPORT RULES */
+@import "_rules";
+//////////////////
+
+.prize-content {
+  @extend %center;
+  height: 100%;
+  font-size: 1.8em;
+  color: $dark-gray;
+  h2{
+    font-size: 2em;
+    color:$dark-green;    
+  }
+}
+
+.prize-content-text{
+    width: 33vw;
+    margin-right: 5%;
+}
+
+.prize-content img{
+    width: 25vw;
+    margin-top: 2%;
+}
+
+.prize-header{
+    background-image: url(../images/line.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin-bottom: 5%;
+}
+
+.prize-content p + p{
+    margin-top: 5%;
+}
+
+
+
