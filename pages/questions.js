@@ -30,17 +30,17 @@ export default class QuestionPage {
 
           <div class="sub-question-container">
             <h3 class="sub-question">5.1 Hvor mange køer har du?</h3>
-            <input type="text" name="cows" placeholder="fx. 120" />
+            <input id="cows" type="text" name="cows" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container">
             <h3 class="sub-question">5.2 Hvor mange tyrer har du?</h3>
-            <input type="text" name="cows" placeholder="fx. 120" />
+            <input id="bulls" type="text" name="cows" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container"> 
             <h3 class="sub-question">5.3 Hvor mange kalve har du?</h3>
-            <input type="text" name="cows" placeholder="fx. 120" />
+            <input id="calves" type="text" name="cows" placeholder="fx. 120" />
           </div>
 
         </form>
@@ -59,7 +59,7 @@ export default class QuestionPage {
 
         </div>  
 
-        <div class="question-button question-button-next">
+        <div class="question-button question-button-next" onclick="createNumOfCattles()">
 
         <p>Næste</p>
         <img src="./images/arrow-right.svg";>

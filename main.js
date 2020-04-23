@@ -196,20 +196,25 @@ function appendChart() {
 
 appendChart(); 
 
+
+
+
 let acc = document.getElementsByClassName("dropdown");
 let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("dropping");
-    let panel = this.nextElementSibling;
+    document.querySelector("#arrow-down").classList.toggle("dropping");
+    let panel = document.querySelector(".panel");
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      console.log("ned");
+
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-    console.log("test123");
-    
+      console.log("op");
+
+    }    
   });
 };
 

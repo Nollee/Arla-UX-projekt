@@ -57,8 +57,12 @@
     transition: 0.5s ease-in;
 }
 
-.last-nav{
+.last-nav.one-up{
     z-index: 8;
+}
+
+.last-nav{
+    z-index: 7;
     -webkit-transition: 0.5s ease-in;
     -o-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
@@ -196,7 +200,7 @@
         z-index: 6;
     }
 
-    .one-up{
+    .last-nav.one-up{
         z-index: 12;
     }
 
