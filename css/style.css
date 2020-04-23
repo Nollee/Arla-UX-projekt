@@ -932,6 +932,11 @@
     -webkit-transition: 0.5s ease-in;
     -o-transition: 0.5s ease-in;
     transition: 0.5s ease-in; } }
+.tip-container {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em; }
+
 * {
   margin: 0;
   padding: 0;
