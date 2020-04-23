@@ -23,8 +23,8 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
-                        </div>   
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help" class="q-help">
+                        </div>    
                         
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
@@ -41,7 +41,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -59,7 +59,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>   
                         
                         <div class="question-indicator">
@@ -77,7 +77,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -95,7 +95,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -114,7 +114,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -168,7 +168,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -186,7 +186,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -204,7 +204,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
                         
                         <div class="question-indicator">
@@ -222,9 +222,9 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
                         </div>  
-                        
+                         
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
                             <img src="./images/exclamation.svg" alt="questionmark">

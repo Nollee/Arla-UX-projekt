@@ -175,41 +175,6 @@ function dead(){
 
 
 
-/* let helpBox = document.getElementById("help-box-container"); 
-
-document.getElementById("q-help").addEventListener('click', showHelp); 
-
- function showHelp() {
-    helpBox.classList.add("active"); 
-} */
- 
-
-
-
-
-
-
-
-
-
-
-
-/* function hideHelp() {
-    helpBox.classList.remove("active"); 
-} */  
-  
-
-
-/* const closeButton = document.querySelector(".q-close-button");
-const openButton = document.querySelector(".q-open-button");
-
-const overlay = document.querySelector(".overlay");
-
-const list = document.querySelector(".question-list");
-
-
-/* const helpBox */ 
-
 
 
 
