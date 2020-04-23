@@ -134,3 +134,12 @@ function dead(){
 
 
 
+function showHelp() {
+    document.getElementById("help-box-container").classList.add("active"); 
+}
+
+function hideHelp() {
+    document.getElementById(help-box-container).classList.remove("active"); 
+}
+
+const helpBox 
