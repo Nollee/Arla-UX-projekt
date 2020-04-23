@@ -1,7 +1,7 @@
 /* IMPORTS */
 /* color variables */
 /* inheritances */
-#yourpage-wrapper, #yourpage__content--farming__tabs, #yourpage__content--questions__tabs, .prize-content, #check__content--left, #check__content--right, nav {
+#yourpage-wrapper, #yourpage__content--farming__tabs, #yourpage__content--questions__tabs, .prize-content, #check__content--left, #check__content--right, #help-box-container, #help-box, nav {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -487,7 +487,7 @@
 /* IMPORT RULES */
 /* color variables */
 /* inheritances */
-#yourpage-wrapper, #yourpage__content--farming__tabs, #yourpage__content--questions__tabs, .prize-content, #check__content--left, #check__content--right, nav {
+#yourpage-wrapper, #yourpage__content--farming__tabs, #yourpage__content--questions__tabs, .prize-content, #check__content--left, #check__content--right, #help-box-container, #help-box, nav {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -651,6 +651,28 @@
 .check__go-back {
   width: 80%;
   color: black; }
+
+#help-box-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999999999;
+  display: none; }
+
+#help-box-container.active {
+  display: block; }
+
+#help-box {
+  width: 45%;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 13px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 13px -4px rgba(0, 0, 0, 0.75);
+  padding: 5%; }
+  #help-box img {
+    width: 50%;
+    margin-left: 8%; }
 
 #help {
   width: 50%;

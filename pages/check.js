@@ -23,7 +23,7 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark">
+                            <img src="./images/questionmark.svg" alt="questionmark" onclick="showHelp()">
                         </div>  
                         
                         <div class="question-indicator">
@@ -232,7 +232,20 @@ export default class CheckPage {
             </div>
             <!-------------------->
             
-        </div>  
+            <div id="help-box-container">
+            <div id="help-box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut quam pellentesque enim laoreet iaculis. Vestibulum ullamcorper nulla sed condimentum scelerisque. Nam at metus eget neque tincidunt mattis eget a arcu. Nulla vel tellus hendrerit dolor efficitur viverra vitae vel dolor. Duis maximus justo vitae elit luctus vestibulum. Aenean convallis condimentum sodales.</p>
+            <img src="../images/questionmark.svg" alt="spørgsmåltegn ikon"> 
+            </div>
+            </div> 
+        
+        </div>
+
+
+        
+        
+
+
     </section>
       `;
     }

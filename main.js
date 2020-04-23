@@ -13,7 +13,7 @@ import ThankYouPage from "./pages/thankyou.js";
 import HelpPage from "./pages/help.js";
 import DataPage from "./pages/yourdata.js";
 
-
+ 
 
 
 // Declare and init
@@ -38,7 +38,7 @@ let dataPage = new DataPage();
 _spaService.init();
 
 
-/* check answers */
+/* check answers */ 
 
 
 // Question navigation
