@@ -15,7 +15,7 @@ export default class QuestionPage {
     
         <div class="question-indicators-container">
           <div class="question-indicator">
-            <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
+            <h4 class="question-indicator-text q-help">Hvordan finder jeg svaret?</h4>
             <img src="./images/questionmark.svg" alt="questionmark">
           </div>
 
