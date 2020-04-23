@@ -17,7 +17,7 @@ const firebaseConfig = {
   
   // ========== READ ==========
   // watch the database ref for changes
-  dataRef.onSnapshot(function(snapshotData) {
+  data.onSnapshot(function(snapshotData) {
     let datas = [];
     snapshotData.forEach(function(doc) {
       let data = doc.data();
@@ -25,6 +25,7 @@ const firebaseConfig = {
       data.id = doc.id;
       datas.push(data);
     });
+    appendUsers(data);
   });
 
 
@@ -133,7 +134,7 @@ function dead(){
 }
 
 
-const helpBox = document.getElementById("help-box-container"); 
+/* const helpBox = document.getElementById("help-box-container"); 
 
 
 function showHelp() {
@@ -142,4 +143,6 @@ function showHelp() {
  
 function hideHelp() {
     helpBox.classList.remove("active"); 
-}
+} */
+
+   
