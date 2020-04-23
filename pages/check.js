@@ -106,7 +106,7 @@ export default class CheckPage {
                 </div> 
 
                 <div class="check__content--left--wrapper">
-                    <div id="check__content--left__question">
+                    <div class="dropdown" id="check__content--left__question">
                         <h3 class="sub-question">6. Hvor mange kvæg er der på din gård?</h3> 
                         <img id="arrow-down" src="../images/arrow-down.svg" alt="se mere pil">  
                     </div>
@@ -121,26 +121,33 @@ export default class CheckPage {
                             <img src="./images/exclamation.svg" alt="questionmark">
                         </div>
                     </div>
+                    
+                    <div class="panel">
+
                     <div class="check__content--left--wrapper">
+                        
                         <div id="check__content--left__question" class="expand-questions">
                             <h4 class="sub-question">6.1 Hvor mange kvæg er der på din gård?</h4> 
                             <input type="text">
-                        </div>
-                
-                        
+                        </div> 
+
                     </div>
+
                     <div class="check__content--left--wrapper">
+                        
                         <div id="check__content--left__question" class="expand-questions">
-                            <h4 class="sub-question">6.2 Hvor mange kvæg er der på din gård?</h4> 
+                            <h4 class="sub-question">6.2 Hvor mange tyrer er der på din gård?</h4> 
                             <input type="text">
                         </div>
                 
                         
                     </div>
+                    
                     <div class="check__content--left--wrapper">
                         <div id="check__content--left__question" class="expand-questions">
-                            <h4 class="sub-question">6.3 Hvor mange kvæg er der på din gård?</h4> 
+                            <h4 class="sub-question">6.3 Hvor mange kalve er der på din gård?</h4> 
                             <input type="text">
+                        </div>
                         </div>
                 
                         

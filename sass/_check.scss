@@ -82,3 +82,13 @@ padding: 5%;
         margin-left: 8%;
     }
 }
+
+.panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}

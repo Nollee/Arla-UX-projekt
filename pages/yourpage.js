@@ -56,7 +56,7 @@ export default class YourPage {
 
          <a href="#"><img src="../images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
 
-         <a href="#"><img src="../images/animals.svg" alt="ikon af penge"><p>Køer<br>0/15</p></a>
+         <a href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><p>Køer<br>0/15</p></a>
 
          <a href="#"><img src="../images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
 
