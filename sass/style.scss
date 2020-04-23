@@ -9,6 +9,7 @@
 @import "_login";
 @import "_howto";
 @import "_thankyou";
+@import "_check"; 
 
 
 * {
@@ -46,6 +47,7 @@ section {
 nav{
   position: absolute;
   top: 20;
+  z-index: 30;
   @extend %center; 
   justify-content: space-between;
   width: 100%;
@@ -58,3 +60,25 @@ nav{
 a {
   text-decoration: none;
 }
+
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $green;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-green;
+}  

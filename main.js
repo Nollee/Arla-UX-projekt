@@ -5,7 +5,7 @@ import ClientsPage from "./pages/clients.js";
 import ContactPage from "./pages/contact.js";
 import _spaService from "./services/spa.js";
 import YourPage from "./pages/yourpage.js"; 
-
+import CheckPage from "./pages/check.js"
 import QuestionPage from "./pages/questions.js";
 import WelcomePage from "./pages/welcome.js";
 import HowToPage from "./pages/howto.js"
@@ -20,7 +20,7 @@ let clientsPage = new ClientsPage();
 let contactPage = new ContactPage();
 let yourPage = new YourPage();  
 let thankyou = new ThankYouPage();
- 
+let checkPage = new CheckPage(); 
 let questionPage = new QuestionPage();
 let welcomePage = new WelcomePage();
 let howtoPage = new HowToPage();
@@ -30,6 +30,8 @@ let howtoPage = new HowToPage();
 // init services
 _spaService.init();
 
+
+/* check answers */
 
 
 /* chart */
