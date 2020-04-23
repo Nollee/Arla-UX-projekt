@@ -17,7 +17,7 @@ const firebaseConfig = {
   
   // ========== READ ==========
   // watch the database ref for changes
-  data.onSnapshot(function(snapshotData) {
+  dataRef.onSnapshot(function(snapshotData) {
     let datas = [];
     snapshotData.forEach(function(doc) {
       let data = doc.data();
@@ -25,7 +25,6 @@ const firebaseConfig = {
       data.id = doc.id;
       datas.push(data);
     });
-    appendUsers(data);
   });
 
 
