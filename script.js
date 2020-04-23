@@ -11,21 +11,21 @@ const firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
-  const userRef = db.collection("users");
+  const dataRef = db.collection("data");
   
   let selectedUserId = "";
   
   // ========== READ ==========
   // watch the database ref for changes
-  userRef.onSnapshot(function(snapshotData) {
-    let users = [];
+  data.onSnapshot(function(snapshotData) {
+    let datas = [];
     snapshotData.forEach(function(doc) {
-      let user = doc.data();
-      console.log(user);
-      user.id = doc.id;
-      users.push(user);
+      let data = doc.data();
+      console.log(data);
+      data.id = doc.id;
+      datas.push(data);
     });
-    appendUsers(users);
+    appendUsers(data);
   });
 
 
