@@ -21,11 +21,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "arla-c", sans-serif;
-  overflow-x: hidden;
-}
-
 .hill-background {
   position: fixed;
   bottom: 0;
@@ -37,6 +32,7 @@ body {
   font-family: "arla-c", sans-serif;
   overflow-x: hidden;
   overflow-y: hidden;
+  @include tablet {overflow-y: scroll;} 
 }
 
 section {

@@ -17,15 +17,23 @@
         z-index: 1;  
         margin-top: 96.39px;
         overflow-y: scroll;
+        @include desktop-sm {width: 70%;}
+        @include tablet {width: 100%;
+        font-size: 1.2rem;}
         &__question { 
             display: flex; 
             flex-direction: row;
+            @include tablet {flex-wrap: wrap;}
             input {    width: 7rem;
-                font-size: 1.2rem;}
+                font-size: 1.2rem;
+                @include tablet {margin-top: 2%;}
+            }
         } 
     }
     &--right {
         background-color: white;
+        @include desktop-sm {width: 30%;}
+        @include tablet {width: 0%;}
         img {
             width: 50%;
         }

@@ -1,11 +1,16 @@
 #yourpage-wrapper {
     width: 100%;
     height: 100vh;
-    @extend %center; 
+    @extend %center;  
+    @include tablet {align-items: flex-start !important;}
 }
 
-#yourpage {     
+#yourpage {
+    @include phone {
+        overflow-y: scroll;
+    }      
     h2 { 
+        margin-right: 20px;
         color: $dark-green;
         font-size: 3em;   
     }
@@ -32,21 +37,24 @@
                 flex-direction: row;
                 align-items: center; 
                 margin-bottom: 5vh;
+                @include tablet {flex-wrap: wrap;}
                 p {
                     font-size: 1.5em;
                 }
                 img {
-                    height: 2em;
-                    margin-left: 20px;
+                    height: 2em; 
                     margin-right: 10px;
                 }
             }    
         }
-        &--farming { 
+        &--farming {
+            @include tablet {margin-top: 100px;}  
             &__tabs {
                 /* width: 40%; */
                 @extend %center; 
                 justify-content: space-between !important;
+                @include desktop-sm {justify-content: flex-start !important}
+                @include phone {justify-content: center !important; align-items: center !important;}
                 a {
                     text-align: center;
                     margin-bottom: 2vh; 
@@ -60,6 +68,8 @@
                     width: 10vw;
                     height: auto;
                     transition: ease .4s;
+                    @include desktop-sm {width: 150px;}
+                    @include tablet {width: 100px;}
                 }
                 img:hover {
                     transform: scale(1.1);
@@ -72,13 +82,17 @@
                 width: 100%;
                 @extend %center;
                 justify-content: space-between !important; 
+                flex-wrap: wrap;
                 a {
                     text-align: center;
+                    margin: 10px;
                 }
                 img {
                     width: 5vw;
                     height: auto;
                     transition: ease .4s;
+                    @include desktop-sm {width: 50px;} 
+                    @include tablet {width: 75px;}
                 }
                 img:hover {
                     transform: scale(1.1);
@@ -102,6 +116,14 @@
   height:250px !important;  
     margin-left: 12%;  
     text-align: center;
+    @include desktop-sm {display: none;}
     
 }
 
+.header-item-wrapper {
+    display: flex;
+flex-direction: row;
+@include phone {padding-top: 10px;
+padding-bottom: 10px;}
+
+}
