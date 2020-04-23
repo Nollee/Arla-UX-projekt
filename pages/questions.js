@@ -15,7 +15,7 @@ export default class QuestionPage {
     
         <div class="question-indicators-container">
           <div class="question-indicator">
-            <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
+            <h4 class="question-indicator-text q-help">Hvordan finder jeg svaret?</h4>
             <img src="./images/questionmark.svg" alt="questionmark">
           </div>
 
@@ -46,9 +46,8 @@ export default class QuestionPage {
         </form>
 
         </div>
-      <div class="question-img">
-        <img src="./images/cow-icon.svg">
-      </div>
+        <img class="question-img" src="./images/cow-icon.svg">
+      
       
       <div class="question-buttons">
     
@@ -88,7 +87,7 @@ export default class QuestionPage {
     </div>
 
     <div class="show-list">
-      <img class="q-open-button" src="./images/close.svg">
+      <img class="q-open-button" src="./images/list-icon.svg">
       <h4>Se alle spørgsmål</h4>
     </div>
 
