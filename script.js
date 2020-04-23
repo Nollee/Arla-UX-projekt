@@ -134,13 +134,13 @@ function dead(){
 }
 
 
+const helpBox = document.getElementById("help-box-container"); 
+
 
 function showHelp() {
-    document.getElementById("help-box-container").classList.add("active"); 
+    helpBox.classList.add("active"); 
 }
-
+ 
 function hideHelp() {
-    document.getElementById(help-box-container).classList.remove("active"); 
+    helpBox.classList.remove("active"); 
 }
-
-const helpBox 
