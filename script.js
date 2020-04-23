@@ -28,21 +28,26 @@ const firebaseConfig = {
   });
 
 
- /*  function createUser() {
+  function createNumOfCattles() {
     // references to the input fields
-    let nameInput = document.querySelector('#name');
-    let mailInput = document.querySelector('#mail');
-    console.log(nameInput.value);
-    console.log(mailInput.value);
+    let cowsInput = document.querySelector('#cows');
+    let bullsInput = document.querySelector('#bulls');
+    let calvesInput = document.querySelector('#calves');
+    console.log(cowsInput.value);
+    console.log(bullsInput.value);
+    console.log(calvesInput.value);
   
-    let newUser = {
-      name: nameInput.value,
-      mail: mailInput.value
+    let newNumberAnswer = {
+      numOfCows: cowsInput.value,
+      numOfBulls: bullsInput.value,
+      numOfCalves: calvesInput.value
+
     };
   
-    userRef.add(newUser);
+    dataRef.add(newNumberAnswer);
+
   }
- */
+
 
 
 

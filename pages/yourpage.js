@@ -21,7 +21,7 @@ export default class YourPage {
          <div id="yourpage__content--farming--wrapper">
          <!--farming tabs --->
          <div id="yourpage__content--farming__tabs">
-         <a href="#"><img src="../images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
+         <a href="#prize"><img src="../images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
 
          <a href="#data"><img src="../images/data.svg" alt="ikon af data"><p>Data</p></a>
 
