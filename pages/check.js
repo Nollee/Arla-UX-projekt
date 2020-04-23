@@ -23,15 +23,15 @@ export default class CheckPage {
                     <div class="question-indicators-container">
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Hvordan finder jeg svaret?</h4>
-                            <img src="./images/questionmark.svg" alt="questionmark" onclick="showHelp()">
-                        </div>  
+                            <img src="./images/questionmark.svg" alt="questionmark" class="q-help">
+                        </div>   
                         
                         <div class="question-indicator">
                             <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
                             <img src="./images/exclamation.svg" alt="questionmark">
                         </div>
                     </div>
-                </div> 
+                </div>   
                 
                 <div class="check__content--left--wrapper">
                     <div id="check__content--left__question">
