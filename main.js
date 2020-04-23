@@ -199,3 +199,50 @@ appendChart();
 
 
 
+let acc = document.getElementsByClassName("dropdown");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    document.querySelector("#arrow-down").classList.toggle("dropping");
+    let panel = document.querySelector(".panel");
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      console.log("ned");
+
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      console.log("op");
+
+    }    
+  });
+};
+
+
+
+
+
+let helpBox = document.getElementById("help-box-container");
+let help = document.querySelectorAll(".q-help"); 
+
+help.forEach(function(item) {
+    item.addEventListener('click', showHelp);
+}); 
+
+ 
+helpBox.addEventListener('click', hideHelp)
+
+
+/* let link = document.querySelectorAll(".nav__link").forEach(function(item) {
+    item.addEventListener("mouseenter", hover);
+    item.addEventListener("mouseleave", leave); 
+  });   */
+
+
+ function showHelp() {
+    helpBox.classList.add("active"); 
+}
+ 
+ function hideHelp() {
+    helpBox.classList.remove("active"); 
+ }  

@@ -14,7 +14,7 @@
         @extend %shadow; 
         justify-content: start;  
         flex-direction: column;
-        z-index: 10; 
+        z-index: 1;  
         margin-top: 96.39px;
         overflow-y: scroll;
         &__question { 
@@ -60,19 +60,22 @@
     height: 100vh;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 9999999999;
+    opacity: 0; 
+    z-index: -1;
     @extend %center; 
-    display: none;
-}
-
-#help-box-container.active {
-    display: block;
-}
-
+    transition: ease .4s;
+}  
+ 
+#help-box-container.active { 
+    @extend %center; 
+    opacity: 1;  
+    z-index: 10; 
+} 
+  
 #help-box {
     width: 45%;
     background-color: white; 
-    @extend %center; 
+    @extend %center;  
     -webkit-box-shadow: 5px 5px 13px -4px rgba(0,0,0,0.75);
 -moz-box-shadow: 5px 5px 13px -4px rgba(0,0,0,0.75);
 box-shadow: 5px 5px 13px -4px rgba(0,0,0,0.75);
@@ -82,3 +85,50 @@ padding: 5%;
         margin-left: 8%;
     }
 }
+
+.panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+#arrow-down.dropping{
+    transform: rotate(180deg);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    
+}
+
+#arrow-down{
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    
+}
+
+.sub-sub-question{
+    font-size: 22px;
+    width: 80%;
+}
+
+.sub-sub-input{
+    margin-left: 2% !important;
+}
+
+.sub-sub-wrapper{
+    width: 80% !important;
+    margin-left: 5% !important;
+}
+
+.dropdown{
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.12);
+-moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.12);
+box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.12);
+padding: 1vh 2%;
+}
+

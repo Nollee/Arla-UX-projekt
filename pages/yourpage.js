@@ -21,7 +21,7 @@ export default class YourPage {
          <div id="yourpage__content--farming--wrapper">
          <!--farming tabs --->
          <div id="yourpage__content--farming__tabs">
-         <a href="#"><img src="../images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
+         <a href="#prize"><img src="../images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
 
          <a href="#data"><img src="../images/data.svg" alt="ikon af data"><p>Data</p></a>
 
@@ -56,7 +56,7 @@ export default class YourPage {
 
          <a href="#"><img src="../images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
 
-         <a href="#"><img src="../images/animals.svg" alt="ikon af penge"><p>Køer<br>0/15</p></a>
+         <a href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><p>Køer<br>0/15</p></a>
 
          <a href="#"><img src="../images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
 

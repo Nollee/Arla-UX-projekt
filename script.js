@@ -28,6 +28,27 @@ const firebaseConfig = {
   });
 
 
+  function createNumOfCattles() {
+    // references to the input fields
+    let cowsInput = document.querySelector('#cows');
+    let bullsInput = document.querySelector('#bulls');
+    let calvesInput = document.querySelector('#calves');
+    console.log(cowsInput.value);
+    console.log(bullsInput.value);
+    console.log(calvesInput.value);
+  
+    let newNumberAnswer = {
+      numOfCows: cowsInput.value,
+      numOfBulls: bullsInput.value,
+      numOfCalves: calvesInput.value
+
+    };
+  
+    dataRef.add(newNumberAnswer);
+
+  }
+
+
 
 
 
@@ -133,13 +154,30 @@ function dead(){
 }
 
 
-const helpBox = document.getElementById("help-box-container"); 
 
 
-function showHelp() {
-    helpBox.classList.add("active"); 
-}
- 
-function hideHelp() {
-    helpBox.classList.remove("active"); 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= DROPDOWN ============================*/
+
+
