@@ -41,8 +41,8 @@ _spaService.init();
 
 // Question navigation
 
-const closeButton = document.querySelector(".q-close-button");
-const openButton = document.querySelector(".q-open-button");
+const closeButton = document.querySelector(".question-list-ui");
+const openButton = document.querySelector(".show-list");
 
 const overlay = document.querySelector(".overlay");
 

@@ -1,11 +1,42 @@
+#tips h1{
+    text-align: center;
+    font-size: 3em;
+    color: $dark-green;
+    padding-top: 10%;
+}
+
 .tip-container {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
-  padding-top: 10%;
+  padding: 5% 0;
+  overflow-x: initial;
 }
 
 .tip-text{
-    
+    width: 28%;  
+    margin: 0 2rem 0 2rem;  
 }
+
+.tip-text h2{
+    color: $dark-green;
+    margin-bottom: 0.8rem; 
+}
+.tip-text p{
+    color: $dark-gray;
+}
+
+
+.tip-container:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.tip-img{
+    width: 16%;
+}
+
+#tips{
+    overflow-y: scroll;
+}
+
