@@ -12,7 +12,7 @@
 @import "_thankyou";
 @import "_help";
 @import "_yourdata";
-
+@import "_tipspage";
 
 * {
   margin: 0;
@@ -45,12 +45,12 @@ section {
 
 .hide {
   display: none;
-}  
- 
-nav{
+}
+
+nav {
   position: fixed;
   top: 20;
-  @extend %center; 
+  @extend %center;
   justify-content: space-between;
   width: 100%;
   img {
