@@ -916,7 +916,8 @@
     transition: 0.5s ease-in; }
 
   .data-content {
-    width: 90%; }
+    width: 90%;
+    margin: auto; }
     .data-content canvas {
       width: 90%; }
     .data-content .data-header {

@@ -1,3 +1,39 @@
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyCpb0OF-Co5wJU3PRvBwWIqtp71yOi25wY",
+    authDomain: "arla-ux.firebaseapp.com",
+    databaseURL: "https://arla-ux.firebaseio.com",
+    projectId: "arla-ux",
+    storageBucket: "arla-ux.appspot.com",
+    messagingSenderId: "333480570558",
+    appId: "1:333480570558:web:ab212ac76f48f0d92ab8ef"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const dataRef = db.collection("data");
+  
+  let selectedUserId = "";
+  
+  // ========== READ ==========
+  // watch the database ref for changes
+  data.onSnapshot(function(snapshotData) {
+    let datas = [];
+    snapshotData.forEach(function(doc) {
+      let data = doc.data();
+      console.log(data);
+      data.id = doc.id;
+      datas.push(data);
+    });
+    appendUsers(data);
+  });
+
+
+
+
+
+
+
 
 function cowData(){
     document.querySelector(".cow-nav").classList.toggle('next');
@@ -99,3 +135,12 @@ function dead(){
 
 
 
+function showHelp() {
+    document.getElementById("help-box-container").classList.add("active"); 
+}
+
+function hideHelp() {
+    document.getElementById(help-box-container).classList.remove("active"); 
+}
+
+const helpBox 
