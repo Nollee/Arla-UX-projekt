@@ -12,14 +12,15 @@ $dark-blue: #0B43AA;
 //grays
 $dark-gray: #6F6F6F;
 $gray: rgba(111, 111, 111, 0.5); 
-$light-gray: #EBEBEC;     
+$light-gray: #EBEBEC;  
+$shadow-gray: rgb(218, 218, 218);   
 
-/* inheritances */
+/* inheritances */  
 %center { 
     display: flex;
     justify-content: center;
     align-items: center; 
-}
+} 
 
 %absolute-center {
     position: absolute; 
@@ -30,8 +31,8 @@ $light-gray: #EBEBEC;
 } 
 
 %shadow {
-    -webkit-filter: drop-shadow( 3px 3px 2px $gray);
-                    filter: drop-shadow( 3px 3px 2px $gray);
+    -webkit-filter: drop-shadow( 3px 3px 2px $shadow-gray);
+                    filter: drop-shadow( 3px 3px 2px $shadow-gray);
 }
 
 

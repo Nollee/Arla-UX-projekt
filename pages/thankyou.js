@@ -9,11 +9,11 @@ export default class ThankYouPage {
         <div class="thankyou-wrapper">
         <h1>Tak for dine svar!</h1>
         <div class="ty-options">
-        <a href="#" class="ty-option">
+        <a href="#check" class="ty-option">
         <img src="images/ret.svg" alt="ret eller gennemgå"> 
         <h3>Ret eller gennemgå</h3>
         </a>
-        <a href="#" class="ty-option">
+        <a href="#yourpage" class="ty-option">
         <img src="images/godkend.svg" alt="godkend"> 
         <h3>Godkend og vend tilbage</h3>
         </a>

@@ -2,6 +2,7 @@ import NavBar from "./components/navbar.js";
 import LoginPage from "./pages/login.js";
 import _spaService from "./services/spa.js";
 import YourPage from "./pages/yourpage.js"; 
+import CheckPage from "./pages/check.js"
 import QuestionPage from "./pages/questions.js";
 import WelcomePage from "./pages/welcome.js";
 import HowToPage from "./pages/howto.js";
@@ -11,13 +12,15 @@ import HelpPage from "./pages/help.js";
 import DataPage from "./pages/yourdata.js";
 import TipsPage from "./pages/tips.js";
 
-
+ 
 
 
 // Declare and init
 let navbar = new NavBar();
 let loginPage = new LoginPage();
 let yourPage = new YourPage();  
+let thankyou = new ThankYouPage();
+let checkPage = new CheckPage(); 
 let questionPage = new QuestionPage();
 let welcomePage = new WelcomePage();
 let howtoPage = new HowToPage();
@@ -32,6 +35,8 @@ let tipsPage = new TipsPage();
 // init services
 _spaService.init();
 
+
+/* check answers */ 
 
 
 // Question navigation
@@ -190,4 +195,7 @@ function appendChart() {
 }
 
 appendChart(); 
+
+
+
 
