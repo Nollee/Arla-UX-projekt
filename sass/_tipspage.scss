@@ -1,8 +1,8 @@
-#tips h1{
-    text-align: center;
-    font-size: 3em;
-    color: $dark-green;
-    padding-top: 10%;
+#tips h1 {
+  text-align: center;
+  font-size: 3em;
+  color: $dark-green;
+  padding-top: 20vh;
 }
 
 .tip-container {
@@ -12,31 +12,40 @@
   font-size: 1.5em;
   padding: 5% 0;
   overflow-x: initial;
+  flex-wrap: wrap;
+  margin: 0 10%;
 }
 
-.tip-text{
-    width: 28%;  
-    margin: 0 2rem 0 2rem;  
+.tip-text {
+  width: 28%;
+  margin: 0 2rem 0 2rem;
+  min-width: 300px;
 }
 
-.tip-text h2{
-    color: $dark-green;
-    margin-bottom: 0.8rem; 
+.tip-text h2 {
+  color: $dark-green;
+  margin-bottom: 0.8rem;
 }
-.tip-text p{
-    color: $dark-gray;
-}
-
-
-.tip-container:nth-child(odd){
-    flex-direction: row-reverse;
+.tip-text p {
+  color: $dark-gray;
 }
 
-.tip-img{
-    width: 16%;
+.tip-container:nth-child(odd) {
+  flex-direction: row-reverse;
 }
 
-#tips{
-    overflow-y: scroll;
+.tip-img {
+  width: 16%;
+  min-width: 300px;
+  margin-top: 5vh;
 }
 
+#tips {
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 840px) {
+    .tip-text{
+      text-align: center;
+    }
+  }
