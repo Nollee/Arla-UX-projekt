@@ -11,13 +11,13 @@ const firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
-  const dataRef = db.collection("data");
+  const twentyRef = db.collection("2020");
   
   let selectedUserId = "";
   
   // ========== READ ==========
   // watch the database ref for changes
-  dataRef.onSnapshot(function(snapshotData) {
+  twentyRef.onSnapshot(function(snapshotData) {
     let datas = [];
     snapshotData.forEach(function(doc) {
       let data = doc.data();
@@ -38,16 +38,18 @@ const firebaseConfig = {
     console.log(calvesInput.value);
   
     let newNumberAnswer = {
-      numOfCalves: calvesInput.value,
-      numOfBulls: bullsInput.value,
-      numOfCows: cowsInput.value
+      numOfCalves: +calvesInput.value,
+      numOfBulls: +bullsInput.value,
+      numOfCows: +cowsInput.value,
+      numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value
 
 
     };
   
-    dataRef.doc("Hvor mange kvæg").set(newNumberAnswer);
+    twentyRef.doc("Antal kvæg").set(newNumberAnswer);
 
   }
+
 /* 
   let selectedUserId = "";
 
