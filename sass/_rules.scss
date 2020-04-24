@@ -89,4 +89,34 @@ $shadow-gray: rgb(218, 218, 218);
     font-family: 'arla-c'; 
     src: url('../fonts/ArlaIFCondensed_Bd.otf') format('opentype');    
   } 
-   
+
+
+/* Mediaqueries */
+$phone: 550px;
+$tablet: 750px;
+$desktop-sm: 1050px;
+$desktop-lg: 1200px;
+ 
+@mixin phone {
+    @media only screen and (max-width: $phone) {
+        @content;  
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet) {
+        @content;  
+    }
+}  
+
+@mixin desktop-sm {
+    @media only screen and (max-width: $desktop-sm) {
+        @content;  
+    }
+}
+
+@mixin desktop-lg {
+    @media only screen and (max-width: $desktop-lg) {
+        @content;  
+    }
+}    

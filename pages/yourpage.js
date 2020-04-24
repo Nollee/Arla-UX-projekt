@@ -15,8 +15,9 @@ export default class YourPage {
          <div id="yourpage__content--farming">
 
          <div id="yourpage__content--farming__header">
-         <h2>Dit landbrug</h2> <img src="../images/light-bulb.svg" alt="lyspære ikon"><p>Du har 15 km2 pr ko</p>
-         </div> 
+         <h2>Dit landbrug</h2> <div class="header-item-wrapper"><img src="../images/light-bulb.svg" alt="lyspære ikon"><p>Du har 15 km2 pr ko</p>
+         </div>
+         </div>  
 
          <div id="yourpage__content--farming--wrapper">
          <!--farming tabs --->
@@ -48,8 +49,9 @@ export default class YourPage {
          <div id="yourpage__content--questions">
 
          <div id="yourpage__content--questions__header">
-         <h2>Spørgsmål</h2> <img src="../images/clock.svg" alt="ur ikon"><p>Du har ca 4 timer tilbage af besvarelsen</p>
-         </div> 
+         <h2>Spørgsmål</h2> <div class="header-item-wrapper"><img src="../images/clock.svg" alt="ur ikon"><p>Du har ca 4 timer tilbage af besvarelsen</p>
+         </div>
+         </div>
          <!--questions tabs --->
          <div id="yourpage__content--questions__tabs">
          <a href="#"><img src="../images/cow-food.svg" alt="ikon af mælk"><p>Dyrefoder<br>0/15</p></a>
