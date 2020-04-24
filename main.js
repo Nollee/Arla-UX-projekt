@@ -241,3 +241,4 @@ helpBox.addEventListener('click', hideHelp)
  function hideHelp() {
     helpBox.classList.remove("active"); 
  }  
+

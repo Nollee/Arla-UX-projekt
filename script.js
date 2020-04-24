@@ -1,23 +1,9 @@
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyCpb0OF-Co5wJU3PRvBwWIqtp71yOi25wY",
-    authDomain: "arla-ux.firebaseapp.com",
-    databaseURL: "https://arla-ux.firebaseio.com",
-    projectId: "arla-ux",
-    storageBucket: "arla-ux.appspot.com",
-    messagingSenderId: "333480570558",
-    appId: "1:333480570558:web:ab212ac76f48f0d92ab8ef"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-  const twentyRef = db.collection("2020");
-  
-  let selectedUserId = "";
+const dataRef = db.collection("data");
+
   
   // ========== READ ==========
   // watch the database ref for changes
-  twentyRef.onSnapshot(function(snapshotData) {
+  dataRef.onSnapshot(function(snapshotData) {
     let datas = [];
     snapshotData.forEach(function(doc) {
       let data = doc.data();
@@ -25,8 +11,17 @@ const firebaseConfig = {
       data.id = doc.id;
       datas.push(data);
     });
+    selectCattleData();
   });
 
+  function selectCattleData(){
+/*     numOfCattlesRef.get().then(function(doc){
+        cattleStatus = doc.data();
+        console.log(cattleStatus);
+
+
+    }); */
+  }
 
   function createNumOfCattles() {
     // references to the input fields
@@ -41,32 +36,16 @@ const firebaseConfig = {
       numOfCalves: +calvesInput.value,
       numOfBulls: +bullsInput.value,
       numOfCows: +cowsInput.value,
-      numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value
+      numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
+      year: 2020
 
 
     };
   
-    twentyRef.doc("Antal kvæg").set(newNumberAnswer);
+    dataRef.doc("Cattles2020").set(newNumberAnswer);
 
   }
 
-/* 
-  let selectedUserId = "";
-
-
-  function selectData(id, cows, bulls, calves) {
-    // references to the input fields
-    let cowsInput = document.querySelector('#cows');
-    let bullsInput = document.querySelector('#bulls');
-    let calvesInput = document.querySelector('#calves');
-    cowsInput.value = cows;
-    bullsInput.value = bulls;
-    calvesInput.value = calves;
-    selectedUserId = id;
-
-    console.log(cows);
-    
-  } */
 
 
 
@@ -144,10 +123,6 @@ function numOfCows(){
     document.getElementById("data-heading").innerHTML ="Antal køer"
 }
 
-function numOfBulls(){
-    document.getElementById("data-heading").innerHTML ="Antal Tyrer"
-}
-
 function numOfCalves(){
     document.getElementById("data-heading").innerHTML ="Antal Kalve"
 }
@@ -197,9 +172,5 @@ function dead(){
 
 
 
-
-
-
-/* ================================= DROPDOWN ============================*/
 
 

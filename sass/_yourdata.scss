@@ -119,11 +119,15 @@
         font-size: 40px;
         color: $dark-green;
     }
-    canvas{
+    #dataChart{
         height: 40vh;
         width: 80%;
-        background-color: green;
         margin: 7vh auto;
+        canvas{
+            height: 40vh;
+        width: 80%;
+        margin: 7vh auto;
+        }
     }
     .data-header{
         background-color: white;
@@ -153,6 +157,11 @@
 .nav-close, .nav-overlay{
     display: none;
 }
+
+.hidden{
+    display: none !important;
+}
+
 
 @media only screen and (min-width: 1100px) {
 
