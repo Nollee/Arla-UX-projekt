@@ -21,11 +21,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "arla-c", sans-serif;
-  overflow-x: hidden;
-}
-
 .hill-background {
   position: fixed;
   bottom: 0;
@@ -37,6 +32,7 @@ body {
   font-family: "arla-c", sans-serif;
   overflow-x: hidden;
   overflow-y: hidden;
+  @include tablet {overflow-y: scroll;} 
 }
 
 section {
@@ -86,3 +82,11 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: $dark-green;
 }  
+
+
+@media only screen and (max-width: 500px) {
+
+  body{
+    overflow-y: visible;
+  }
+}

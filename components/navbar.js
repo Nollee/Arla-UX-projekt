@@ -8,7 +8,6 @@ export default class NavBar {
       <nav class="tabbar">
       <a href="#yourpage"><img src="../images/arla_logo.svg" alt="arla logo"></a>  
         <a href="#login">Login</a>
-        <a href="#contact">Contact</a>
         <a href="#yourpage">Din side</a>  
         <a href="#check">check</a>
         <a href="#thankyou">thankyou</a>   

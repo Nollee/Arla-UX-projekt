@@ -26,6 +26,7 @@
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
     width: 20%;
+    z-index: 10;
     h3{
         text-align: center;
         margin-top: 20px;
@@ -53,5 +54,30 @@
         -webkit-transition: 0.3s ease-in;
         -o-transition: 0.3s ease-in;
         transition: 0.3s ease-in;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .thankyou-wrapper{
+        width: 90%;
+        padding-top: 80px;
+        overflow-y: visible;
+        h1{
+            margin-bottom: 2vh;
+        }
+    }
+
+    .ty-options{
+        flex-direction: column;
+    }
+
+    .ty-option{
+        width: 50%;
+        margin-bottom: 4vh;
+        h3{
+            font-size: 24px;
+            margin-top: 10px;
+        }
     }
 }

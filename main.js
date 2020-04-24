@@ -218,12 +218,12 @@ for (i = 0; i < acc.length; i++) {
   });
 };
 
+ 
 
 
 
-
-let helpBox = document.getElementById("help-box-container");
-let help = document.querySelectorAll(".q-help"); 
+const helpBox = document.getElementById("help-box-container");
+const help = document.querySelectorAll(".q-help"); 
 
 help.forEach(function(item) {
     item.addEventListener('click', showHelp);
@@ -232,11 +232,6 @@ help.forEach(function(item) {
  
 helpBox.addEventListener('click', hideHelp)
 
-
-/* let link = document.querySelectorAll(".nav__link").forEach(function(item) {
-    item.addEventListener("mouseenter", hover);
-    item.addEventListener("mouseleave", leave); 
-  });   */
 
 
  function showHelp() {

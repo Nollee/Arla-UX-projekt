@@ -11,13 +11,13 @@ const firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
-  const dataRef = db.collection("data");
+  const twentyRef = db.collection("2020");
   
   let selectedUserId = "";
   
   // ========== READ ==========
   // watch the database ref for changes
-  dataRef.onSnapshot(function(snapshotData) {
+  twentyRef.onSnapshot(function(snapshotData) {
     let datas = [];
     snapshotData.forEach(function(doc) {
       let data = doc.data();
@@ -38,15 +38,37 @@ const firebaseConfig = {
     console.log(calvesInput.value);
   
     let newNumberAnswer = {
-      numOfCows: cowsInput.value,
-      numOfBulls: bullsInput.value,
-      numOfCalves: calvesInput.value
+      numOfCalves: +calvesInput.value,
+      numOfBulls: +bullsInput.value,
+      numOfCows: +cowsInput.value,
+      numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value
+
 
     };
   
-    dataRef.add(newNumberAnswer);
+    twentyRef.doc("Antal kvæg").set(newNumberAnswer);
 
   }
+
+/* 
+  let selectedUserId = "";
+
+
+  function selectData(id, cows, bulls, calves) {
+    // references to the input fields
+    let cowsInput = document.querySelector('#cows');
+    let bullsInput = document.querySelector('#bulls');
+    let calvesInput = document.querySelector('#calves');
+    cowsInput.value = cows;
+    bullsInput.value = bulls;
+    calvesInput.value = calves;
+    selectedUserId = id;
+
+    console.log(cows);
+    
+  } */
+
+
 
 
 

@@ -73,3 +73,20 @@
 .remove{
     display: none;
 }
+
+@media only screen and (max-width: 500px) {
+    .login-wrapper{
+        width: 90%;
+        .login-code{
+            width: 80%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .login-wrapper{
+        width: 80%;
+    }
+
+}
