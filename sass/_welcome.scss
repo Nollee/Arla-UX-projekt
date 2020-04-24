@@ -181,3 +181,9 @@ height: 25vh;
         height: 15vh;
     }
 }
+
+@media only screen and (max-width: 1050px) {
+    .back-btn{
+        right: 45%;
+    }
+}
