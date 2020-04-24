@@ -122,3 +122,62 @@
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
+
+.howto-icon-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+height: 25vh;
+
+    .icon-top, .icon-bot{
+        display: flex;
+        flex-direction: column;
+        width: 12%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .icon-top{
+        justify-content: flex-start;
+    }
+    .icon-bot{
+        justify-content: flex-end;
+    }
+
+}
+
+.back{
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 500px) {
+    .next-btn{
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;  
+    }
+
+    .welcome-wrapper{
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .back-btn, .start-btn{
+        width: 100px;
+        padding: 1px 1px;
+        p{
+        font-size: 20px;
+        }
+    }
+    .back-btn{
+        left: 5%;
+
+    }
+
+    .howto-icon-wrapper{
+        height: 15vh;
+    }
+}
