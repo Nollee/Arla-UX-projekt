@@ -26,11 +26,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-.question-container {
-  margin-right: 10rem;
-}
+
 
 .sub-question-container {
   display: flex;
@@ -176,5 +175,8 @@
 }
 
 .question-img {
-  width: 20%;
+  width: 20vw;
+  min-width: 300px;
 }
+
+
