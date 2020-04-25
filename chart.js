@@ -76,6 +76,21 @@ function showFood() {
   document.querySelector("#foodChart").classList.remove("hidden");
 }
 
+function showSick() {
+  let headers = document.querySelectorAll(".data-heading");
+
+  for (let header of headers) {
+    header.innerHTML = "Antal døde";
+  }
+
+  let charts = document.querySelectorAll(".chart");
+
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
+  document.querySelector("#foodChart").classList.remove("hidden");
+}
+
 // ========== GLOBAL VARIABLES ========== //
 const _dataRef = db.collection("data");
 let _sustainabilityData;
