@@ -17,6 +17,9 @@ function selectData() {
   let cattle2020 = dataRef.doc("Cattles2020");
   let food2020 = dataRef.doc("food2020");
 
+
+  /* ============= opdatere dataen inde i cowspørgsmålet ===================*/
+
   cattle2020.get().then(function (doc) {
     cattleStatus = doc.data();
     let cowsInput = document.querySelector("#cows");
@@ -35,6 +38,8 @@ function selectData() {
     calvesInput.value = cattleStatus.numOfCalves;
     calveUpdate.value = cattleStatus.numOfCalves;
   });
+
+/* ============= opdatere dataen inde i foodspørgsmålet ===================*/
 
   food2020.get().then(function (doc) {
     foodStatus = doc.data();
