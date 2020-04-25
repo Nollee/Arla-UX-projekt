@@ -46,6 +46,26 @@ const dataRef = db.collection("data");
 
   }
 
+  function createNumOfFood() {
+    // references to the input fields
+    let foodTotalInput = document.querySelector('#foodTotal');
+    let foodSelfInput = document.querySelector('#foodSelf');
+    let foodBoughtInput = document.querySelector('#foodBought');
+    console.log(foodSelfInput.value);
+    console.log(foodTotalInput.value);
+    console.log(foodBoughtInput.value);
+  
+    let newNumberAnswer = {
+      numOfFoodBought: +foodTotalInput.value,
+      numOfFoodSelf: +foodSelfInput.value,
+      numOfFoodTotal: +foodBoughtInput.value,
+      year: 2020
+    };
+  
+    dataRef.doc("food2020").set(newNumberAnswer);
+
+  }
+
 
 
 

@@ -46,10 +46,103 @@ export default class QuestionPage {
         </form>
 
         </div>
+        <div class="question-img-container">
         <img class="question-img" src="./images/cow-icon.svg">
-      
-      
-      <div class="question-buttons">
+        </div>
+    
+    </div>
+
+    <div onload="selectCattleData()" class="question-section">
+
+      <div class="question-container">
+
+        <h2 class="question">2. Hvor meget foder giver du til dine kvæg?</h2>
+    
+        <div class="question-indicators-container">
+          <div class="question-indicator">
+            <h4 class="question-indicator-text q-help">Hvordan finder jeg svaret?</h4>
+            <img src="./images/questionmark.svg" alt="questionmark">
+          </div>
+
+          <div class="question-indicator">
+          <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
+          <img src="./images/exclamation.svg" alt="questionmark">
+          </div>
+        </div>
+       
+
+        <form>
+
+          <div class="sub-question-container">
+            <h3 class="sub-question">2.1 Hvor meget foder bruger du i alt?</h3>
+            <input id="foodTotal" type="text" name="foodTotal" placeholder="fx. 120" />
+          </div>
+
+          <div class="sub-question-container">
+            <h3 class="sub-question">2.2 Hvor meget foder er selvforsynende?</h3>
+            <input id="foodSelf" type="text" name="foodSelf" placeholder="fx. 120" />
+          </div>
+
+          <div class="sub-question-container"> 
+            <h3 class="sub-question">2.3 Hvor meget foder er indkøbt?</h3>
+            <input id="foodBought" type="text" name="foodBought" placeholder="fx. 120" />
+          </div>
+
+        </form>
+
+        </div>
+        <div class="question-img-container">
+        <img class="question-img" src="./images/cow-food.svg">
+        </div>
+    
+    </div>
+
+    <div onload="selectCattleData()" class="question-section">
+
+      <div class="question-container">
+
+        <h2 class="question">5. Hvor mange kvæg har du på din gård?</h2>
+    
+        <div class="question-indicators-container">
+          <div class="question-indicator">
+            <h4 class="question-indicator-text q-help">Hvordan finder jeg svaret?</h4>
+            <img src="./images/questionmark.svg" alt="questionmark">
+          </div>
+
+          <div class="question-indicator">
+          <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
+          <img src="./images/exclamation.svg" alt="questionmark">
+          </div>
+        </div>
+       
+
+        <form>
+
+          <div class="sub-question-container">
+            <h3 class="sub-question">5.1 Hvor mange køer har du?</h3>
+            <input id="cows" type="text" name="cows" placeholder="fx. 120" />
+          </div>
+
+          <div class="sub-question-container">
+            <h3 class="sub-question">5.2 Hvor mange tyrer har du?</h3>
+            <input id="bulls" type="text" name="cows" placeholder="fx. 120" />
+          </div>
+
+          <div class="sub-question-container"> 
+            <h3 class="sub-question">5.3 Hvor mange kalve har du?</h3>
+            <input id="calves" type="text" name="cows" placeholder="fx. 120" />
+          </div>
+
+        </form>
+
+        </div>
+        <div class="question-img-container">
+        <img class="question-img" src="./images/recycle.svg">
+        </div>
+    
+    </div>
+
+    <div class="question-buttons">
     
         <div class="question-button question-button-prev">
 
@@ -58,15 +151,10 @@ export default class QuestionPage {
 
         </div>  
 
-        <div class="question-button question-button-next" onclick="createNumOfCattles()">
+        <div class="question-button question-button-next" onclick="createNumOfCattles(), createNumOfFood()">
 
         <p>Næste</p>
         <img src="./images/arrow-right.svg";>
-
-      </div>
-
-      
-      
 
     </div>
       
