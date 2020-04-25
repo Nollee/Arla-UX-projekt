@@ -250,17 +250,12 @@ for (i = 0; i < acc.length; i++) {
       console.log("op");
     }
   });
-<<<<<<< HEAD
-}
-
-=======
 };
 
  
 
 
 /* HELP POPUP WINDOW FOR QUESTIONS */
->>>>>>> 75bc2cf0c8f372c139585d9b2a4381e77ce1b82c
 const helpBox = document.getElementById("help-box-container");
 const help = document.querySelectorAll(".q-help");
 
@@ -274,11 +269,11 @@ function showHelp() {
   helpBox.classList.add("active");
 }
 
-<<<<<<< HEAD
+
 function hideHelp() {
   helpBox.classList.remove("active");
 }
-=======
+
 
  /* WINDOW FOR LOGOUT USER */
 const userBox = document.getElementById("nav__user__window"); 
@@ -292,4 +287,6 @@ function showUserBox() {
 
 user.addEventListener('click', showUserBox); 
 navGradient.addEventListener('click', showUserBox); 
->>>>>>> 75bc2cf0c8f372c139585d9b2a4381e77ce1b82c
+
+userBox.addEventListener('click', showUserBox);  
+
