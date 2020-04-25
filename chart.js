@@ -42,7 +42,7 @@ function showCattles(){
   let headers = document.querySelectorAll(".data-heading");
 
   for (let header of headers){
-    header.innerHTML ="Antal Kvæg"
+    header.innerHTML ="Alle Kvæg"
 }
   document.querySelector("#cattleChart").classList.remove("hidden");
   document.querySelector("#cowChart").classList.add("hidden");
@@ -117,8 +117,8 @@ function appendBulls(sustainabilityData) {
       scales: {
         yAxes: [{ 
           ticks: {
-            max: (Math.max(...data.bulls) + 1),
-            beginAtZero: true  
+            min: (Math.min(...data.bulls) - 5),
+            max: (Math.max(...data.bulls) + 1)
           }
         }]
       },
@@ -184,8 +184,8 @@ function appendCows(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            max: (Math.max(...data.cows) + 1),
-             beginAtZero: true 
+            min: (Math.min(...data.cows) - 5),
+            max: (Math.max(...data.cows) + 1)
           }
         }]
       },
@@ -252,8 +252,8 @@ function appendCalves(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            max: (Math.max(...data.calves) + 1),
-            beginAtZero: true 
+            min: (Math.min(...data.calves) - 5),
+            max: (Math.max(...data.calves) + 1)
           }
         }]
       },
@@ -320,8 +320,8 @@ function appendCattles(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            max: (Math.max(...data.cattles) + 1),
-            beginAtZero: true  
+            min: (Math.min(...data.cattles) - 5),
+            max: (Math.max(...data.cattles) + 1)
           }
         }]
       },
