@@ -117,9 +117,9 @@ function appendBulls(sustainabilityData) {
       scales: {
         yAxes: [{ 
           ticks: {
-            min: 0,  
-            max: (Math.max(...data.bulls) + 1)  
-          }
+            max: (Math.max(...data.bulls) + 1), 
+            includeZero: true     
+          } 
         }]
       },
       legend: {
