@@ -63,13 +63,13 @@ export default class DataPage {
         <div class="data-category last-nav-cat" onclick="remove(); showBulls()">
         <h3>Tyrer</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove();">
+        <div class="data-category last-nav-cat" onclick="remove(); showCalves()">
         <h3>Kalve</h3>
-        </div>
-        <div class="data-category last-nav-cat" onclick="remove(); numOfCattles()">
+        </div> 
+        <div class="data-category last-nav-cat" onclick="remove(); showCattles()">
         <h3>Alle kvæg</h3>
         </div>
-        </div>
+        </div> 
 
         <!-- HELBRED NAV -->
         <div class="data-nav last-nav helbred-nav">
@@ -91,14 +91,16 @@ export default class DataPage {
         
 
         <div class="data-content">
-        <h1>Dine data</h1>
+        <h1 id="header-web" class="data-heading">Dine data</h1>
         <div class="chart-wrapper" id="dataChart">
         <canvas class="hidden" id="cowChart"></canvas>
         <canvas class="hidden" id="bullChart"></canvas>
+        <canvas class="hidden" id="calveChart"></canvas>
+        <canvas class="hidden" id="cattleChart"></canvas>  
 
         </div>
         <div class="data-header" onclick="firstNav()">
-        <h2 id="data-heading">Vælg data</h2>
+        <h1 class="data-heading">Vælg data</h1>
         </div>
         </div>
         <span class="nav-overlay" onclick="remove()"></span>

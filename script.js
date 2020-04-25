@@ -15,12 +15,40 @@ const dataRef = db.collection("data");
   });
 
   function selectCattleData(){
-/*     numOfCattlesRef.get().then(function(doc){
+    let cattle2020 = dataRef.doc("Cattles2020");
+
+    cattle2020.get().then(function(doc){
         cattleStatus = doc.data();
-        console.log(cattleStatus);
+        console.log(cattleStatus.numOfCows);
+
+        let cowsInput = document.querySelector('#cows');
+        let bullsInput = document.querySelector('#bulls');
+        let calvesInput = document.querySelector('#calves');
+        let inputs = document.querySelectorAll('.input');
+        let cowUpdate = document.querySelector('#cow-update');
+        let bullUpdate = document.querySelector('#bull-update');
+        let calveUpdate = document.querySelector('#calve-update');
 
 
-    }); */
+
+        cowsInput.value = cattleStatus.numOfCows;
+        cowUpdate.value = cattleStatus.numOfCows;
+        
+        bullsInput.value = cattleStatus.numOfBulls;
+        bullUpdate.value = cattleStatus.numOfBulls;
+
+        calvesInput.value = cattleStatus.numOfCalves;
+        calveUpdate.value = cattleStatus.numOfCalves;
+
+
+        for (let input of inputs){
+            if(input.value === "undefined"){
+                input.value = ""
+            }
+        }
+
+
+    });
   }
 
   function createNumOfCattles() {
@@ -46,6 +74,7 @@ const dataRef = db.collection("data");
 
   }
 
+<<<<<<< HEAD
   function createNumOfFood() {
     // references to the input fields
     let foodTotalInput = document.querySelector('#foodTotal');
@@ -64,6 +93,28 @@ const dataRef = db.collection("data");
   
     dataRef.doc("food2020").set(newNumberAnswer);
 
+=======
+  function updateNumOfCattles(){
+          // references to the input fields
+    let cowsInput = document.querySelector('#cow-update');
+    let bullsInput = document.querySelector('#bull-update');
+    let calvesInput = document.querySelector('#calve-update');
+    console.log(cowsInput.value);
+    console.log(bullsInput.value);
+    console.log(calvesInput.value);
+  
+    let newNumberAnswer = {
+      numOfCalves: +calvesInput.value,
+      numOfBulls: +bullsInput.value,
+      numOfCows: +cowsInput.value,
+      numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
+      year: 2020
+
+
+    };
+  
+    dataRef.doc("Cattles2020").set(newNumberAnswer);
+>>>>>>> 75bc2cf0c8f372c139585d9b2a4381e77ce1b82c
   }
 
 
@@ -174,6 +225,15 @@ function dead(){
 
 
 
+/* ========================== UPDATE YOURPAGE QUESTIONS ========================= */
+
+
+function fillCows(){
+    document.querySelector("#cow-number-questions").innerHTML ="15";
+    document.querySelector(".done").style.display ="block";
+    document.querySelector(".cow-question").setAttribute('href', '#thankyou');
+
+}
 
 
 

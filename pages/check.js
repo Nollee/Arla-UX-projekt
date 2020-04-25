@@ -129,7 +129,7 @@ export default class CheckPage {
                         
                         <div id="check__content--left__question" class="expand-questions">
                             <h4 class="sub-sub-question">6.2 Hvor mange køer er der på din gård?</h4> 
-                            <input class="sub-sub-input" type="text" placeholder="50">
+                            <input class="sub-sub-input" id="cow-update" type="text" placeholder="50">
                         </div>                
                         
                     </div>
@@ -138,7 +138,7 @@ export default class CheckPage {
                         
                         <div id="check__content--left__question" class="expand-questions">
                             <h4 class="sub-sub-question">6.2 Hvor mange tyrer er der på din gård?</h4> 
-                            <input class="sub-sub-input" type="text" placeholder="45">
+                            <input class="sub-sub-input" id="bull-update" type="text" placeholder="45">
                         </div>                
                         
                     </div>
@@ -146,7 +146,7 @@ export default class CheckPage {
                     <div class="check__content--left--wrapper sub-sub-wrapper">
                         <div id="check__content--left__question" class="expand-questions">
                             <h4 class="sub-sub-question">6.3 Hvor mange kalve er der på din gård?</h4> 
-                            <input class="sub-sub-input" type="text" placeholder="22">
+                            <input class="sub-sub-input" id="calve-update" type="text" placeholder="22">
                         </div>
                         </div>
 
@@ -237,7 +237,11 @@ export default class CheckPage {
             
             <!-- right side content; illustration -->
             <div id="check__content--right">
+            <h1>Ret eller gennemgå</h1>
                 <img src="../images/cow-icon.svg" alt="ikon af arla ko"> 
+                <a class="accept-btn" href="#thankyou" onclick="updateNumOfCattles()"><p>Godkend</p>
+                <img src="images/checkmark.svg" alt="check">
+                </a>
                 <!-------------------->
             </div>
             <!-------------------->

@@ -115,38 +115,28 @@
     margin-left: 30%;
     padding-top: 140px;
     text-align: center;
+
     h1{
         font-size: 40px;
         color: $dark-green;
     }
+
     #dataChart{
-        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
         width: 80%;
         margin: 7vh auto;
         canvas{
-            height: 40vh;
-        width: 80%;
-        margin: 7vh auto;
+        width: 90% !important;
+        background-color: white !important;
+        padding: 3vh 4% !important;
         }
-    }
-    .data-header{
-        background-color: white;
-        -webkit-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16);
-        -moz-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16);
-        box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16);
-        width: 40%;
-        margin: auto;
-        padding: 2vh 0;
-        position: relative;
-        z-index: 5;
-        -webkit-transition: 0.3s ease-in;
-        -o-transition: 0.3s ease-in;
-        transition: 0.3s ease-in;
-        h2{
-            font-size: 35px;
-            color: $dark-green;
-        }
-
+        background-color: white !important;
+        -webkit-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16) !important;
+        -moz-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16) !important;
+        box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.16) !important;
     }
 }
 
@@ -160,6 +150,10 @@
 
 .hidden{
     display: none !important;
+}
+
+.data-header{
+    display: none;
 }
 
 
@@ -229,7 +223,7 @@
     width: 90%;
     margin: auto;
     canvas{
-        width: 90%;
+        width: 90%;  
     }
     .data-header{
         width: 70%;
@@ -260,6 +254,40 @@
 }
 
 
+.data-header{
+    display: block;
+    background-color: white;
+    -webkit-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.16);
+    width: 40%;
+    margin: auto;
+    padding: 2vh 0;
+    position: relative;
+    z-index: 5;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    h2{
+        font-size: 35px;
+        color: $dark-green;
+    }
+
+}
+
+.data-content{
+    #dataChart{
+        width: 100% !important;
+        canvas{
+            padding: 1vh 2% !important;
+            width: 100% !important;
+            height: 80% !important;
+        }
+    }
+}
+#header-web{
+    display: none;
+}
 
 }
 
