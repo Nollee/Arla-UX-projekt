@@ -91,7 +91,7 @@ export default class DataPage {
         
 
         <div class="data-content">
-        <h1>Dine data</h1>
+        <h1 id="header-web" class="data-heading">Dine data</h1>
         <div class="chart-wrapper" id="dataChart">
         <canvas class="hidden" id="cowChart"></canvas>
         <canvas class="hidden" id="bullChart"></canvas>
@@ -100,7 +100,7 @@ export default class DataPage {
 
         </div>
         <div class="data-header" onclick="firstNav()">
-        <h2 id="data-heading">Vælg data</h2>
+        <h1 class="data-heading">Vælg data</h1>
         </div>
         </div>
         <span class="nav-overlay" onclick="remove()"></span>
