@@ -11,7 +11,7 @@ export default class QuestionPage {
 
       <div class="question-container">
 
-        <h2 class="question">5. Hvor mange kvæg har du på din gård?</h2>
+        <h2 class="question">1. Hvor mange kvæg har du på din gård?</h2>
     
         <div class="question-indicators-container">
           <div class="question-indicator">
@@ -29,17 +29,17 @@ export default class QuestionPage {
         <form>
 
           <div class="sub-question-container">
-            <h3 class="sub-question">5.1 Hvor mange køer har du?</h3>
+            <h3 class="sub-question">1.1 Hvor mange køer har du?</h3>
             <input class="input"  id="cows" type="text" name="cows" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container">
-            <h3 class="sub-question">5.2 Hvor mange tyrer har du?</h3>
+            <h3 class="sub-question">1.2 Hvor mange tyrer har du?</h3>
             <input class="input"  id="bulls" type="text" name="cows" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container"> 
-            <h3 class="sub-question">5.3 Hvor mange kalve har du?</h3>
+            <h3 class="sub-question">1.3 Hvor mange kalve har du?</h3>
             <input class="input" id="calves" type="text" name="cows" placeholder="fx. 120" />
           </div>
 
@@ -101,7 +101,7 @@ export default class QuestionPage {
 
       <div class="question-container">
 
-        <h2 class="question">5. Hvor mange kvæg har du på din gård?</h2>
+        <h2 class="question">3. Hvordan er dine kvægs helbred?</h2>
     
         <div class="question-indicators-container">
           <div class="question-indicator">
@@ -119,18 +119,18 @@ export default class QuestionPage {
         <form>
 
           <div class="sub-question-container">
-            <h3 class="sub-question">5.1 Hvor mange køer har du?</h3>
-            <input id="cows" type="text" name="cows" placeholder="fx. 120" />
+            <h3 class="sub-question">3.1 Hvor mange kvæg er sunde og raske?</h3>
+            <input id="healthy" type="text" name="healthy" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container">
-            <h3 class="sub-question">5.2 Hvor mange tyrer har du?</h3>
-            <input id="bulls" type="text" name="cows" placeholder="fx. 120" />
+            <h3 class="sub-question">3.2 Hvor mange kvæg er døde i år?</h3>
+            <input id="dead" type="text" name="dead" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container"> 
-            <h3 class="sub-question">5.3 Hvor mange kalve har du?</h3>
-            <input id="calves" type="text" name="cows" placeholder="fx. 120" />
+            <h3 class="sub-question">3.3 Hvor mange kvæg er syge?</h3>
+            <input id="sick" type="text" name="sick" placeholder="fx. 120" />
           </div>
 
         </form>
