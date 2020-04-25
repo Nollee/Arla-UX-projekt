@@ -108,6 +108,9 @@ function prepareCowData(sustainabilityData) {
     years
   }
 }
+
+
+
 //3: appending the chart
 function appendCows(sustainabilityData) {
   let data = prepareCowData(sustainabilityData);

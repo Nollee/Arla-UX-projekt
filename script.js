@@ -15,12 +15,40 @@ const dataRef = db.collection("data");
   });
 
   function selectCattleData(){
-/*     numOfCattlesRef.get().then(function(doc){
+    let cattle2020 = dataRef.doc("Cattles2020");
+
+    cattle2020.get().then(function(doc){
         cattleStatus = doc.data();
-        console.log(cattleStatus);
+        console.log(cattleStatus.numOfCows);
+
+        let cowsInput = document.querySelector('#cows');
+        let bullsInput = document.querySelector('#bulls');
+        let calvesInput = document.querySelector('#calves');
+        let inputs = document.querySelectorAll('.input');
+        let cowUpdate = document.querySelector('#cow-update');
+        let bullUpdate = document.querySelector('#bull-update');
+        let calveUpdate = document.querySelector('#calve-update');
 
 
-    }); */
+
+        cowsInput.value = cattleStatus.numOfCows;
+        cowUpdate.value = cattleStatus.numOfCows;
+        
+        bullsInput.value = cattleStatus.numOfBulls;
+        bullUpdate.value = cattleStatus.numOfBulls;
+
+        calvesInput.value = cattleStatus.numOfCalves;
+        calveUpdate.value = cattleStatus.numOfCalves;
+
+
+        for (let input of inputs){
+            if(input.value === "undefined"){
+                input.value = ""
+            }
+        }
+
+
+    });
   }
 
   function createNumOfCattles() {
