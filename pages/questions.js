@@ -65,7 +65,7 @@ export default class QuestionPage {
           </div>
 
           <div class="question-indicator">
-          <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
+          <h4 class="question-indicator-text">Gennemsnittet er 120 kg per kvæg</h4>
           <img src="./images/exclamation.svg" alt="questionmark">
           </div>
         </div>
@@ -92,7 +92,7 @@ export default class QuestionPage {
 
         </div>
         <div class="question-img-container">
-        <img class="question-img" src="./images/cow-food.svg">
+        <img class="question-img" src="./images/cow-icon.svg">
         </div>
     
     </div>
@@ -110,7 +110,7 @@ export default class QuestionPage {
           </div>
 
           <div class="question-indicator">
-          <h4 class="question-indicator-text">Gennemsnittet er 158</h4>
+          <h4 class="question-indicator-text">I gennemsnit er 80% køer sunde og raske</h4>
           <img src="./images/exclamation.svg" alt="questionmark">
           </div>
         </div>
@@ -137,7 +137,7 @@ export default class QuestionPage {
 
         </div>
         <div class="question-img-container">
-        <img class="question-img" src="./images/recycle.svg">
+        <img class="question-img" src="./images/cow-icon.svg">
         </div>
     
     </div>
@@ -157,6 +157,13 @@ export default class QuestionPage {
         <img src="./images/arrow-right.svg";>
 
     </div>
+
+    <a href="#thankyou" class="question-button question-button-done">
+
+    <p>Afslut</p>
+    <img src="./images/arrow-right.svg";>
+
+</a>
       
     </div>
 
