@@ -90,8 +90,9 @@ nav {
   position: absolute;
   display: none; 
   width: 100%;
-  height: 100vh !important;  
-  z-index: 40; 
+  height: 200vh; // for some reason it only covers half the screen with 100vh? 
+  /* background-color: rgba($color: #000000, $alpha: .5); */
+  z-index: 40;  
 }
  
 #nav__gradient.active {
