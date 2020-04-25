@@ -92,6 +92,7 @@ function createNumOfFood() {
     numOfFoodSelf: +foodSelfInput.value,
     numOfFoodTotal: +foodBoughtInput.value,
     year: 2020,
+    category: "food",
   };
 
   dataRef.doc("food2020").set(newNumberAnswer);
@@ -104,9 +105,9 @@ function createNumOfHealth() {
   let sickInput = document.querySelector("#sick");
 
   let newNumberAnswer = {
-    numOfFoodBought: +healthyInput.value,
-    numOfFoodSelf: +deadInput.value,
-    numOfFoodTotal: +sickInput.value,
+    numOfHealthy: +healthyInput.value,
+    numOfDead: +deadInput.value,
+    numOfSick: +sickInput.value,
     healthYear: 2020,
   };
 
@@ -128,14 +129,11 @@ function updateNumOfCattles() {
     numOfCows: +cowsInput.value,
     numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
     year: 2020,
-    category: "cattle"
+    category: "cattle",
   };
 
   dataRef.doc("Cattles2020").set(newNumberAnswer);
 }
-
-
-
 
 /* ============================ NAV til "Din data" ================================= */
 
@@ -190,8 +188,6 @@ function firstNav() {
   document.querySelector(".nav-close").style.left = "5%";
   document.querySelector(".nav-overlay").style.display = "block";
 }
-
-
 
 /* ===================================== ANTAL ========================================= */
 function numOfCows() {
