@@ -59,7 +59,7 @@ function createNumOfCattles() {
     numOfBulls: +bullsInput.value,
     numOfCows: +cowsInput.value,
     numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
-    cowYear: 2020,
+    year: 2020,
   };
 
   dataRef.doc("Cattles2020").set(newNumberAnswer);

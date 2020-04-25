@@ -39,11 +39,6 @@ function showBulls(){
 }
 
 
-
-
-
-
-
 function showCalves(){
   let headers = document.querySelectorAll(".data-heading");
 
@@ -82,7 +77,7 @@ let _sustainabilityData;
 
 // 1: data from firebase
 // listen for changes on _dataRef
-_dataRef.orderBy("cowYear").onSnapshot(snapshotData => {
+_dataRef.orderBy("year").onSnapshot(snapshotData => {
   _sustainabilityData = []; // reset _sustainabilityData
   snapshotData.forEach(doc => { // loop through snapshotData - like for of loop
     let data = doc.data(); // save the data in a variable
