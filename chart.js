@@ -1,75 +1,81 @@
 "use strict";
 
-
-function showCows(){
+function showCows() {
   let headers = document.querySelectorAll(".data-heading");
 
-  for (let header of headers){
-    header.innerHTML ="Antal Køer"
-}
+  for (let header of headers) {
+    header.innerHTML = "Antal Køer";
+  }
 
-let charts = document.querySelectorAll(".chart");
+  let charts = document.querySelectorAll(".chart");
 
-for (let chart of charts){
-  chart.classList.add("hidden");
-}
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
   document.querySelector("#cowChart").classList.remove("hidden");
-
-
 }
 
-
-
-
-
-function showBulls(){
+function showBulls() {
   let headers = document.querySelectorAll(".data-heading");
 
-      for (let header of headers){
-        header.innerHTML ="Antal Tyrer"
-     }
+  for (let header of headers) {
+    header.innerHTML = "Antal Tyrer";
+  }
 
-     let charts = document.querySelectorAll(".chart");
-      
-     for (let chart of charts){
-      chart.classList.add("hidden");
-      }
+  let charts = document.querySelectorAll(".chart");
 
-      document.querySelector("#bullChart").classList.remove("hidden");
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
+
+  document.querySelector("#bullChart").classList.remove("hidden");
 }
 
-
-function showCalves(){
+function showCalves() {
   let headers = document.querySelectorAll(".data-heading");
 
-        for (let header of headers){
-          header.innerHTML ="Antal Kalve"
-        }
+  for (let header of headers) {
+    header.innerHTML = "Antal Kalve";
+  }
 
-    let charts = document.querySelectorAll(".chart");
-  
-      for (let chart of charts){
-        chart.classList.add("hidden");
-      }
-        document.querySelector("#calveChart").classList.remove("hidden");
-      }
+  let charts = document.querySelectorAll(".chart");
 
-function showCattles(){
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
+  document.querySelector("#calveChart").classList.remove("hidden");
+}
+
+function showCattles() {
   let headers = document.querySelectorAll(".data-heading");
 
-          for (let header of headers){
-            header.innerHTML ="Alle Kvæg"
-        }
 
-        let charts = document.querySelectorAll(".chart");
+  for (let header of headers) {
+    header.innerHTML = "Alle Kvæg";
+  }
 
-        for (let chart of charts){
-          chart.classList.add("hidden");
-        }
-          document.querySelector("#cattleChart").classList.remove("hidden");
-        }
+  let charts = document.querySelectorAll(".chart");
 
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
+  document.querySelector("#cattleChart").classList.remove("hidden");
+}
 
+function showFood() {
+  let headers = document.querySelectorAll(".data-heading");
+
+  for (let header of headers) {
+    header.innerHTML = "Alt foder";
+  }
+
+  let charts = document.querySelectorAll(".chart");
+
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
+  document.querySelector("#foodChart").classList.remove("hidden");
+}
 
 // ========== GLOBAL VARIABLES ========== //
 const _dataRef = db.collection("data");
@@ -79,7 +85,8 @@ let _sustainabilityData;
 // listen for changes on _dataRef
 _dataRef.orderBy("year").onSnapshot(snapshotData => {
   _sustainabilityData = []; // reset _sustainabilityData
-  snapshotData.forEach(doc => { // loop through snapshotData - like for of loop
+  snapshotData.forEach((doc) => {
+    // loop through snapshotData - like for of loop
     let data = doc.data(); // save the data in a variable
     data.id = doc.id; // add the id to the data variable
     _sustainabilityData.push(data); // push the data object to the global array _sustainabilityData
@@ -89,8 +96,7 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
   appendCows(_sustainabilityData);
   appendCalves(_sustainabilityData);
   appendCattles(_sustainabilityData);
-
-
+  appendFood(_sustainabilityData);
 });
 
 // 2: preparing the data
@@ -106,62 +112,61 @@ function prepareBullData(sustainabilityData) {
   });
   return {
     bulls,
-    years
-  }
+    years,
+  };
 }
 //3: appending the chart
 function appendBulls(sustainabilityData) {
-
-
-
   let data = prepareBullData(sustainabilityData);
   console.log(data);
   // generate chart
-  let chartContainer = document.querySelector('#bullChart');
+  let chartContainer = document.querySelector("#bullChart");
 
   let chart = new Chart(chartContainer, {
-    type: 'bar',
+    type: "bar",
     data: {
-      datasets: [{
-        data: data.bulls,
-        label: false,
-        fill: false,
-        borderColor: "#6F6F6F",
-        backgroundColor: "#0B43AA",
-        pointBackgroundColor: "#55bae7",
-        pointBorderColor: "#55bae7",
-        pointHoverBackgroundColor: "#55bae7",
-        pointHoverBorderColor: "#55bae7",
-      }],
-      labels: data.years
+      datasets: [
+        {
+          data: data.bulls,
+          label: false,
+          fill: false,
+          borderColor: "#6F6F6F",
+          backgroundColor: "#0B43AA",
+          pointBackgroundColor: "#55bae7",
+          pointBorderColor: "#55bae7",
+          pointHoverBackgroundColor: "#55bae7",
+          pointHoverBorderColor: "#55bae7",
+        },
+      ],
+      labels: data.years,
     },
     options: {
       scales: {
-        yAxes: [{
+        yAxes: [
+          {
             ticks: {
-                beginAtZero: true,
-                max: (Math.max(...data.bulls) + 4)
-
+              beginAtZero: true,
+              max: Math.max(...data.bulls) + 4,
             },
             gridLines: {
               color: "rgba(0, 0, 0, 0)",
-          }
-        }],
-        xAxes: [{
-          gridLines: {
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
               color: "rgba(0, 0, 0, 0)",
-          }
-      }]
-    },
+            },
+          },
+        ],
+      },
       legend: {
-        display: false
-    }
-    }
+        display: false,
+      },
+    },
   });
 }
-
-
-
 
 function prepareCowData(sustainabilityData) {
   let cows = [];
@@ -174,33 +179,33 @@ function prepareCowData(sustainabilityData) {
   });
   return {
     cows,
-    years
-  }
+    years,
+  };
 }
-
-
 
 //3: appending the chart
 function appendCows(sustainabilityData) {
   let data = prepareCowData(sustainabilityData);
   console.log(data);
   // generate chart
-  let cowContainer = document.querySelector('#cowChart');
+  let cowContainer = document.querySelector("#cowChart");
   let chart = new Chart(cowContainer, {
-    type: 'bar',
+    type: "bar",
     data: {
-      datasets: [{
-        data: data.cows,
-        label: false,
-        fill: false,
-        borderColor: "#6F6F6F",
-        backgroundColor: "#FF9837",
-        pointBackgroundColor: "#55bae7",
-        pointBorderColor: "#55bae7",
-        pointHoverBackgroundColor: "#55bae7",
-        pointHoverBorderColor: "#55bae7",
-      }],
-      labels: data.years
+      datasets: [
+        {
+          data: data.cows,
+          label: false,
+          fill: false,
+          borderColor: "#6F6F6F",
+          backgroundColor: "#FF9837",
+          pointBackgroundColor: "#55bae7",
+          pointBorderColor: "#55bae7",
+          pointHoverBackgroundColor: "#55bae7",
+          pointHoverBorderColor: "#55bae7",
+        },
+      ],
+      labels: data.years,
     },
     options: {
       scales: {
@@ -225,8 +230,7 @@ function appendCows(sustainabilityData) {
     }
     }
   });
-
-};
+}
 
 //////////////////////////////////////////////////////////////
 /* Calve data */
@@ -241,34 +245,33 @@ function prepareCalveData(sustainabilityData) {
   });
   return {
     calves,
-    years
-  }
+    years,
+  };
 }
 //3: appending the chart
 function appendCalves(sustainabilityData) {
-
-
-
   let data = prepareCalveData(sustainabilityData);
   console.log(data);
   // generate chart
-  let chartContainer = document.querySelector('#calveChart');
+  let chartContainer = document.querySelector("#calveChart");
 
   let chart = new Chart(chartContainer, {
-    type: 'bar',
+    type: "bar",
     data: {
-      datasets: [{
-        data: data.calves,
-        label: false,
-        fill: false,
-        borderColor: "#6F6F6F",
-        backgroundColor: "#4BB131",
-        pointBackgroundColor: "#55bae7",
-        pointBorderColor: "#55bae7",
-        pointHoverBackgroundColor: "#55bae7",
-        pointHoverBorderColor: "#55bae7",
-      }],
-      labels: data.years
+      datasets: [
+        {
+          data: data.calves,
+          label: false,
+          fill: false,
+          borderColor: "#6F6F6F",
+          backgroundColor: "#4BB131",
+          pointBackgroundColor: "#55bae7",
+          pointBorderColor: "#55bae7",
+          pointHoverBackgroundColor: "#55bae7",
+          pointHoverBorderColor: "#55bae7",
+        },
+      ],
+      labels: data.years,
     },
     options: {
       scales: {
@@ -309,56 +312,129 @@ function prepareCattleData(sustainabilityData) {
   });
   return {
     cattles,
-    years
-  }
+    years,
+  };
 }
 //3: appending the chart
 function appendCattles(sustainabilityData) {
-
-
-
   let data = prepareCattleData(sustainabilityData);
   console.log(data);
   // generate chart
-  let chartContainer = document.querySelector('#cattleChart');
+  let chartContainer = document.querySelector("#cattleChart");
 
   let chart = new Chart(chartContainer, {
-    type: 'line',
+    type: "line",
     data: {
-      datasets: [{
-        data: data.cattles,
-        label: false,
-        fill: false,
-        borderColor: "#F8353C",
-        backgroundColor: "#e755ba",
-        pointBackgroundColor: "#4BB131",
-        pointBorderColor: "#4BB131",
-        pointHoverBackgroundColor: "#4BB131",
-        pointHoverBorderColor: "#4BB131",
-      }],
-      labels: data.years
+      datasets: [
+        {
+          data: data.cattles,
+          label: false,
+          fill: false,
+          borderColor: "#F8353C",
+          backgroundColor: "#e755ba",
+          pointBackgroundColor: "#4BB131",
+          pointBorderColor: "#4BB131",
+          pointHoverBackgroundColor: "#4BB131",
+          pointHoverBorderColor: "#4BB131",
+        },
+      ],
+      labels: data.years,
     },
     options: {
       scales: {
-        yAxes: [{
+        yAxes: [
+          {
             ticks: {
-                beginAtZero: true,
-                max: (Math.max(...data.cattles) + 4)
+              max: Math.max(...data.cattles) + 1,
+              beginAtZero: true,
+            },
+          },
+        ],
+      },
+      legend: {
+        display: false,
+      },
+      scales: {
+        xAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+        yAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+      },
+    },
+  });
+}
 
+function prepareFoodData(sustainabilityData) {
+  let food = [];
+  let years = [];
+  sustainabilityData.forEach((data) => {
+    food.push(data.numOfFoodTotal);
+    years.push(data.year);
+  });
+  return {
+    bulls,
+    years,
+  };
+}
+//3: appending the chart
+function appendFood(sustainabilityData) {
+  let data = prepareFoodData(sustainabilityData);
+  console.log(data);
+  // generate chart
+  let chartContainer = document.querySelector("#foodChart");
+
+  let chart = new Chart(chartContainer, {
+    type: "bar",
+    data: {
+      datasets: [
+        {
+          data: data.food,
+          label: false,
+          fill: false,
+          borderColor: "#6F6F6F",
+          backgroundColor: "#0B43AA",
+          pointBackgroundColor: "#55bae7",
+          pointBorderColor: "#55bae7",
+          pointHoverBackgroundColor: "#55bae7",
+          pointHoverBorderColor: "#55bae7",
+        },
+      ],
+      labels: data.years,
+    },
+    options: {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              max: Math.max(...data.food) + 4,
             },
             gridLines: {
               color: "rgba(0, 0, 0, 0)",
-          }
-        }],
-        xAxes: [{
-          gridLines: {
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
               color: "rgba(0, 0, 0, 0)",
-          }
-      }]
-    },
+            },
+          },
+        ],
+      },
       legend: {
-        display: false
-    }
-    } 
+        display: false,
+      },
+    },
   });
 }
