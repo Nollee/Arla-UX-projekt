@@ -20,7 +20,7 @@ export default class DataPage {
         <img src="images/icons/elektricitet.svg" alt="elektricitet">
         </div>
         <div class="data-category" onclick="cowData()">
-        <h3>Køer</h3>
+        <h3>Kvæg</h3>
         <img src="images/icons/cows.svg" alt="køer">
 
         </div>

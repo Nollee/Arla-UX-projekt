@@ -82,7 +82,7 @@ function prepareBullData(sustainabilityData) {
       bulls.push(data.numOfBulls);
       years.push(data.year);
   });
-  return { 
+  return {
     bulls,
     years
   }
@@ -115,27 +115,25 @@ function appendBulls(sustainabilityData) {
     },
     options: {
       scales: {
-        yAxes: [{ 
-          ticks: {
-            min: (Math.min(...data.bulls) - 5),
-            max: (Math.max(...data.bulls) + 1)
+        yAxes: [{
+            ticks: {
+                beginAtZero: true,
+                max: (Math.max(...data.bulls) + 4)
+
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
           }
-        }]
-      },
+        }],
+        xAxes: [{
+          gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+          }
+      }]
+    },
       legend: {
         display: false
-    }, scales: {
-            xAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }],
-            yAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }   
-            }]
-        }
+    }
     }
   });
 }

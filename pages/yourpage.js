@@ -58,7 +58,7 @@ export default class YourPage {
 
          <a href="#"><img src="../images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
 
-         <a class="cow-question" href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><img class="done" src="images/checkmark-circle.svg" alt="done"> <p>Køer<br><span id="cow-number-questions">0</span>/15</p></a>
+         <a class="cow-question" href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><img class="done" src="images/checkmark-circle.svg" alt="done"> <p>Kvæg<br><span id="cow-number-questions">0</span>/15</p></a>
 
          <a href="#"><img src="../images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
 
