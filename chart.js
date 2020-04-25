@@ -2,8 +2,11 @@
 
 
 function showCows(){
-  document.getElementById("data-heading").innerHTML ="Antal Køer"
+  let headers = document.querySelectorAll(".data-heading");
 
+  for (let header of headers){
+    header.innerHTML ="Antal Køer"
+}
   document.querySelector("#cowChart").classList.remove("hidden");
   document.querySelector("#bullChart").classList.add("hidden");
   document.querySelector("#calveChart").classList.add("hidden");  
@@ -11,7 +14,11 @@ function showCows(){
 }
 
 function showBulls(){
-  document.getElementById("data-heading").innerHTML ="Antal Tyrer"
+  let headers = document.querySelectorAll(".data-heading");
+
+  for (let header of headers){
+    header.innerHTML ="Antal Tyrer"
+}
 
   document.querySelector("#bullChart").classList.remove("hidden");
   document.querySelector("#cowChart").classList.add("hidden");
@@ -20,8 +27,11 @@ function showBulls(){
 }
 
 function showCalves(){
-  document.getElementById("data-heading").innerHTML ="Antal Kalve"
+  let headers = document.querySelectorAll(".data-heading");
 
+  for (let header of headers){
+    header.innerHTML ="Antal Kalve"
+}
   document.querySelector("#calveChart").classList.remove("hidden");
   document.querySelector("#cowChart").classList.add("hidden");
   document.querySelector("#bullChart").classList.add("hidden"); 
@@ -29,8 +39,11 @@ function showCalves(){
 }
 
 function showCattles(){
-  document.getElementById("data-heading").innerHTML ="Antal Kvæg"
+  let headers = document.querySelectorAll(".data-heading");
 
+  for (let header of headers){
+    header.innerHTML ="Antal Kvæg"
+}
   document.querySelector("#cattleChart").classList.remove("hidden");
   document.querySelector("#cowChart").classList.add("hidden");
   document.querySelector("#bullChart").classList.add("hidden"); 
