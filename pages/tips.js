@@ -52,6 +52,35 @@ export default class HelpPage {
         </div>
         <img class="tip-img" src="./images/cow-icon.svg" alt="Dyrevelfærd">
       </div>
+
+      <div class="tip-container">
+      <div class="tip-text">
+        <h2>Brændstof</h2>
+        <p>Maskiner, traktorer osv. på din gård kan blive ændre til modeller som bruger mindre brændstof og mere ikke-fossil brændstof. Vær med til at praktisere øko-kørsel og reducer din kilometertal og din brændstofforbrug per kilometer. 
+
+        
+        </p>
+      </div>
+      <img class="tip-img" src="./images/fuel.svg" alt="Brændstof">
+    </div>
+
+    <div class="tip-container">
+    <div class="tip-text">
+      <h2>Kulstof beslaglæggelse</h2>
+      <p>Kulstof beslaglæggelse (opsamling og opbevaring af kulstof i jorden) kan forhøjes, især ved at gro grass og bruge gødning.
+      </p>
+    </div>
+    <img class="tip-img" src="./images/emission.svg" alt="Kulstof">
+  </div>
+
+  <div class="tip-container">
+  <div class="tip-text">
+    <h2>Træer og planter</h2>
+    <p>Du kan plante flere træer, buske, hække og blomster på dit land. Dette vil ikke kun hjælpe med at absorbere CO2, men vil også forbedre biodiversiteten.
+    </p>
+  </div>
+  <img class="tip-img" src="./images/trees.svg" alt="Træer og planter">
+</div>
              
         </section>
       `;
