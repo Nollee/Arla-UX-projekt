@@ -93,10 +93,10 @@ export default class DataPage {
         <div class="data-content">
         <h1 id="header-web" class="data-heading">Dine data</h1>
         <div class="chart-wrapper" id="dataChart">
-        <canvas class="hidden" id="cowChart"></canvas>
-        <canvas class="hidden" id="bullChart"></canvas>
-        <canvas class="hidden" id="calveChart"></canvas>
-        <canvas class="hidden" id="cattleChart"></canvas>  
+        <canvas class="hidden chart" id="cowChart"></canvas>
+        <canvas class="hidden chart" id="bullChart"></canvas>
+        <canvas class="hidden chart" id="calveChart"></canvas>
+        <canvas class="hidden chart" id="cattleChart"></canvas>  
 
         </div>
         <div class="data-header" onclick="firstNav()">

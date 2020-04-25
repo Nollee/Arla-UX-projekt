@@ -7,48 +7,72 @@ function showCows(){
   for (let header of headers){
     header.innerHTML ="Antal Køer"
 }
-  document.querySelector("#cowChart").classList.remove("hidden");
-  document.querySelector("#bullChart").classList.add("hidden");
-  document.querySelector("#calveChart").classList.add("hidden");
-  document.querySelector("#cattleChart").classList.add("hidden");
+
+let charts = document.querySelectorAll(".chart");
+
+for (let chart of charts){
+  chart.classList.add("hidden");
 }
+  document.querySelector("#cowChart").classList.remove("hidden");
+
+
+}
+
+
+
+
 
 function showBulls(){
   let headers = document.querySelectorAll(".data-heading");
 
-  for (let header of headers){
-    header.innerHTML ="Antal Tyrer"
+      for (let header of headers){
+        header.innerHTML ="Antal Tyrer"
+     }
+
+     let charts = document.querySelectorAll(".chart");
+      
+     for (let chart of charts){
+      chart.classList.add("hidden");
+      }
+
+      document.querySelector("#bullChart").classList.remove("hidden");
 }
 
-  document.querySelector("#bullChart").classList.remove("hidden");
-  document.querySelector("#cowChart").classList.add("hidden");
-  document.querySelector("#calveChart").classList.add("hidden");
-  document.querySelector("#cattleChart").classList.add("hidden");
-}
+
+
+
+
+
 
 function showCalves(){
   let headers = document.querySelectorAll(".data-heading");
 
-  for (let header of headers){
-    header.innerHTML ="Antal Kalve"
-}
-  document.querySelector("#calveChart").classList.remove("hidden");
-  document.querySelector("#cowChart").classList.add("hidden");
-  document.querySelector("#bullChart").classList.add("hidden");
-  document.querySelector("#cattleChart").classList.add("hidden");
-}
+        for (let header of headers){
+          header.innerHTML ="Antal Kalve"
+        }
+
+    let charts = document.querySelectorAll(".chart");
+  
+      for (let chart of charts){
+        chart.classList.add("hidden");
+      }
+        document.querySelector("#calveChart").classList.remove("hidden");
+      }
 
 function showCattles(){
   let headers = document.querySelectorAll(".data-heading");
 
-  for (let header of headers){
-    header.innerHTML ="Alle Kvæg"
-}
-  document.querySelector("#cattleChart").classList.remove("hidden");
-  document.querySelector("#cowChart").classList.add("hidden");
-  document.querySelector("#bullChart").classList.add("hidden");
-  document.querySelector("#calveChart").classList.add("hidden");
-}
+          for (let header of headers){
+            header.innerHTML ="Alle Kvæg"
+        }
+
+        let charts = document.querySelectorAll(".chart");
+
+        for (let chart of charts){
+          chart.classList.add("hidden");
+        }
+          document.querySelector("#cattleChart").classList.remove("hidden");
+        }
 
 
 
