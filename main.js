@@ -68,18 +68,18 @@ function plusSlides(n) {
   if (slideIndex === 3){
     document.querySelector(".question-button-next").style.display= "none"
     document.querySelector(".question-button-done").style.display= "flex"
-
-
-
   }
 
   else{
     document.querySelector(".question-button-next").style.display= "flex"
     document.querySelector(".question-button-done").style.display= "none"
+  }
 
-
-
-
+  if(slideIndex === 1){
+    document.querySelector(".question-button-prev").style.display= "none"
+  }
+  else{
+    document.querySelector(".question-button-prev").style.display= "flex"
 
   }
 }

@@ -10,20 +10,18 @@ dataRef.onSnapshot(function (snapshotData) {
     data.id = doc.id;
     datas.push(data);
   });
-  selectCattleData();
+  selectData();
 });
 
-function selectCattleData() {
+function selectData() {
   let cattle2020 = dataRef.doc("Cattles2020");
+  let food2020 = dataRef.doc("food2020");
 
   cattle2020.get().then(function (doc) {
     cattleStatus = doc.data();
-    console.log(cattleStatus.numOfCows);
-
     let cowsInput = document.querySelector("#cows");
     let bullsInput = document.querySelector("#bulls");
     let calvesInput = document.querySelector("#calves");
-    let inputs = document.querySelectorAll(".input");
     let cowUpdate = document.querySelector("#cow-update");
     let bullUpdate = document.querySelector("#bull-update");
     let calveUpdate = document.querySelector("#calve-update");
@@ -36,13 +34,31 @@ function selectCattleData() {
 
     calvesInput.value = cattleStatus.numOfCalves;
     calveUpdate.value = cattleStatus.numOfCalves;
-
-    for (let input of inputs) {
-      if (input.value === "undefined") {
-        input.value = "";
-      }
-    }
   });
+
+
+  food2020.get().then(function (doc) {
+    foodStatus = doc.data();
+
+    let totalInput = document.querySelector("#foodTotal");
+    let selfInput = document.querySelector("#foodSelf");
+    let boughtInput = document.querySelector("#foodBought");
+
+    totalInput.value = foodStatus.numOfFoodBought;
+
+    selfInput.value = foodStatus.numOfFoodSelf;
+
+    boughtInput.value = foodStatus.numOfFoodBought;
+  });
+  
+  let inputs = document.querySelectorAll(".input");
+
+
+  for (let input of inputs) {
+    if (input.value === "undefined") {
+      input.value = "";
+    }
+  }
 }
 
 function createNumOfCattles() {

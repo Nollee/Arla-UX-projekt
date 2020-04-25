@@ -56,7 +56,7 @@ export default class QuestionPage {
 
       <div class="question-container">
 
-        <h2 class="question">2. Hvor meget foder giver du til dine kvæg?</h2>
+        <h2 class="question">2. Hvor meget foder giver du til dine kvæg? (målt i kg. per kvæg)</h2>
     
         <div class="question-indicators-container">
           <div class="question-indicator">
@@ -75,17 +75,17 @@ export default class QuestionPage {
 
           <div class="sub-question-container">
             <h3 class="sub-question">2.1 Hvor meget foder bruger du i alt?</h3>
-            <input id="foodTotal" type="text" name="foodTotal" placeholder="fx. 120" />
+            <input class="input" id="foodTotal" type="text" name="foodTotal" placeholder="fx. 120" />
           </div>
 
           <div class="sub-question-container">
             <h3 class="sub-question">2.2 Hvor meget foder er selvforsynende?</h3>
-            <input id="foodSelf" type="text" name="foodSelf" placeholder="fx. 120" />
+            <input class="input" id="foodSelf" type="text" name="foodSelf" placeholder="fx. 42" />
           </div>
 
           <div class="sub-question-container"> 
             <h3 class="sub-question">2.3 Hvor meget foder er indkøbt?</h3>
-            <input id="foodBought" type="text" name="foodBought" placeholder="fx. 120" />
+            <input class="input" id="foodBought" type="text" name="foodBought" placeholder="fx. 65" />
           </div>
 
         </form>
@@ -97,7 +97,7 @@ export default class QuestionPage {
     
     </div>
 
-    <div onload="selectCattleData()" class="question-section">
+    <div class="question-section">
 
       <div class="question-container">
 
@@ -151,7 +151,7 @@ export default class QuestionPage {
 
         </div>  
 
-        <div class="question-button question-button-next" onclick="createNumOfCattles(), createNumOfFood()">
+        <div class="question-button question-button-next" onclick="createNumOfCattles(); createNumOfFood(); createNumOfHealth()">
 
         <p>Næste</p>
         <img src="./images/arrow-right.svg";>
@@ -161,7 +161,7 @@ export default class QuestionPage {
     <a href="#thankyou" class="question-button question-button-done">
 
     <p>Afslut</p>
-    <img src="./images/arrow-right.svg";>
+    <img src="./images/white-check.svg";>
 
 </a>
       
