@@ -103,8 +103,11 @@ function prepareBullData(sustainabilityData) {
   let bulls = [];
   let years = [];
   sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
+
       bulls.push(data.numOfBulls);
       years.push(data.year);
+  }
   });
   return {
     bulls,
@@ -169,8 +172,10 @@ function prepareCowData(sustainabilityData) {
   let cows = [];
   let years = [];
   sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
       cows.push(data.numOfCows);
       years.push(data.year);
+    }
   });
   return {
     cows,
@@ -236,8 +241,10 @@ function prepareCalveData(sustainabilityData) {
   let calves = [];
   let years = [];
   sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
       calves.push(data.numOfCalves);
       years.push(data.year);
+    }
   });
   return {
     calves,
@@ -304,8 +311,10 @@ function prepareCattleData(sustainabilityData) {
   let cattles = [];
   let years = [];
   sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
       cattles.push(data.numOfCattles);
       years.push(data.year);
+    }
   });
   return {
     cattles,
