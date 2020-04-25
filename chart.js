@@ -82,7 +82,7 @@ let _sustainabilityData;
 
 // 1: data from firebase
 // listen for changes on _dataRef
-_dataRef.orderBy("year").onSnapshot(snapshotData => {
+_dataRef.orderBy("cowYear").onSnapshot(snapshotData => {
   _sustainabilityData = []; // reset _sustainabilityData
   snapshotData.forEach(doc => { // loop through snapshotData - like for of loop
     let data = doc.data(); // save the data in a variable
@@ -210,26 +210,24 @@ function appendCows(sustainabilityData) {
     options: {
       scales: {
         yAxes: [{
-          ticks: {
-            max: (Math.max(...data.cows) + 1),
-            beginAtZero: true
+            ticks: {
+                beginAtZero: true,
+                max: (Math.max(...data.cows) + 4)
+
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
           }
-        }]
-      },
+        }],
+        xAxes: [{
+          gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+          }
+      }]
+    },
       legend: {
         display: false
-    }, scales: {
-            xAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }],
-            yAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }]
-        }
+    }
     }
   });
 
@@ -280,26 +278,24 @@ function appendCalves(sustainabilityData) {
     options: {
       scales: {
         yAxes: [{
-          ticks: {
-            max: (Math.max(...data.calves) + 1),
-            beginAtZero: true
+            ticks: {
+                beginAtZero: true,
+                max: (Math.max(...data.calves) + 4)
+
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
           }
-        }]
-      },
+        }],
+        xAxes: [{
+          gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+          }
+      }]
+    },
       legend: {
         display: false
-    }, scales: {
-            xAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }],
-            yAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }]
-        }
+    }
     }
   });
 }
@@ -350,26 +346,24 @@ function appendCattles(sustainabilityData) {
     options: {
       scales: {
         yAxes: [{
-          ticks: {
-            max: (Math.max(...data.cattles) + 1),
-            beginAtZero: true
+            ticks: {
+                beginAtZero: true,
+                max: (Math.max(...data.cattles) + 4)
+
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
           }
-        }]
-      },
+        }],
+        xAxes: [{
+          gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+          }
+      }]
+    },
       legend: {
         display: false
-    }, scales: {
-            xAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }],
-            yAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }]
-        }
     }
+    } 
   });
 }
