@@ -49,20 +49,6 @@ function showCalves() {
 function showCattles() {
   let headers = document.querySelectorAll(".data-heading");
 
-  for (let header of headers) {
-    header.innerHTML = "Alle Kvæg";
-  }
-
-  let charts = document.querySelectorAll(".chart");
-
-  for (let chart of charts) {
-    chart.classList.add("hidden");
-  }
-  document.querySelector("#cattleChart").classList.remove("hidden");
-}
-
-function showCattles() {
-  let headers = document.querySelectorAll(".data-heading");
 
   for (let header of headers) {
     header.innerHTML = "Alle Kvæg";
@@ -97,7 +83,7 @@ let _sustainabilityData;
 
 // 1: data from firebase
 // listen for changes on _dataRef
-_dataRef.orderBy("year").onSnapshot((snapshotData) => {
+_dataRef.orderBy("year").onSnapshot(snapshotData => {
   _sustainabilityData = []; // reset _sustainabilityData
   snapshotData.forEach((doc) => {
     // loop through snapshotData - like for of loop
