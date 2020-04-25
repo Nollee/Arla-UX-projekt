@@ -117,8 +117,8 @@ function appendBulls(sustainabilityData) {
       scales: {
         yAxes: [{ 
           ticks: {
-            min: (Math.min(...data.bulls) - 5),
-            max: (Math.max(...data.bulls) + 1)
+            max: (Math.max(...data.bulls) + 1),
+            beginAtZero: true  
           }
         }]
       },
@@ -184,8 +184,8 @@ function appendCows(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            min: (Math.min(...data.cows) - 5),
-            max: (Math.max(...data.cows) + 1)
+            max: (Math.max(...data.cows) + 1),
+             beginAtZero: true 
           }
         }]
       },
@@ -252,8 +252,8 @@ function appendCalves(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            min: (Math.min(...data.calves) - 5),
-            max: (Math.max(...data.calves) + 1)
+            max: (Math.max(...data.calves) + 1),
+            beginAtZero: true 
           }
         }]
       },
@@ -320,8 +320,8 @@ function appendCattles(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            min: (Math.min(...data.cattles) - 5),
-            max: (Math.max(...data.cattles) + 1)
+            max: (Math.max(...data.cattles) + 1),
+            beginAtZero: true  
           }
         }]
       },
