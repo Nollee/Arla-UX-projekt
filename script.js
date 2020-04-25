@@ -70,9 +70,6 @@ function createNumOfFood() {
   let foodTotalInput = document.querySelector("#foodTotal");
   let foodSelfInput = document.querySelector("#foodSelf");
   let foodBoughtInput = document.querySelector("#foodBought");
-  console.log(foodSelfInput.value);
-  console.log(foodTotalInput.value);
-  console.log(foodBoughtInput.value);
 
   let newNumberAnswer = {
     numOfFoodBought: +foodTotalInput.value,
@@ -83,6 +80,22 @@ function createNumOfFood() {
 
   dataRef.doc("food2020").set(newNumberAnswer);
 }
+
+function createNumOfHealth() {
+    // references to the input fields
+    let healthyInput = document.querySelector("#healthy");
+    let deadInput = document.querySelector("#dead");
+    let sickInput = document.querySelector("#sick");
+  
+    let newNumberAnswer = {
+      numOfFoodBought: +healthyInput.value,
+      numOfFoodSelf: +deadInput.value,
+      numOfFoodTotal: +sickInput.value,
+      healthYear: 2020,
+    };
+  
+    dataRef.doc("health2020").set(newNumberAnswer);
+  }
 
 function updateNumOfCattles() {
   // references to the input fields
