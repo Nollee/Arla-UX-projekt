@@ -92,8 +92,8 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
   console.log(_sustainabilityData);
   appendBulls(_sustainabilityData);
   appendCows(_sustainabilityData);
-  appendCalves(_sustainabilityData); 
-  appendCattles(_sustainabilityData); 
+  appendCalves(_sustainabilityData);
+  appendCattles(_sustainabilityData);
 
 
 });
@@ -207,7 +207,7 @@ function appendCows(sustainabilityData) {
         yAxes: [{
           ticks: {
             max: (Math.max(...data.cows) + 1),
-            beginAtZero: true 
+            beginAtZero: true
           }
         }]
       },
@@ -222,7 +222,7 @@ function appendCows(sustainabilityData) {
             yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
-                }   
+                }
             }]
         }
     }
@@ -275,7 +275,7 @@ function appendCalves(sustainabilityData) {
         yAxes: [{
           ticks: {
             max: (Math.max(...data.calves) + 1),
-            beginAtZero: true 
+            beginAtZero: true
           }
         }]
       },
@@ -287,15 +287,15 @@ function appendCalves(sustainabilityData) {
                     color: "rgba(0, 0, 0, 0)",
                 }
             }],
-            yAxes: [{ 
+            yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
-                }   
+                }
             }]
         }
     }
   });
-} 
+}
 
 /////////////////////////////////////////////////////////
 /* cattle */
@@ -343,9 +343,9 @@ function appendCattles(sustainabilityData) {
         yAxes: [{
           ticks: {
             max: (Math.max(...data.cattles) + 1),
-            beginAtZero: true  
+            beginAtZero: true
           }
-        }] 
+        }]
       },
       legend: {
         display: false
@@ -358,9 +358,9 @@ function appendCattles(sustainabilityData) {
             yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
-                }   
+                }
             }]
         }
     }
   });
-}  
+}
