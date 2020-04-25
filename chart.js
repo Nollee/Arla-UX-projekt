@@ -9,7 +9,7 @@ function showCows(){
 }
   document.querySelector("#cowChart").classList.remove("hidden");
   document.querySelector("#bullChart").classList.add("hidden");
-  document.querySelector("#calveChart").classList.add("hidden");  
+  document.querySelector("#calveChart").classList.add("hidden");
   document.querySelector("#cattleChart").classList.add("hidden");
 }
 
@@ -34,7 +34,7 @@ function showCalves(){
 }
   document.querySelector("#calveChart").classList.remove("hidden");
   document.querySelector("#cowChart").classList.add("hidden");
-  document.querySelector("#bullChart").classList.add("hidden"); 
+  document.querySelector("#bullChart").classList.add("hidden");
   document.querySelector("#cattleChart").classList.add("hidden");
 }
 
@@ -46,8 +46,8 @@ function showCattles(){
 }
   document.querySelector("#cattleChart").classList.remove("hidden");
   document.querySelector("#cowChart").classList.add("hidden");
-  document.querySelector("#bullChart").classList.add("hidden"); 
-  document.querySelector("#calveChart").classList.add("hidden"); 
+  document.querySelector("#bullChart").classList.add("hidden");
+  document.querySelector("#calveChart").classList.add("hidden");
 }
 
 
@@ -68,8 +68,8 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
   console.log(_sustainabilityData);
   appendBulls(_sustainabilityData);
   appendCows(_sustainabilityData);
-  appendCalves(_sustainabilityData); 
-  appendCattles(_sustainabilityData); 
+  appendCalves(_sustainabilityData);
+  appendCattles(_sustainabilityData);
 
 
 });
@@ -82,7 +82,7 @@ function prepareBullData(sustainabilityData) {
       bulls.push(data.numOfBulls);
       years.push(data.year);
   });
-  return { 
+  return {
     bulls,
     years
   }
@@ -115,27 +115,25 @@ function appendBulls(sustainabilityData) {
     },
     options: {
       scales: {
-        yAxes: [{ 
-          ticks: {
-            max: (Math.max(...data.bulls) + 1), 
-            beginAtZero: true     
-          } 
-        }]
-      },
+        yAxes: [{
+            ticks: {
+                beginAtZero: true,
+                max: (Math.max(...data.bulls) + 4)
+
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+          }
+      }]
+    },
       legend: {
         display: false
-    }, scales: {
-            xAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }
-            }], 
-            yAxes: [{
-                gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                }   
-            }]
-        }
+    }
     }
   });
 }
@@ -185,7 +183,7 @@ function appendCows(sustainabilityData) {
         yAxes: [{
           ticks: {
             max: (Math.max(...data.cows) + 1),
-            beginAtZero: true 
+            beginAtZero: true
           }
         }]
       },
@@ -200,7 +198,7 @@ function appendCows(sustainabilityData) {
             yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
-                }   
+                }
             }]
         }
     }
@@ -253,7 +251,7 @@ function appendCalves(sustainabilityData) {
         yAxes: [{
           ticks: {
             max: (Math.max(...data.calves) + 1),
-            beginAtZero: true 
+            beginAtZero: true
           }
         }]
       },
@@ -265,15 +263,15 @@ function appendCalves(sustainabilityData) {
                     color: "rgba(0, 0, 0, 0)",
                 }
             }],
-            yAxes: [{ 
+            yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
-                }   
+                }
             }]
         }
     }
   });
-} 
+}
 
 /////////////////////////////////////////////////////////
 /* cattle */
@@ -321,9 +319,9 @@ function appendCattles(sustainabilityData) {
         yAxes: [{
           ticks: {
             max: (Math.max(...data.cattles) + 1),
-            beginAtZero: true  
+            beginAtZero: true
           }
-        }] 
+        }]
       },
       legend: {
         display: false
@@ -336,9 +334,9 @@ function appendCattles(sustainabilityData) {
             yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
-                }   
+                }
             }]
         }
     }
   });
-}  
+}
