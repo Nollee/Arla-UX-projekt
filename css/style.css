@@ -1192,7 +1192,8 @@
   position: fixed;
   bottom: 0;
   pointer-events: none;
-  width: 100%; }
+  width: 100%;
+  z-index: -1; }
 
 body {
   font-family: "arla-c", sans-serif;
