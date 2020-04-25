@@ -382,7 +382,7 @@ function prepareFoodData(sustainabilityData) {
     years.push(data.year);
   });
   return {
-    bulls,
+    food,
     years,
   };
 }
