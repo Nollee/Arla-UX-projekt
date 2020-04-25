@@ -257,7 +257,7 @@ for (i = 0; i < acc.length; i++) {
 
 /* HELP POPUP WINDOW FOR QUESTIONS */
 const helpBox = document.getElementById("help-box-container");
-const help = document.querySelectorAll(".q-help");
+const help = document.querySelectorAll(".question-indicator");
 
 help.forEach(function (item) {
   item.addEventListener("click", showHelp);

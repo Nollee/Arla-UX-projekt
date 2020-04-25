@@ -877,7 +877,7 @@
 
 #help-box-container.active {
   opacity: 1;
-  z-index: 10; }
+  z-index: 100; }
 
 #help-box {
   width: 45%;
@@ -925,6 +925,9 @@
   -moz-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.12);
   padding: 1vh 2%; }
+
+.question-indicator {
+  cursor: pointer; }
 
 #help {
   width: 50%;
