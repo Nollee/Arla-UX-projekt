@@ -36,7 +36,6 @@ function selectData() {
     calveUpdate.value = cattleStatus.numOfCalves;
   });
 
-
   food2020.get().then(function (doc) {
     foodStatus = doc.data();
 
@@ -50,9 +49,8 @@ function selectData() {
 
     boughtInput.value = foodStatus.numOfFoodBought;
   });
-  
-  let inputs = document.querySelectorAll(".input");
 
+  let inputs = document.querySelectorAll(".input");
 
   for (let input of inputs) {
     if (input.value === "undefined") {
@@ -76,6 +74,7 @@ function createNumOfCattles() {
     numOfCows: +cowsInput.value,
     numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
     year: 2020,
+    category: "cattle",
   };
 
   dataRef.doc("Cattles2020").set(newNumberAnswer);
@@ -109,6 +108,7 @@ function createNumOfHealth() {
     numOfDead: +deadInput.value,
     numOfSick: +sickInput.value,
     healthYear: 2020,
+    category: "health",
   };
 
   dataRef.doc("health2020").set(newNumberAnswer);
