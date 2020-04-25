@@ -98,20 +98,20 @@ function createNumOfFood() {
 }
 
 function createNumOfHealth() {
-    // references to the input fields
-    let healthyInput = document.querySelector("#healthy");
-    let deadInput = document.querySelector("#dead");
-    let sickInput = document.querySelector("#sick");
-  
-    let newNumberAnswer = {
-      numOfFoodBought: +healthyInput.value,
-      numOfFoodSelf: +deadInput.value,
-      numOfFoodTotal: +sickInput.value,
-      healthYear: 2020,
-    };
-  
-    dataRef.doc("health2020").set(newNumberAnswer);
-  }
+  // references to the input fields
+  let healthyInput = document.querySelector("#healthy");
+  let deadInput = document.querySelector("#dead");
+  let sickInput = document.querySelector("#sick");
+
+  let newNumberAnswer = {
+    numOfFoodBought: +healthyInput.value,
+    numOfFoodSelf: +deadInput.value,
+    numOfFoodTotal: +sickInput.value,
+    healthYear: 2020,
+  };
+
+  dataRef.doc("health2020").set(newNumberAnswer);
+}
 
 function updateNumOfCattles() {
   // references to the input fields
