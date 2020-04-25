@@ -73,13 +73,13 @@ export default class DataPage {
 
         <!-- HELBRED NAV -->
         <div class="data-nav last-nav helbred-nav">
-        <div class="data-category last-nav-cat" onclick="remove(); showFood()">
+        <div class="data-category last-nav-cat" onclick="remove();">
         <h3>Antal syge</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove(); diet()">
+        <div class="data-category last-nav-cat" onclick="remove(); showFood()">
         <h3>Kost</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove(); dead() ">
+        <div class="data-category last-nav-cat" onclick="remove(); dead()">
         <h3>Afdøde</h3>
         </div>
         </div>
