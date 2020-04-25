@@ -117,9 +117,12 @@ _dataRef.orderBy("year").onSnapshot((snapshotData) => {
 function prepareBullData(sustainabilityData) {
   let bulls = [];
   let years = [];
-  sustainabilityData.forEach((data) => {
-    bulls.push(data.numOfBulls);
-    years.push(data.year);
+  sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
+
+      bulls.push(data.numOfBulls);
+      years.push(data.year);
+  }
   });
   return {
     bulls,
@@ -182,9 +185,11 @@ function appendBulls(sustainabilityData) {
 function prepareCowData(sustainabilityData) {
   let cows = [];
   let years = [];
-  sustainabilityData.forEach((data) => {
-    cows.push(data.numOfCows);
-    years.push(data.year);
+  sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
+      cows.push(data.numOfCows);
+      years.push(data.year);
+    }
   });
   return {
     cows,
@@ -218,35 +223,26 @@ function appendCows(sustainabilityData) {
     },
     options: {
       scales: {
-        yAxes: [
-          {
+        yAxes: [{
             ticks: {
-              max: Math.max(...data.cows) + 1,
-              beginAtZero: true,
+                beginAtZero: true,
+                max: (Math.max(...data.cows) + 4)
+
             },
-          },
-        ],
-      },
-      legend: {
-        display: false,
-      },
-      scales: {
-        xAxes: [
-          {
             gridLines: {
               color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
-        yAxes: [
-          {
-            gridLines: {
+          }
+        }],
+        xAxes: [{
+          gridLines: {
               color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
-      },
+          }
+      }]
     },
+      legend: {
+        display: false
+    }
+    }
   });
 }
 
@@ -255,9 +251,11 @@ function appendCows(sustainabilityData) {
 function prepareCalveData(sustainabilityData) {
   let calves = [];
   let years = [];
-  sustainabilityData.forEach((data) => {
-    calves.push(data.numOfCalves);
-    years.push(data.year);
+  sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
+      calves.push(data.numOfCalves);
+      years.push(data.year);
+    }
   });
   return {
     calves,
@@ -291,35 +289,26 @@ function appendCalves(sustainabilityData) {
     },
     options: {
       scales: {
-        yAxes: [
-          {
+        yAxes: [{
             ticks: {
-              max: Math.max(...data.calves) + 1,
-              beginAtZero: true,
+                beginAtZero: true,
+                max: (Math.max(...data.calves) + 4)
+
             },
-          },
-        ],
-      },
-      legend: {
-        display: false,
-      },
-      scales: {
-        xAxes: [
-          {
             gridLines: {
               color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
-        yAxes: [
-          {
-            gridLines: {
+          }
+        }],
+        xAxes: [{
+          gridLines: {
               color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
-      },
+          }
+      }]
     },
+      legend: {
+        display: false
+    }
+    }
   });
 }
 
@@ -329,9 +318,11 @@ function appendCalves(sustainabilityData) {
 function prepareCattleData(sustainabilityData) {
   let cattles = [];
   let years = [];
-  sustainabilityData.forEach((data) => {
-    cattles.push(data.numOfCattles);
-    years.push(data.year);
+  sustainabilityData.forEach(data => {
+    if (data.category === 'cattle') { 
+      cattles.push(data.numOfCattles);
+      years.push(data.year);
+    }
   });
   return {
     cattles,
