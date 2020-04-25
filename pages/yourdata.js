@@ -11,11 +11,11 @@ export default class DataPage {
 
         <section id="data" class="page">
         <div class="data-nav first-nav">
-        <div class="data-category" onclick="foodData()">
+        <div class="data-category">
         <h3>Dyrefoder</h3>
         <img src="images/icons/dyrefoder.svg" alt="dyrefoder">
         </div>
-        <div class="data-category" onclick="elecData()">
+        <div class="data-category">
         <h3>Energi</h3>
         <img src="images/icons/elektricitet.svg" alt="elektricitet">
         </div>
@@ -24,19 +24,19 @@ export default class DataPage {
         <img src="images/icons/cows.svg" alt="køer">
 
         </div>
-        <div class="data-category" onclick="resData()">
+        <div class="data-category">
         <h3>Ressourcer</h3>
         <img src="images/icons/ressourcer.svg" alt="ressourcer">
         </div>
-        <div class="data-category" onclick="waterData()">
+        <div class="data-category">
         <h3>Vand</h3>
         <img src="images/icons/vand.svg" alt="vand">
         </div>
-        <div class="data-category" onclick="dairyData()">
+        <div class="data-category">
         <h3>Mejeri</h3>
         <img src="images/icons/mejeri.svg" alt="mejeri">
         </div>
-        <div class="data-category" onclick="organicData()">
+        <div class="data-category">
         <h3>Organisk</h3>
         <img src="images/icons/organisk.svg" alt="organisk">
         </div>
@@ -78,9 +78,6 @@ export default class DataPage {
         </div>
         <div class="data-category last-nav-cat" onclick="remove(); diet()">
         <h3>Kost</h3>
-        </div>
-        <div class="data-category last-nav-cat" onclick="remove(); mood()">
-        <h3>Humør</h3>
         </div>
         <div class="data-category last-nav-cat" onclick="remove(); dead() ">
         <h3>Afdøde</h3>

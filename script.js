@@ -112,10 +112,16 @@ function updateNumOfCattles() {
     numOfCows: +cowsInput.value,
     numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
     year: 2020,
+    category: "cattle"
   };
 
   dataRef.doc("Cattles2020").set(newNumberAnswer);
 }
+
+
+
+
+/* ============================ NAV til "Din data" ================================= */
 
 function cowData() {
   document.querySelector(".cow-nav").classList.toggle("next");
@@ -168,6 +174,8 @@ function firstNav() {
   document.querySelector(".nav-close").style.left = "5%";
   document.querySelector(".nav-overlay").style.display = "block";
 }
+
+
 
 /* ===================================== ANTAL ========================================= */
 function numOfCows() {

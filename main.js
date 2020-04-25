@@ -63,7 +63,25 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
-  console.log("hello world");
+  console.log(slideIndex);
+
+  if (slideIndex === 3){
+    document.querySelector(".question-button-next").style.display= "none"
+    document.querySelector(".question-button-done").style.display= "flex"
+
+
+
+  }
+
+  else{
+    document.querySelector(".question-button-next").style.display= "flex"
+    document.querySelector(".question-button-done").style.display= "none"
+
+
+
+
+
+  }
 }
 
 
@@ -90,6 +108,7 @@ prevButton.addEventListener("click", function(){
 
 nextButton.addEventListener("click", function(){
   plusSlides(1);
+  
 });
 
 

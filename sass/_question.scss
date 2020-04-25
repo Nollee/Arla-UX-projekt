@@ -84,8 +84,15 @@
 }
 
 .question-button-next {
-  border-color: orange;
-  color: orange;
+  border-color: $orange;
+  color:$orange;
+}
+
+.question-button-done{
+  display: none;
+  background-color: $orange;
+  color: white;
+  border-color: $orange;
 }
 
 .question-button-prev p {
