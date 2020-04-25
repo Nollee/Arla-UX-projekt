@@ -26,7 +26,7 @@ export default class YourPage {
 
          <a href="#data"><img src="../images/data.svg" alt="ikon af data"><p>Data</p></a>
 
-         <a href="#"><img src="../images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
+         <a href="#tips"><img src="../images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
         
          <div class="chart-container"> 
          <canvas id="chartContainer"></canvas>
