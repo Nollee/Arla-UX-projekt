@@ -117,8 +117,8 @@ function appendBulls(sustainabilityData) {
       scales: {
         yAxes: [{ 
           ticks: {
-            min: (Math.min(...data.bulls) - 5),
-            max: (Math.max(...data.bulls) + 1)
+            min: 0,  
+            max: (Math.max(...data.bulls) + 1)  
           }
         }]
       },
@@ -129,7 +129,7 @@ function appendBulls(sustainabilityData) {
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
                 }
-            }],
+            }], 
             yAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
@@ -184,8 +184,8 @@ function appendCows(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            min: (Math.min(...data.cows) - 5),
-            max: (Math.max(...data.cows) + 1)
+            max: (Math.max(...data.cows) + 1),
+            beginAtZero: true 
           }
         }]
       },
@@ -252,8 +252,8 @@ function appendCalves(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            min: (Math.min(...data.calves) - 5),
-            max: (Math.max(...data.calves) + 1)
+            max: (Math.max(...data.calves) + 1),
+            beginAtZero: true 
           }
         }]
       },
@@ -265,7 +265,7 @@ function appendCalves(sustainabilityData) {
                     color: "rgba(0, 0, 0, 0)",
                 }
             }],
-            yAxes: [{
+            yAxes: [{ 
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
                 }   
@@ -320,10 +320,10 @@ function appendCattles(sustainabilityData) {
       scales: {
         yAxes: [{
           ticks: {
-            min: (Math.min(...data.cattles) - 5),
-            max: (Math.max(...data.cattles) + 1)
+            max: (Math.max(...data.cattles) + 1),
+            beginAtZero: true  
           }
-        }]
+        }] 
       },
       legend: {
         display: false
@@ -341,4 +341,4 @@ function appendCattles(sustainabilityData) {
         }
     }
   });
-}
+}  

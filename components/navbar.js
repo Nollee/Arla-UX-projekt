@@ -22,9 +22,10 @@ export default class NavBar {
         <img id="nav__user__img" src="../images/user.svg" alt="login bruger"> 
         </div>  
         <div id="nav__user__window">
+        <a href="#help"><img src="../images/help-icon.svg" alt="Hjælp ikon">Hjælp</a>
         <a href="#login"><img src="../images/logout.svg" alt="log ud ikon">Log ud</a>
-        <a href="#help"><img src="../images/help-icon.svg" alt="Hjælp ikon">Hjælp</a></div>
-        </div> 
+        </div>
+        </div>  
        
         <div id="nav__gradient"></div> 
        
