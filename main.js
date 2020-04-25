@@ -255,3 +255,4 @@ function showUserBox() {
 
 user.addEventListener('click', showUserBox); 
 navGradient.addEventListener('click', showUserBox); 
+userBox.addEventListener('click', showUserBox);  
