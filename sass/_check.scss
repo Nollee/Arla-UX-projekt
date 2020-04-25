@@ -31,11 +31,20 @@
         } 
     }
     &--right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 140px;
         background-color: white;
         @include desktop-sm {width: 30%;}
         @include tablet {width: 0%;}
+        h1{
+            color: $dark-green;
+            font-size: 45px;
+        }
         img {
             width: 50%;
+            margin-top: 15vh;
         }
     }
 }

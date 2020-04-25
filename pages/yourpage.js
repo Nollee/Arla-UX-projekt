@@ -26,7 +26,7 @@ export default class YourPage {
 
          <a href="#data"><img src="../images/data.svg" alt="ikon af data"><p>Data</p></a>
 
-         <a href="#"><img src="../images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
+         <a href="#tips"><img src="../images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
         
          <div class="chart-container"> 
          <canvas id="chartContainer"></canvas>
@@ -58,7 +58,7 @@ export default class YourPage {
 
          <a href="#"><img src="../images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
 
-         <a href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><p>Køer<br>0/15</p></a>
+         <a class="cow-question" href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><img class="done" src="images/checkmark-circle.svg" alt="done"> <p>Køer<br><span id="cow-number-questions">0</span>/15</p></a>
 
          <a href="#"><img src="../images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
 

@@ -237,7 +237,11 @@ export default class CheckPage {
             
             <!-- right side content; illustration -->
             <div id="check__content--right">
+            <h1>Ret eller gennemgå</h1>
                 <img src="../images/cow-icon.svg" alt="ikon af arla ko"> 
+                <a class="accept-btn" href="#thankyou" onclick="updateNumOfCattles()"><p>Godkend</p>
+                <img src="images/checkmark.svg" alt="check">
+                </a>
                 <!-------------------->
             </div>
             <!-------------------->

@@ -36,7 +36,7 @@
     }
 }
 
-.next-btn, .back-btn, .start-btn{
+.next-btn, .back-btn, .start-btn, .accept-btn{
     position: absolute;
     bottom: 10vh;
     width: 200px;
@@ -55,6 +55,39 @@
     }
     p{
         font-size: 28px;
+    }
+}
+
+.accept-btn{
+justify-content: space-around; 
+-webkit-transition: 0.3s ease-in;
+-o-transition: 0.3s ease-in;
+transition: 0.3s ease-in;  
+     p{
+        width: 70%;
+        -webkit-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+    }
+    img{
+        width: 20% !important;
+        margin-top: 0 !important;
+    }
+}
+
+.accept-btn:hover{
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    border-color: $orange;
+    p{
+        color: $orange;
+        -webkit-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
     }
 }
 

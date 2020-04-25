@@ -74,6 +74,28 @@ const dataRef = db.collection("data");
 
   }
 
+  function updateNumOfCattles(){
+          // references to the input fields
+    let cowsInput = document.querySelector('#cow-update');
+    let bullsInput = document.querySelector('#bull-update');
+    let calvesInput = document.querySelector('#calve-update');
+    console.log(cowsInput.value);
+    console.log(bullsInput.value);
+    console.log(calvesInput.value);
+  
+    let newNumberAnswer = {
+      numOfCalves: +calvesInput.value,
+      numOfBulls: +bullsInput.value,
+      numOfCows: +cowsInput.value,
+      numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
+      year: 2020
+
+
+    };
+  
+    dataRef.doc("Cattles2020").set(newNumberAnswer);
+  }
+
 
 
 
@@ -182,6 +204,15 @@ function dead(){
 
 
 
+/* ========================== UPDATE YOURPAGE QUESTIONS ========================= */
+
+
+function fillCows(){
+    document.querySelector("#cow-number-questions").innerHTML ="15";
+    document.querySelector(".done").style.display ="block";
+    document.querySelector(".cow-question").setAttribute('href', '#thankyou');
+
+}
 
 
 
