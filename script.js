@@ -74,6 +74,26 @@ const dataRef = db.collection("data");
 
   }
 
+<<<<<<< HEAD
+  function createNumOfFood() {
+    // references to the input fields
+    let foodTotalInput = document.querySelector('#foodTotal');
+    let foodSelfInput = document.querySelector('#foodSelf');
+    let foodBoughtInput = document.querySelector('#foodBought');
+    console.log(foodSelfInput.value);
+    console.log(foodTotalInput.value);
+    console.log(foodBoughtInput.value);
+  
+    let newNumberAnswer = {
+      numOfFoodBought: +foodTotalInput.value,
+      numOfFoodSelf: +foodSelfInput.value,
+      numOfFoodTotal: +foodBoughtInput.value,
+      year: 2020
+    };
+  
+    dataRef.doc("food2020").set(newNumberAnswer);
+
+=======
   function updateNumOfCattles(){
           // references to the input fields
     let cowsInput = document.querySelector('#cow-update');
@@ -94,6 +114,7 @@ const dataRef = db.collection("data");
     };
   
     dataRef.doc("Cattles2020").set(newNumberAnswer);
+>>>>>>> 75bc2cf0c8f372c139585d9b2a4381e77ce1b82c
   }
 
 

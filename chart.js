@@ -82,7 +82,7 @@ function prepareBullData(sustainabilityData) {
       bulls.push(data.numOfBulls);
       years.push(data.year);
   });
-  return {
+  return { 
     bulls,
     years
   }

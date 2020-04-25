@@ -58,6 +58,47 @@ nav {
   }
 }
 
+#nav__user {
+  margin-right: 2%;
+  font-family: 'arla', sans-serif;
+  position: absolute;
+  z-index: 45;
+  top: 30%;
+  right: 2%;
+  &__img {
+    width: 25px;
+    height: auto;  
+  }
+  &--wrapper {display: flex;
+    flex-direction: row;  
+    width: auto;  
+    p { margin-top: 15px;
+      margin-right: 15px;  
+    }}
+  &__window {opacity: 0;
+  transition: .4s; 
+  z-index: -1; 
+  background-color: $light-gray; 
+  margin-top: 10px;
+  padding: 10px; 
+  a{color: $dark-gray; img{width: 15%;} @extend %center; width: 100%; margin-bottom: 5px;  justify-content: space-between;} 
+}  
+  &__window.active{opacity: 1; z-index: 10;}   
+}
+
+#nav__gradient {
+  position: absolute;
+  display: none; 
+  width: 100%;
+  height: 200vh; // for some reason it only covers half the screen with 100vh? 
+  /* background-color: rgba($color: #000000, $alpha: .5); */
+  z-index: 40;  
+}
+ 
+#nav__gradient.active {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
