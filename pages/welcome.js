@@ -11,7 +11,9 @@ export default class WelcomePage {
         <h1>Velkommen</h1>
         </div>
         <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. diam
+        Velkommen til arla-gården+ <br>
+        Du vil herinde blev stillet en masse spørgsmål, som vil være med til at bestemme hvor bæredygtig dit landbrug er. <br><br> Som noget nyt har du nu muligheden for at være med til at blive en del af helt ny mælkekarton, som repræsentere landmændene. Denne mælkekarton vil blive solgt sammen med de andre mælkekartoner og her vil en andel af indkomsten fra kartonen gå direkte til dig. Du kan læse mere om den nye økonomiske gevinst og hvordan man bliver gyldig til at blive en del af den, indepå <i>Præmie</i> under <i>Dit landbrug</i> 
+        
         </p>
 
         <div class="welcome-icon-wrapper">

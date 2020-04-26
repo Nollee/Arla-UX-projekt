@@ -80,7 +80,7 @@ function showSick() {
   let headers = document.querySelectorAll(".data-heading");
 
   for (let header of headers) {
-    header.innerHTML = "Antal døde";
+    header.innerHTML = "Antal syge kvæg";
   }
 
   let charts = document.querySelectorAll(".chart");
@@ -95,7 +95,7 @@ function showDead() {
   let headers = document.querySelectorAll(".data-heading");
 
   for (let header of headers) {
-    header.innerHTML = "Antal døde";
+    header.innerHTML = "Antal døde kvæg";
   }
 
   let charts = document.querySelectorAll(".chart");
