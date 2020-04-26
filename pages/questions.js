@@ -79,7 +79,7 @@ export default class QuestionPage {
           </div>
 
           <div class="sub-question-container">
-            <h3 class="sub-question">2.2 Hvor meget foder er selvforsynende?</h3>
+            <h3 class="sub-question">2.2 Hvor meget foder er selvforsynet?</h3>
             <input class="input" id="foodSelf" type="text" name="foodSelf" placeholder="fx. 42" />
           </div>
 
@@ -151,14 +151,21 @@ export default class QuestionPage {
 
         </div>  
 
-        <div class="question-button question-button-next" onclick="createNumOfCattles(); createNumOfFood(); createNumOfHealth()">
+        <div class="question-button question-button-first cattle-btn" onclick="createNumOfCattles()">
 
         <p>Næste</p>
         <img src="./images/arrow-right.svg";>
 
     </div>
 
-    <a href="#thankyou" class="question-button question-button-done">
+    <div class="question-button question-button-next food-btn" onclick="createNumOfFood()">
+
+    <p>Næste</p>
+    <img src="./images/arrow-right.svg";>
+
+</div>
+
+    <a href="#thankyou" class="question-button question-button-done" onclick="createNumOfHealth()">
 
     <p>Afslut</p>
     <img src="./images/white-check.svg";>

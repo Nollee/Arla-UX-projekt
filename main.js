@@ -55,31 +55,37 @@ function closeList() {
 
 const nextButton = document.querySelector(".question-button-next");
 const prevButton = document.querySelector(".question-button-prev");
+const firstButton = document.querySelector(".question-button-first");
 
 
 var slideIndex = 1;
 showSlides(slideIndex);
+
+
+
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
   console.log(slideIndex);
 
-  if (slideIndex === 3){
-    document.querySelector(".question-button-next").style.display= "none"
-    document.querySelector(".question-button-done").style.display= "flex"
+  if(slideIndex === 2){
+    document.querySelector(".cattle-btn").style.display ="none"
+    document.querySelector(".food-btn").style.display ="flex"
+    document.querySelector(".question-button-prev").style.display ="flex"
+    document.querySelector(".question-button-done").style.display ="none"
   }
 
-  else{
-    document.querySelector(".question-button-next").style.display= "flex"
-    document.querySelector(".question-button-done").style.display= "none"
+  if(slideIndex === 3){
+    document.querySelector(".food-btn").style.display ="none"
+    document.querySelector(".question-button-done").style.display ="flex"
   }
 
   if(slideIndex === 1){
-    document.querySelector(".question-button-prev").style.display= "none"
-  }
-  else{
-    document.querySelector(".question-button-prev").style.display= "flex"
+    document.querySelector(".food-btn").style.display ="none"
+    document.querySelector(".cattle-btn").style.display ="flex"
+    document.querySelector(".question-button-done").style.display ="none"
+
 
   }
 }
@@ -126,6 +132,11 @@ prevButton.addEventListener("click", function(){
 });
 
 nextButton.addEventListener("click", function(){
+  plusSlides(1);
+  
+});
+
+firstButton.addEventListener("click", function(){
   plusSlides(1);
   
 });
@@ -301,22 +312,6 @@ function appendChart() {
 
 appendChart();
 
-let acc = document.getElementsByClassName("dropdown");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    document.querySelector("#arrow-down").classList.toggle("dropping");
-    let panel = document.querySelector(".panel");
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      console.log("ned");
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      console.log("op");
-    }
-  });
-};
 
  
 

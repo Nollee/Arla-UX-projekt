@@ -16,6 +16,7 @@ dataRef.onSnapshot(function (snapshotData) {
 function selectData() {
   let cattle2020 = dataRef.doc("Cattles2020");
   let food2020 = dataRef.doc("food2020");
+  let health2020 = dataRef.doc("health2020");
 
 
   /* ============= opdatere dataen inde i cowspørgsmålet ===================*/
@@ -40,22 +41,59 @@ function selectData() {
   });
 
 /* ============= opdatere dataen inde i foodspørgsmålet ===================*/
+
   food2020.get().then(function (doc) {
     foodStatus = doc.data();
 
     let totalInput = document.querySelector("#foodTotal");
     let selfInput = document.querySelector("#foodSelf");
     let boughtInput = document.querySelector("#foodBought");
+    let foodUpdate = document.querySelector("#food-update");
+    let selfUpdate = document.querySelector("#self-update");
+    let buyUpdate = document.querySelector("#buy-update");
 
     totalInput.value = foodStatus.numOfFoodBought;
+    foodUpdate.value = foodStatus.numOfFoodBought;
+
 
     selfInput.value = foodStatus.numOfFoodSelf;
+    selfUpdate.value = foodStatus.numOfFoodSelf;
+
 
     boughtInput.value = foodStatus.numOfFoodBought;
-  });
-  
-  let inputs = document.querySelectorAll(".input");
+    buyUpdate.value = foodStatus.numOfFoodBought;
 
+  });
+
+  /* ============= opdatere dataen inde i healthpørgsmålet ===================*/
+
+  health2020.get().then(function (doc) {
+    healthStatus = doc.data();
+
+    let healthyInput = document.querySelector("#healthy");
+    let deadInput = document.querySelector("#dead");
+    let sickInput = document.querySelector("#sick");
+    let healthyUpdate = document.querySelector("#healthy-update");
+    let deadUpdate = document.querySelector("#dead-update");
+    let sickUpdate = document.querySelector("#sick-update");
+
+
+
+
+    healthyInput.value = healthStatus.numOfHealthy;
+    healthyUpdate.value = healthStatus.numOfHealthy;
+
+
+    deadInput.value = healthStatus.numOfDead;
+    deadUpdate.value = healthStatus.numOfDead;
+
+
+    sickInput.value = healthStatus.numOfSick;
+    sickUpdate.value = healthStatus.numOfSick;
+
+  });
+
+  let inputs = document.querySelectorAll(".input");
 
   for (let input of inputs) {
     if (input.value === "undefined") {
@@ -79,6 +117,7 @@ function createNumOfCattles() {
     numOfCows: +cowsInput.value,
     numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
     year: 2020,
+    category: "cattle",
   };
 
   dataRef.doc("Cattles2020").set(newNumberAnswer);
@@ -111,31 +150,56 @@ function createNumOfHealth() {
     numOfHealthy: +healthyInput.value,
     numOfDead: +deadInput.value,
     numOfSick: +sickInput.value,
-    healthYear: 2020,
+    year: 2020,
+    category: "health",
   };
 
   dataRef.doc("health2020").set(newNumberAnswer);
 }
 
-function updateNumOfCattles() {
-  // references to the input fields
-  let cowsInput = document.querySelector("#cow-update");
-  let bullsInput = document.querySelector("#bull-update");
-  let calvesInput = document.querySelector("#calve-update");
-  console.log(cowsInput.value);
-  console.log(bullsInput.value);
-  console.log(calvesInput.value);
 
+// ========================= opdater data inde i check ==========================
+function updateData() {
+  // references to the input fields
+  let cowsUpdate = document.querySelector("#cow-update");
+  let bullsUpdate = document.querySelector("#bull-update");
+  let calvesUpdate = document.querySelector("#calve-update");
+  let foodTotalUpdate = document.querySelector("#food-update");
+  let foodSelfUpdate = document.querySelector("#self-update");
+  let foodBoughtUpdate = document.querySelector("#buy-update");
+  let healthyUpdate = document.querySelector("#healthy-update");
+  let deadUpdate = document.querySelector("#dead-update");
+  let sickUpdate = document.querySelector("#sick-update");
+
+  // opdatere cattle spørgsmål
   let newNumberAnswer = {
-    numOfCalves: +calvesInput.value,
-    numOfBulls: +bullsInput.value,
-    numOfCows: +cowsInput.value,
-    numOfCattles: +cowsInput.value + +bullsInput.value + +calvesInput.value,
-    year: 2020,
-    category: "cattle",
+    numOfCalves: +calvesUpdate.value,
+    numOfBulls: +bullsUpdate.value,
+    numOfCows: +cowsUpdate.value,
+    numOfCattles: +cowsUpdate.value + +bullsUpdate.value + +calvesUpdate.value
   };
 
-  dataRef.doc("Cattles2020").set(newNumberAnswer);
+  dataRef.doc("Cattles2020").update(newNumberAnswer);
+
+// opdatere food spørgsmål
+  let newFoodAnswer = {
+    numOfFoodBought: +foodTotalUpdate.value,
+    numOfFoodSelf: +foodSelfUpdate.value,
+    numOfFoodTotal: +foodBoughtUpdate.value
+  };
+
+  dataRef.doc("food2020").update(newFoodAnswer);
+
+  // opdatere food spørgsmål
+  let newHealthAnswer = {
+    numOfHealthy: +healthyUpdate.value,
+    numOfDead: +deadUpdate.value,
+    numOfSick: +sickUpdate.value,
+  };
+
+  dataRef.doc("health2020").update(newHealthAnswer);
+
+
 }
 
 /* ============================ NAV til "Din data" ================================= */
@@ -230,3 +294,44 @@ function fillCows() {
   document.querySelector(".done").style.display = "block";
   document.querySelector(".cow-question").setAttribute("href", "#thankyou");
 }
+
+
+// ============================== DROPDOWN ==============================
+
+
+function dropDown1(){
+      document.querySelector(".arrow-down1").classList.toggle("dropping");
+      let panel = document.querySelector(".panel1");
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        console.log("ned");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        console.log("op");
+      }
+  }
+
+  function dropDown2(){
+    document.querySelector(".arrow-down2").classList.toggle("dropping");
+    let panel = document.querySelector(".panel2");
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      console.log("ned");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      console.log("op");
+    }
+}
+
+function dropDown3(){
+  document.querySelector(".arrow-down3").classList.toggle("dropping");
+  let panel = document.querySelector(".panel3");
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    console.log("ned");
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    console.log("op");
+  }
+}
+  

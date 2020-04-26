@@ -420,10 +420,10 @@
 .question-button:hover {
   transform: scale(1.1); }
 
-.question-button-next p {
+.question-button-next p, .question-button-first p {
   margin-right: 1rem; }
 
-.question-button-next {
+.question-button-next, .question-button-first {
   border-color: #FF9837;
   color: #FF9837; }
 
@@ -524,6 +524,9 @@
 
 .question-img-container {
   padding: 5rem 5rem 5rem 5rem; }
+
+.food-btn {
+  display: none; }
 
 @media only screen and (max-width: 840px) {
   .question {

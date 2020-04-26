@@ -56,6 +56,7 @@
   font-size: 2.2rem;
 }
 
+
 .question-buttons {
   display: flex;
   position: fixed;
@@ -79,11 +80,11 @@
   transform: scale(1.1);
 }
 
-.question-button-next p {
+.question-button-next p, .question-button-first p {
   margin-right: 1rem;
 }
 
-.question-button-next {
+.question-button-next, .question-button-first {
   border-color: $orange;
   color:$orange;
 }
@@ -206,6 +207,11 @@
 
 .question-img-container {
   padding: 5rem 5rem 5rem 5rem;
+}
+
+
+.food-btn{
+  display: none;
 }
 
 @media only screen and (max-width: 840px) {
