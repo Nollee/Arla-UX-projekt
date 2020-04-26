@@ -108,7 +108,7 @@ function listButtonSlides() {
     document.querySelector(".question-button-prev").style.display= "flex"
 
   } 
-}  
+}   
 
 function showSlides(n) {
   var i;
