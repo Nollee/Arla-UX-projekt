@@ -85,6 +85,7 @@ function plusSlides(n) {
     document.querySelector(".food-btn").style.display ="none"
     document.querySelector(".cattle-btn").style.display ="flex"
     document.querySelector(".question-button-done").style.display ="none"
+    document.querySelector(".question-button-prev").style.display ="none"
 
 
   }
