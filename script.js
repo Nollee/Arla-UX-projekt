@@ -154,10 +154,10 @@ function createNumOfFood() {
   let foodBoughtInput = document.querySelector("#foodBought");
 
   let newNumberAnswer = {
-    numOfFoodBought: +foodTotalInput.value,
+    numOfFoodBought: +foodBoughtInput.value,
     numOfFoodSelf: +foodSelfInput.value,
-    numOfFoodTotal: +foodBoughtInput.value,
-    year: 2015,
+    numOfFoodTotal: +foodTotalInput.value,
+    year: 2020,
     category: "food",
   };
 
