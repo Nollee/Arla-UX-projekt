@@ -92,23 +92,27 @@ function plusSlides(n) {
 }
 
 function listButtonSlides() {
-  if (slideIndex === 3){
-    document.querySelector(".question-button-next").style.display= "none"
-    document.querySelector(".question-button-done").style.display= "flex"
+
+  if(slideIndex === 2){
+    document.querySelector(".cattle-btn").style.display ="none"
+    document.querySelector(".food-btn").style.display ="flex"
+    document.querySelector(".question-button-prev").style.display ="flex"
+    document.querySelector(".question-button-done").style.display ="none"
   }
 
-  else{
-    document.querySelector(".question-button-next").style.display= "flex"
-    document.querySelector(".question-button-done").style.display= "none"
+  if(slideIndex === 3){
+    document.querySelector(".food-btn").style.display ="none"
+    document.querySelector(".question-button-done").style.display ="flex"
   }
 
   if(slideIndex === 1){
-    document.querySelector(".question-button-prev").style.display= "none"
-  }
-  else{
-    document.querySelector(".question-button-prev").style.display= "flex"
+    document.querySelector(".food-btn").style.display ="none"
+    document.querySelector(".cattle-btn").style.display ="flex"
+    document.querySelector(".question-button-done").style.display ="none"
+    document.querySelector(".question-button-prev").style.display ="none"
 
-  } 
+
+  }
 }  
 
 function showSlides(n) {
@@ -152,17 +156,23 @@ function showQuestion1() {
   slideIndex = 1;
   showSlides(slideIndex);
   listButtonSlides(); 
+  closeList();
+
 
 }
 function showQuestion2() {
   slideIndex = 2;
   showSlides(slideIndex); 
   listButtonSlides();   
+  closeList();
+
 }
 function showQuestion3() {
   slideIndex = 3;
   showSlides(slideIndex);   
-  listButtonSlides();  
+  listButtonSlides();
+  closeList();
+
 } 
 question1.addEventListener('click', showQuestion1);
 question2.addEventListener('click', showQuestion2);

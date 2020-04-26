@@ -23,9 +23,16 @@ function selectData() {
 
   cattle2020.get().then(function (doc) {
     cattleStatus = doc.data();
+
+    // Inputs i spørgsmålene
     let cowsInput = document.querySelector("#cows");
     let bullsInput = document.querySelector("#bulls");
     let calvesInput = document.querySelector("#calves");
+
+    // svaret i listen
+    let cattleList = document.querySelector("#cattle-list")
+
+    // Inputs i checklisten
     let cowUpdate = document.querySelector("#cow-update");
     let bullUpdate = document.querySelector("#bull-update");
     let calveUpdate = document.querySelector("#calve-update");
@@ -38,6 +45,8 @@ function selectData() {
 
     calvesInput.value = cattleStatus.numOfCalves;
     calveUpdate.value = cattleStatus.numOfCalves;
+
+    cattleList.innerHTML = cattleStatus.numOfCattles;
   });
 
 /* ============= opdatere dataen inde i foodspørgsmålet ===================*/
@@ -45,15 +54,21 @@ function selectData() {
   food2020.get().then(function (doc) {
     foodStatus = doc.data();
 
+    // Inputs i spørgsmålene
     let totalInput = document.querySelector("#foodTotal");
     let selfInput = document.querySelector("#foodSelf");
     let boughtInput = document.querySelector("#foodBought");
+
+    // svaret i listen
+    let foodList = document.querySelector("#food-list");
+
+    // Inputs i checklisten
     let foodUpdate = document.querySelector("#food-update");
     let selfUpdate = document.querySelector("#self-update");
     let buyUpdate = document.querySelector("#buy-update");
 
-    totalInput.value = foodStatus.numOfFoodBought;
-    foodUpdate.value = foodStatus.numOfFoodBought;
+    totalInput.value = foodStatus.numOfFoodTotal;
+    foodUpdate.value = foodStatus.numOfFoodTotal;
 
 
     selfInput.value = foodStatus.numOfFoodSelf;
@@ -63,6 +78,8 @@ function selectData() {
     boughtInput.value = foodStatus.numOfFoodBought;
     buyUpdate.value = foodStatus.numOfFoodBought;
 
+    foodList.innerHTML = foodStatus.numOfFoodTotal + " kg";
+
   });
 
   /* ============= opdatere dataen inde i healthpørgsmålet ===================*/
@@ -70,9 +87,15 @@ function selectData() {
   health2020.get().then(function (doc) {
     healthStatus = doc.data();
 
+        // Inputs i spørgsmålene
     let healthyInput = document.querySelector("#healthy");
     let deadInput = document.querySelector("#dead");
     let sickInput = document.querySelector("#sick");
+
+    // svaret i checklisten
+    let healthList = document.querySelector("#health-list")
+
+    // Inputs i checklisten
     let healthyUpdate = document.querySelector("#healthy-update");
     let deadUpdate = document.querySelector("#dead-update");
     let sickUpdate = document.querySelector("#sick-update");
@@ -91,6 +114,7 @@ function selectData() {
     sickInput.value = healthStatus.numOfSick;
     sickUpdate.value = healthStatus.numOfSick;
 
+    healthList.innerHTML = healthStatus.numOfHealthy + " køer er sunde og raske"
   });
 
   let inputs = document.querySelectorAll(".input");
