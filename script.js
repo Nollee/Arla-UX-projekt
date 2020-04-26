@@ -18,7 +18,6 @@ function selectData() {
   let food2020 = dataRef.doc("food2020");
   let health2020 = dataRef.doc("health2020");
 
-
   /* ============= opdatere dataen inde i cowspørgsmålet ===================*/
 
   cattle2020.get().then(function (doc) {
@@ -30,7 +29,7 @@ function selectData() {
     let calvesInput = document.querySelector("#calves");
 
     // svaret i listen
-    let cattleList = document.querySelector("#cattle-list")
+    let cattleList = document.querySelector("#cattle-list");
 
     // Inputs i checklisten
     let cowUpdate = document.querySelector("#cow-update");
@@ -49,7 +48,7 @@ function selectData() {
     cattleList.innerHTML = cattleStatus.numOfCattles;
   });
 
-/* ============= opdatere dataen inde i foodspørgsmålet ===================*/
+  /* ============= opdatere dataen inde i foodspørgsmålet ===================*/
 
   food2020.get().then(function (doc) {
     foodStatus = doc.data();
@@ -70,16 +69,13 @@ function selectData() {
     totalInput.value = foodStatus.numOfFoodTotal;
     foodUpdate.value = foodStatus.numOfFoodTotal;
 
-
     selfInput.value = foodStatus.numOfFoodSelf;
     selfUpdate.value = foodStatus.numOfFoodSelf;
-
 
     boughtInput.value = foodStatus.numOfFoodBought;
     buyUpdate.value = foodStatus.numOfFoodBought;
 
     foodList.innerHTML = foodStatus.numOfFoodTotal + " kg";
-
   });
 
   /* ============= opdatere dataen inde i healthpørgsmålet ===================*/
@@ -87,34 +83,30 @@ function selectData() {
   health2020.get().then(function (doc) {
     healthStatus = doc.data();
 
-        // Inputs i spørgsmålene
+    // Inputs i spørgsmålene
     let healthyInput = document.querySelector("#healthy");
     let deadInput = document.querySelector("#dead");
     let sickInput = document.querySelector("#sick");
 
     // svaret i checklisten
-    let healthList = document.querySelector("#health-list")
+    let healthList = document.querySelector("#health-list");
 
     // Inputs i checklisten
     let healthyUpdate = document.querySelector("#healthy-update");
     let deadUpdate = document.querySelector("#dead-update");
     let sickUpdate = document.querySelector("#sick-update");
 
-
-
-
     healthyInput.value = healthStatus.numOfHealthy;
     healthyUpdate.value = healthStatus.numOfHealthy;
-
 
     deadInput.value = healthStatus.numOfDead;
     deadUpdate.value = healthStatus.numOfDead;
 
-
     sickInput.value = healthStatus.numOfSick;
     sickUpdate.value = healthStatus.numOfSick;
 
-    healthList.innerHTML = healthStatus.numOfHealthy + " køer er sunde og raske"
+    healthList.innerHTML =
+      healthStatus.numOfHealthy + " køer er sunde og raske";
   });
 
   let inputs = document.querySelectorAll(".input");
@@ -161,7 +153,7 @@ function createNumOfFood() {
     category: "food",
   };
 
-  dataRef.doc("food2015").set(newNumberAnswer);
+  dataRef.doc("food2020").set(newNumberAnswer);
 }
 
 function createNumOfHealth() {
@@ -181,7 +173,6 @@ function createNumOfHealth() {
   dataRef.doc("health2020").set(newNumberAnswer);
 }
 
-
 // ========================= opdater data inde i check ==========================
 function updateData() {
   // references to the input fields
@@ -200,16 +191,16 @@ function updateData() {
     numOfCalves: +calvesUpdate.value,
     numOfBulls: +bullsUpdate.value,
     numOfCows: +cowsUpdate.value,
-    numOfCattles: +cowsUpdate.value + +bullsUpdate.value + +calvesUpdate.value
+    numOfCattles: +cowsUpdate.value + +bullsUpdate.value + +calvesUpdate.value,
   };
 
   dataRef.doc("Cattles2020").update(newNumberAnswer);
 
-// opdatere food spørgsmål
+  // opdatere food spørgsmål
   let newFoodAnswer = {
     numOfFoodBought: +foodTotalUpdate.value,
     numOfFoodSelf: +foodSelfUpdate.value,
-    numOfFoodTotal: +foodBoughtUpdate.value
+    numOfFoodTotal: +foodBoughtUpdate.value,
   };
 
   dataRef.doc("food2020").update(newFoodAnswer);
@@ -222,8 +213,6 @@ function updateData() {
   };
 
   dataRef.doc("health2020").update(newHealthAnswer);
-
-
 }
 
 /* ============================ NAV til "Din data" ================================= */
@@ -280,7 +269,6 @@ function firstNav() {
   document.querySelector(".nav-overlay").style.display = "block";
 }
 
-
 /* ========================== UPDATE YOURPAGE QUESTIONS ========================= */
 
 function fillCows() {
@@ -289,35 +277,33 @@ function fillCows() {
   document.querySelector(".cow-question").setAttribute("href", "#thankyou");
 }
 
-
 // ============================== DROPDOWN ==============================
 
-
-function dropDown1(){
-      document.querySelector(".arrow-down1").classList.toggle("dropping");
-      let panel = document.querySelector(".panel1");
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        console.log("ned");
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        console.log("op");
-      }
+function dropDown1() {
+  document.querySelector(".arrow-down1").classList.toggle("dropping");
+  let panel = document.querySelector(".panel1");
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    console.log("ned");
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    console.log("op");
   }
-
-  function dropDown2(){
-    document.querySelector(".arrow-down2").classList.toggle("dropping");
-    let panel = document.querySelector(".panel2");
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      console.log("ned");
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      console.log("op");
-    }
 }
 
-function dropDown3(){
+function dropDown2() {
+  document.querySelector(".arrow-down2").classList.toggle("dropping");
+  let panel = document.querySelector(".panel2");
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    console.log("ned");
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    console.log("op");
+  }
+}
+
+function dropDown3() {
   document.querySelector(".arrow-down3").classList.toggle("dropping");
   let panel = document.querySelector(".panel3");
   if (panel.style.maxHeight) {
@@ -328,4 +314,3 @@ function dropDown3(){
     console.log("op");
   }
 }
-  
