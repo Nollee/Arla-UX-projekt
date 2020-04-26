@@ -55,16 +55,43 @@ function closeList() {
 
 const nextButton = document.querySelector(".question-button-next");
 const prevButton = document.querySelector(".question-button-prev");
+const firstButton = document.querySelector(".question-button-first");
 
 
 var slideIndex = 1;
 showSlides(slideIndex);
+
+
+
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
   console.log(slideIndex);
 
+  if(slideIndex === 2){
+    document.querySelector(".cattle-btn").style.display ="none"
+    document.querySelector(".food-btn").style.display ="flex"
+    document.querySelector(".question-button-prev").style.display ="flex"
+    document.querySelector(".question-button-done").style.display ="none"
+  }
+
+  if(slideIndex === 3){
+    document.querySelector(".food-btn").style.display ="none"
+    document.querySelector(".question-button-done").style.display ="flex"
+  }
+
+  if(slideIndex === 1){
+    document.querySelector(".food-btn").style.display ="none"
+    document.querySelector(".cattle-btn").style.display ="flex"
+    document.querySelector(".question-button-done").style.display ="none"
+    document.querySelector(".question-button-prev").style.display ="none"
+
+
+  }
+}
+
+function listButtonSlides() {
   if (slideIndex === 3){
     document.querySelector(".question-button-next").style.display= "none"
     document.querySelector(".question-button-done").style.display= "flex"
@@ -81,9 +108,8 @@ function plusSlides(n) {
   else{
     document.querySelector(".question-button-prev").style.display= "flex"
 
-  }
-}
-
+  } 
+}  
 
 function showSlides(n) {
   var i;
@@ -110,6 +136,39 @@ nextButton.addEventListener("click", function(){
   plusSlides(1);
   
 });
+
+firstButton.addEventListener("click", function(){
+  plusSlides(1);
+  
+});
+
+
+/* show slides when pressins on specific question from list */
+const question1 = document.querySelector('.list-q-text1');
+const question2 = document.querySelector('.list-q-text2');
+const question3 = document.querySelector('.list-q-text3');
+
+function showQuestion1() {
+  slideIndex = 1;
+  showSlides(slideIndex);
+  listButtonSlides(); 
+
+}
+function showQuestion2() {
+  slideIndex = 2;
+  showSlides(slideIndex); 
+  listButtonSlides();   
+}
+function showQuestion3() {
+  slideIndex = 3;
+  showSlides(slideIndex);   
+  listButtonSlides();  
+} 
+question1.addEventListener('click', showQuestion1);
+question2.addEventListener('click', showQuestion2);
+question3.addEventListener('click', showQuestion3);  
+  
+
 
 
 /* chart */
@@ -254,22 +313,6 @@ function appendChart() {
 
 appendChart();
 
-let acc = document.getElementsByClassName("dropdown");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    document.querySelector("#arrow-down").classList.toggle("dropping");
-    let panel = document.querySelector(".panel");
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      console.log("ned");
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      console.log("op");
-    }
-  });
-};
 
  
 

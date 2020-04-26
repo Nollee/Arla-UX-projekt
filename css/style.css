@@ -420,10 +420,10 @@
 .question-button:hover {
   transform: scale(1.1); }
 
-.question-button-next p {
+.question-button-next p, .question-button-first p {
   margin-right: 1rem; }
 
-.question-button-next {
+.question-button-next, .question-button-first {
   border-color: #FF9837;
   color: #FF9837; }
 
@@ -508,7 +508,8 @@
 
 .question-list-q {
   font-size: 1.3em;
-  margin: 10% 0 0 7%; }
+  margin: 10% 0 0 7%;
+  cursor: pointer; }
 
 .question-list-q h4 {
   color: grey; }
@@ -523,6 +524,9 @@
 
 .question-img-container {
   padding: 5rem 5rem 5rem 5rem; }
+
+.food-btn {
+  display: none; }
 
 @media only screen and (max-width: 840px) {
   .question {
@@ -1361,7 +1365,8 @@ nav {
   #nav__user--wrapper {
     display: flex;
     flex-direction: row;
-    width: auto; }
+    width: auto;
+    cursor: pointer; }
     #nav__user--wrapper p {
       margin-top: 15px;
       margin-right: 15px; }

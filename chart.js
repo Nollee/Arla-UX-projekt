@@ -65,7 +65,7 @@ function showFood() {
   let headers = document.querySelectorAll(".data-heading");
 
   for (let header of headers) {
-    header.innerHTML = "Alt foder";
+    header.innerHTML = "Alt foder (Kg. per kvæg)";
   }
 
   let charts = document.querySelectorAll(".chart");
