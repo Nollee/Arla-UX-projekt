@@ -59,3 +59,11 @@
       text-align: center;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    #tips{
+      width: 100%;
+      overflow-y: visible;
+      background-color: transparent;
+    }
+  }

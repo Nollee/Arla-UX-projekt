@@ -140,4 +140,16 @@ a {
   body{
     overflow-y: visible;
   }
+
+  nav{#home{
+    top: 1vh;
+  }}
+
+  #nav__user--wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    p{
+    display: none;
+    }
+  }
 }
