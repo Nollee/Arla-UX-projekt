@@ -157,11 +157,11 @@ function createNumOfFood() {
     numOfFoodBought: +foodTotalInput.value,
     numOfFoodSelf: +foodSelfInput.value,
     numOfFoodTotal: +foodBoughtInput.value,
-    year: 2020,
+    year: 2015,
     category: "food",
   };
 
-  dataRef.doc("food2020").set(newNumberAnswer);
+  dataRef.doc("food2015").set(newNumberAnswer);
 }
 
 function createNumOfHealth() {
@@ -280,36 +280,6 @@ function firstNav() {
   document.querySelector(".nav-overlay").style.display = "block";
 }
 
-/* ===================================== ANTAL ========================================= */
-function numOfCows() {
-  document.getElementById("data-heading").innerHTML = "Antal køer";
-}
-
-function numOfCalves() {
-  document.getElementById("data-heading").innerHTML = "Antal Kalve";
-}
-
-function numOfCattles() {
-  document.getElementById("data-heading").innerHTML = "Alle kvæg";
-}
-
-/* ===================================== HELBRED ========================================= */
-
-function sickness() {
-  document.getElementById("data-heading").innerHTML = "Antal syge kvæg";
-}
-
-function diet() {
-  document.getElementById("data-heading").innerHTML = "kvægenes kost";
-}
-
-function mood() {
-  document.getElementById("data-heading").innerHTML = "kvægenes humør";
-}
-
-function dead() {
-  document.getElementById("data-heading").innerHTML = "Antal døde køer";
-}
 
 /* ========================== UPDATE YOURPAGE QUESTIONS ========================= */
 

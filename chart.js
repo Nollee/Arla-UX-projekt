@@ -88,7 +88,22 @@ function showSick() {
   for (let chart of charts) {
     chart.classList.add("hidden");
   }
-  document.querySelector("#foodChart").classList.remove("hidden");
+  document.querySelector("#sickChart").classList.remove("hidden");
+}
+
+function showDead() {
+  let headers = document.querySelectorAll(".data-heading");
+
+  for (let header of headers) {
+    header.innerHTML = "Antal døde";
+  }
+
+  let charts = document.querySelectorAll(".chart");
+
+  for (let chart of charts) {
+    chart.classList.add("hidden");
+  }
+  document.querySelector("#deadChart").classList.remove("hidden");
 }
 
 // ========== GLOBAL VARIABLES ========== //
@@ -111,6 +126,8 @@ _dataRef.orderBy("year").onSnapshot((snapshotData) => {
   appendCalves(_sustainabilityData);
   appendCattles(_sustainabilityData);
   appendFood(_sustainabilityData);
+  appendSick(_sustainabilityData);
+  appendDead(_sustainabilityData);
 });
 
 // 2: preparing the data
@@ -440,6 +457,142 @@ function appendFood(sustainabilityData) {
             ticks: {
               beginAtZero: true,
               max: Math.max(...data.food) + 4,
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+      },
+      legend: {
+        display: false,
+      },
+    },
+  });
+}
+
+function prepareSickData(sustainabilityData) {
+  let sick = [];
+  let years = [];
+  sustainabilityData.forEach((data) => {
+    if (data.category === "health") {
+      sick.push(data.numOfSick);
+      years.push(data.year);
+    }
+  });
+  return {
+    sick,
+    years,
+  };
+}
+
+//3: appending the chart
+function appendSick(sustainabilityData) {
+  let data = prepareSickData(sustainabilityData);
+  console.log(data);
+  // generate chart
+  let chartContainer = document.querySelector("#sickChart");
+
+  let chart = new Chart(chartContainer, {
+    type: "line",
+    data: {
+      datasets: [
+        {
+          data: data.sick,
+          label: false,
+          fill: true,
+          borderColor: "#FF9837",
+          backgroundColor: "#0B43AA",
+          pointBackgroundColor: "#55bae7",
+          pointBorderColor: "#55bae7",
+          pointHoverBackgroundColor: "#55bae7",
+          pointHoverBorderColor: "#55bae7",
+        },
+      ],
+      labels: data.years,
+    },
+    options: {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              max: Math.max(...data.sick) + 4,
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+      },
+      legend: {
+        display: false,
+      },
+    },
+  });
+}
+
+function prepareDeadData(sustainabilityData) {
+  let dead = [];
+  let years = [];
+  sustainabilityData.forEach((data) => {
+    if (data.category === "health") {
+      dead.push(data.numOfDead);
+      years.push(data.year);
+    }
+  });
+  return {
+    dead,
+    years,
+  };
+}
+
+//3: appending the chart
+function appendDead(sustainabilityData) {
+  let data = prepareDeadData(sustainabilityData);
+  console.log(data);
+  // generate chart
+  let chartContainer = document.querySelector("#deadChart");
+
+  let chart = new Chart(chartContainer, {
+    type: "bar",
+    data: {
+      datasets: [
+        {
+          data: data.dead,
+          label: false,
+          fill: false,
+          borderColor: "#6F6F6F",
+          backgroundColor: "#0B43AA",
+          pointBackgroundColor: "#55bae7",
+          pointBorderColor: "#55bae7",
+          pointHoverBackgroundColor: "#55bae7",
+          pointHoverBorderColor: "#55bae7",
+        },
+      ],
+      labels: data.years,
+    },
+    options: {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              max: Math.max(...data.dead) + 4,
             },
             gridLines: {
               color: "rgba(0, 0, 0, 0)",
