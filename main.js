@@ -91,7 +91,7 @@ function plusSlides(n) {
   }
 }
 
-function listButtonSlides() {
+/* function listButtonSlides() {
   if (slideIndex === 3){
     document.querySelector(".question-button-next").style.display= "none"
     document.querySelector(".question-button-done").style.display= "flex"
@@ -109,7 +109,7 @@ function listButtonSlides() {
     document.querySelector(".question-button-prev").style.display= "flex"
 
   } 
-}   
+}  */  
 
 function showSlides(n) {
   var i;
@@ -158,7 +158,7 @@ function showQuestion2() {
   slideIndex = 2;
   showSlides(slideIndex); 
   listButtonSlides();   
-}
+} 
 function showQuestion3() {
   slideIndex = 3;
   showSlides(slideIndex);   
