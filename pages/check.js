@@ -94,7 +94,7 @@ export default class CheckPage {
                          
                          <div id="check__content--left__question" class="expand-questions">
                              <h4 class="sub-sub-question">2.1 Hvor meget foder bruger du i alt?</h4> 
-                             <input class="sub-sub-input" id="healthy-update" type="text" placeholder="50">
+                             <input class="sub-sub-input" id="food-update" type="text" placeholder="50">
                          </div>                
                          
                      </div>
@@ -103,7 +103,7 @@ export default class CheckPage {
                          
                          <div id="check__content--left__question" class="expand-questions">
                              <h4 class="sub-sub-question">2.2 Hvor meget foder er selvforsynet?</h4> 
-                             <input class="sub-sub-input" id="dead-update" type="text" placeholder="45">
+                             <input class="sub-sub-input" id="buy-update" type="text" placeholder="45">
                          </div>                
                          
                      </div>
@@ -111,7 +111,7 @@ export default class CheckPage {
                      <div class="check__content--left--wrapper sub-sub-wrapper">
                          <div id="check__content--left__question" class="expand-questions">
                              <h4 class="sub-sub-question">2.3 Hvor meget foder er indkøbt?</h4> 
-                             <input class="sub-sub-input" id="sick-update" type="text" placeholder="22">
+                             <input class="sub-sub-input" id="self-update" type="text" placeholder="22">
                          </div>
                          </div>
  
@@ -149,7 +149,7 @@ export default class CheckPage {
                          
                          <div id="check__content--left__question" class="expand-questions">
                              <h4 class="sub-sub-question">3.1 Hvor mange kvæg er sunde og raske?</h4> 
-                             <input class="sub-sub-input" id="food-update" type="text" placeholder="50">
+                             <input class="sub-sub-input" id="healthy-update" type="text" placeholder="50">
                          </div>                
                          
                      </div>
@@ -158,7 +158,7 @@ export default class CheckPage {
                          
                          <div id="check__content--left__question" class="expand-questions">
                              <h4 class="sub-sub-question">3.2 Hvor mange kvæg er døde i år?</h4> 
-                             <input class="sub-sub-input" id="self-update" type="text" placeholder="45">
+                             <input class="sub-sub-input" id="dead-update" type="text" placeholder="45">
                          </div>                
                          
                      </div>
@@ -166,7 +166,7 @@ export default class CheckPage {
                      <div class="check__content--left--wrapper sub-sub-wrapper">
                          <div id="check__content--left__question" class="expand-questions">
                              <h4 class="sub-sub-question">3.3 Hvor mange kvæg er syge?</h4> 
-                             <input class="sub-sub-input" id="buy-update" type="text" placeholder="22">
+                             <input class="sub-sub-input" id="sick-update" type="text" placeholder="22">
                          </div>
                          </div>
  

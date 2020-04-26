@@ -48,12 +48,20 @@ section {
 nav {
   position: fixed;
   top: 20;
-  z-index: 30;
-  @extend %center; 
-  justify-content: space-between;
+  z-index: 5;
+  @extend %center;
+  background-color: white;
   width: 100%;
-  img {
-    width: 120px;
+  height: 10vh;
+  #home{
+    position: absolute;
+    left: 5%;
+    top: 3vh;
+  }
+  #logo{
+    @extend %absolute-center;
+    top: 1vh;
+    width: 100px;
     height: auto;
   }
 }
