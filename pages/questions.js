@@ -173,11 +173,43 @@ export default class QuestionPage {
         <h4>Luk fanen</h4>
       </div>
       <div class="questions">
+
+        <div class="question-list-q">
+          <h4 class="list-q-number">1.0</h4>
+          <h3 class="list-q-text1">Hvor mange kvæg har du på din gård?</h4>
+          <h4 class="list-q-answer">158</h4> 
+        </div>
+
+        <div class="question-list-q">
+          <h4 class="list-q-number">2.0</h4>
+          <h3 class="list-q-text2">Hvor meget foder giver du til dine kvæg? (målt i kg. per kvæg)</h4>
+          <h4 class="list-q-answer">120</h4>
+        </div> 
+        
+        <div class="question-list-q">
+          <h4 class="list-q-number">3.0</h4>
+          <h3 class="list-q-text3">Hvordan er dine kvægs helbred?</h4>
+          <h4 class="list-q-answer">120</h4>
+        </div>  
+
+        <div class="question-list-q">
+          <h4 class="list-q-number">4.0</h4>
+          <h3 class="list-q-text3">Hvordan er dine kvægs helbred?</h4>
+          <h4 class="list-q-answer">120</h4>
+        </div> 
+
         <div class="question-list-q">
           <h4 class="list-q-number">5.0</h4>
-          <h3 class="list-q-text">Hvor mange kvæg har du på din gård?</h4>
+          <h3 class="list-q-text3">Hvordan er dine kvægs helbred?</h4>
           <h4 class="list-q-answer">120</h4>
-        </div>
+        </div> 
+
+        <div class="question-list-q">
+          <h4 class="list-q-number">6.0</h4>
+          <h3 class="list-q-text3">Hvordan er dine kvægs helbred?</h4>
+          <h4 class="list-q-answer">120</h4>
+        </div> 
+
       </div>
     </div>
 

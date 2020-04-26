@@ -84,6 +84,25 @@ function plusSlides(n) {
   }
 }
 
+function listButtonSlides() {
+  if (slideIndex === 3){
+    document.querySelector(".question-button-next").style.display= "none"
+    document.querySelector(".question-button-done").style.display= "flex"
+  }
+
+  else{
+    document.querySelector(".question-button-next").style.display= "flex"
+    document.querySelector(".question-button-done").style.display= "none"
+  }
+
+  if(slideIndex === 1){
+    document.querySelector(".question-button-prev").style.display= "none"
+  }
+  else{
+    document.querySelector(".question-button-prev").style.display= "flex"
+
+  } 
+}  
 
 function showSlides(n) {
   var i;
@@ -110,6 +129,34 @@ nextButton.addEventListener("click", function(){
   plusSlides(1);
   
 });
+
+
+/* show slides when pressins on specific question from list */
+const question1 = document.querySelector('.list-q-text1');
+const question2 = document.querySelector('.list-q-text2');
+const question3 = document.querySelector('.list-q-text3');
+
+function showQuestion1() {
+  slideIndex = 1;
+  showSlides(slideIndex);
+  listButtonSlides(); 
+
+}
+function showQuestion2() {
+  slideIndex = 2;
+  showSlides(slideIndex); 
+  listButtonSlides();   
+}
+function showQuestion3() {
+  slideIndex = 3;
+  showSlides(slideIndex);   
+  listButtonSlides();  
+} 
+question1.addEventListener('click', showQuestion1);
+question2.addEventListener('click', showQuestion2);
+question3.addEventListener('click', showQuestion3);  
+  
+
 
 
 /* chart */

@@ -508,7 +508,8 @@
 
 .question-list-q {
   font-size: 1.3em;
-  margin: 10% 0 0 7%; }
+  margin: 10% 0 0 7%;
+  cursor: pointer; }
 
 .question-list-q h4 {
   color: grey; }
@@ -1361,7 +1362,8 @@ nav {
   #nav__user--wrapper {
     display: flex;
     flex-direction: row;
-    width: auto; }
+    width: auto;
+    cursor: pointer; }
     #nav__user--wrapper p {
       margin-top: 15px;
       margin-right: 15px; }
