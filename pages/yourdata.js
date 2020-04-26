@@ -73,13 +73,13 @@ export default class DataPage {
 
         <!-- HELBRED NAV -->
         <div class="data-nav last-nav helbred-nav">
-        <div class="data-category last-nav-cat" onclick="remove();">
+        <div class="data-category last-nav-cat" onclick="remove(); showSick()">
         <h3>Antal syge</h3>
         </div>
         <div class="data-category last-nav-cat" onclick="remove(); showFood()">
         <h3>Kost</h3>
         </div>
-        <div class="data-category last-nav-cat" onclick="remove(); dead()">
+        <div class="data-category last-nav-cat" onclick="remove(); showDead()">
         <h3>Afdøde</h3>
         </div>
         </div>
@@ -94,7 +94,9 @@ export default class DataPage {
         <canvas class="hidden chart" id="bullChart"></canvas>
         <canvas class="hidden chart" id="calveChart"></canvas>
         <canvas class="hidden chart" id="cattleChart"></canvas>
-        <canvas class="hidden chart" id="foodChart"></canvas>  
+        <canvas class="hidden chart" id="foodChart"></canvas> 
+        <canvas class="hidden chart" id="sickChart"></canvas>
+        <canvas class="hidden chart" id="deadChart"></canvas>  
 
         </div>
         <div class="data-header" onclick="firstNav()">
