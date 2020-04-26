@@ -482,8 +482,8 @@ function prepareSickData(sustainabilityData) {
   let sick = [];
   let years = [];
   sustainabilityData.forEach((data) => {
-    if (data.category === "sick") {
-      food.push(data.numOfSick);
+    if (data.category === "health") {
+      sick.push(data.numOfSick);
       years.push(data.year);
     }
   });
@@ -501,14 +501,14 @@ function appendSick(sustainabilityData) {
   let chartContainer = document.querySelector("#sickChart");
 
   let chart = new Chart(chartContainer, {
-    type: "bar",
+    type: "line",
     data: {
       datasets: [
         {
           data: data.sick,
           label: false,
-          fill: false,
-          borderColor: "#6F6F6F",
+          fill: true,
+          borderColor: "#FF9837",
           backgroundColor: "#0B43AA",
           pointBackgroundColor: "#55bae7",
           pointBorderColor: "#55bae7",
@@ -551,7 +551,7 @@ function prepareDeadData(sustainabilityData) {
   let years = [];
   sustainabilityData.forEach((data) => {
     if (data.category === "health") {
-      food.push(data.numOfDead);
+      dead.push(data.numOfDead);
       years.push(data.year);
     }
   });

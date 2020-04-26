@@ -133,11 +133,11 @@ function createNumOfFood() {
     numOfFoodBought: +foodTotalInput.value,
     numOfFoodSelf: +foodSelfInput.value,
     numOfFoodTotal: +foodBoughtInput.value,
-    year: 2020,
+    year: 2015,
     category: "food",
   };
 
-  dataRef.doc("food2020").set(newNumberAnswer);
+  dataRef.doc("food2015").set(newNumberAnswer);
 }
 
 function createNumOfHealth() {
