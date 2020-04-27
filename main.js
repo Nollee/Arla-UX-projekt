@@ -48,7 +48,6 @@ overlay.addEventListener("click", closeList);
 function closeList() {
   list.classList.toggle("fade-out");
   overlay.classList.toggle("overlay-show");
-  console.log('closelist')
 }
 
 // Change between questions
@@ -67,7 +66,6 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
-  console.log(slideIndex);
 
   if(slideIndex === 2){
     document.querySelector(".cattle-btn").style.display ="none"

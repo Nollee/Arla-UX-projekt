@@ -120,7 +120,6 @@ _dataRef.orderBy("year").onSnapshot((snapshotData) => {
     data.id = doc.id; // add the id to the data variable
     _sustainabilityData.push(data); // push the data object to the global array _sustainabilityData
   });
-  console.log(_sustainabilityData);
   appendBulls(_sustainabilityData);
   appendCows(_sustainabilityData);
   appendCalves(_sustainabilityData);
@@ -148,7 +147,6 @@ function prepareBullData(sustainabilityData) {
 //3: appending the chart
 function appendBulls(sustainabilityData) {
   let data = prepareBullData(sustainabilityData);
-  console.log(data);
   // generate chart
   let chartContainer = document.querySelector("#bullChart");
 
@@ -216,7 +214,6 @@ function prepareCowData(sustainabilityData) {
 //3: appending the chart
 function appendCows(sustainabilityData) {
   let data = prepareCowData(sustainabilityData);
-  console.log(data);
   // generate chart
   let cowContainer = document.querySelector("#cowChart");
   let chart = new Chart(cowContainer, {
@@ -284,7 +281,6 @@ function prepareCalveData(sustainabilityData) {
 //3: appending the chart
 function appendCalves(sustainabilityData) {
   let data = prepareCalveData(sustainabilityData);
-  console.log(data);
   // generate chart
   let chartContainer = document.querySelector("#calveChart");
 
@@ -354,7 +350,6 @@ function prepareCattleData(sustainabilityData) {
 //3: appending the chart
 function appendCattles(sustainabilityData) {
   let data = prepareCattleData(sustainabilityData);
-  console.log(data);
   // generate chart
   let chartContainer = document.querySelector("#cattleChart");
 
@@ -428,7 +423,6 @@ function prepareFoodData(sustainabilityData) {
 //3: appending the chart
 function appendFood(sustainabilityData) {
   let data = prepareFoodData(sustainabilityData);
-  console.log(data);
   // generate chart
   let chartContainer = document.querySelector("#foodChart");
 
@@ -496,7 +490,6 @@ function prepareSickData(sustainabilityData) {
 //3: appending the chart
 function appendSick(sustainabilityData) {
   let data = prepareSickData(sustainabilityData);
-  console.log(data);
   // generate chart
   let chartContainer = document.querySelector("#sickChart");
 
@@ -564,7 +557,6 @@ function prepareDeadData(sustainabilityData) {
 //3: appending the chart
 function appendDead(sustainabilityData) {
   let data = prepareDeadData(sustainabilityData);
-  console.log(data);
   // generate chart
   let chartContainer = document.querySelector("#deadChart");
 

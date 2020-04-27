@@ -6,7 +6,6 @@ dataRef.onSnapshot(function (snapshotData) {
   let datas = [];
   snapshotData.forEach(function (doc) {
     let data = doc.data();
-    console.log(data);
     data.id = doc.id;
     datas.push(data);
   });
@@ -123,9 +122,6 @@ function createNumOfCattles() {
   let cowsInput = document.querySelector("#cows");
   let bullsInput = document.querySelector("#bulls");
   let calvesInput = document.querySelector("#calves");
-  console.log(cowsInput.value);
-  console.log(bullsInput.value);
-  console.log(calvesInput.value);
 
   let newNumberAnswer = {
     numOfCalves: +calvesInput.value,
@@ -284,10 +280,8 @@ function dropDown1() {
   let panel = document.querySelector(".panel1");
   if (panel.style.maxHeight) {
     panel.style.maxHeight = null;
-    console.log("ned");
   } else {
     panel.style.maxHeight = panel.scrollHeight + "px";
-    console.log("op");
   }
 }
 
@@ -296,10 +290,8 @@ function dropDown2() {
   let panel = document.querySelector(".panel2");
   if (panel.style.maxHeight) {
     panel.style.maxHeight = null;
-    console.log("ned");
   } else {
     panel.style.maxHeight = panel.scrollHeight + "px";
-    console.log("op");
   }
 }
 
@@ -308,9 +300,7 @@ function dropDown3() {
   let panel = document.querySelector(".panel3");
   if (panel.style.maxHeight) {
     panel.style.maxHeight = null;
-    console.log("ned");
   } else {
     panel.style.maxHeight = panel.scrollHeight + "px";
-    console.log("op");
   }
 }

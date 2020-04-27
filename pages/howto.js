@@ -17,30 +17,30 @@ export default class HowToPage {
 
         <div class="howto-icon-wrapper">
         <div class="icon-top">
-        <img src="images/icons/dyrefoder.svg" alt="dyrefoder">
+        <img src="./images/cow-food.svg" alt="dyrefoder">
         </div>
         <div class="icon-bot">
-        <img src="images/icons/elektricitet.svg" alt="elektricitet">
+        <img src="./images/energy.svg" alt="elektricitet">
         </div>
 
         <div class="icon-top">
-        <img src="images/icons/cows.svg" alt="køer">
+        <img src="./images/animals.svg" alt="kvæg">
         </div>
         
         <div class="icon-bot">
-        <img src="images/icons/ressourcer.svg" alt="ressourcer">
+        <img src="./images/recycle.svg" alt="ressourcer">
         </div>
 
         <div class="icon-top">
-        <img src="images/icons/vand.svg" alt="vand">
+        <img src="./images/water.svg" alt="vand">
         </div>
 
         <div class="icon-bot">
-        <img src="images/icons/mejeri.svg" alt="mejeri">
+        <img src="./images/cheese.svg" alt="mejeri">
         </div>
 
         <div class="icon-top">
-        <img src="images/icons/organisk.svg" alt="organisk">
+        <img src="./images/organic.svg" alt="organisk">
         </div>
 
 

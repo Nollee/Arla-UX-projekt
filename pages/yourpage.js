@@ -22,11 +22,11 @@ export default class YourPage {
          <div id="yourpage__content--farming--wrapper">
          <!--farming tabs --->
          <div id="yourpage__content--farming__tabs">
-         <a href="#prize"><img src="../images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
+         <a href="#prize"><img src="./images/milk-carton.svg" alt="ikon af mælk"><p>Præmie</p></a>
 
-         <a href="#data"><img src="../images/data.svg" alt="ikon af data"><p>Data</p></a>
+         <a href="#data"><img src="./images/data.svg" alt="ikon af data"><p>Data</p></a>
 
-         <a href="#tips"><img src="../images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
+         <a href="#tips"><img src="./images/money.svg" alt="ikon af penge"><p>Forslag</p></a>
         
          <div class="chart-container"> 
          <canvas id="chartContainer"></canvas>
@@ -54,19 +54,19 @@ export default class YourPage {
          </div>
          <!--questions tabs --->
          <div id="yourpage__content--questions__tabs">
-         <a href="#"><img src="../images/cow-food.svg" alt="ikon af mælk"><p>Dyrefoder<br>0/15</p></a>
+         <a href="#"><img src="./images/cow-food.svg" alt="ikon af mælk"><p>Dyrefoder<br>0/15</p></a>
 
-         <a href="#"><img src="../images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
+         <a href="#"><img src="./images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
 
          <a class="cow-question" href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><img class="done" src="images/checkmark-circle.svg" alt="done"> <p>Kvæg<br><span id="cow-number-questions">0</span>/15</p></a>
 
-         <a href="#"><img src="../images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
+         <a href="#"><img src="./images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
 
-         <a href="#"><img src="../images/water.svg" alt="ikon af data"><p>Vand<br>0/15</p></a>
+         <a href="#"><img src="./images/water.svg" alt="ikon af data"><p>Vand<br>0/15</p></a>
 
-         <a href="#"><img src="../images/cheese.svg" alt="ikon af penge"><p>Mejeri<br>0/15</p></a> 
+         <a href="#"><img src="./images/cheese.svg" alt="ikon af penge"><p>Mejeri<br>0/15</p></a> 
 
-         <a href="#"><img src="../images/organic.svg" alt="ikon af penge"><p>Organisk<br>0/15</p></a> 
+         <a href="#"><img src="./images/organic.svg" alt="ikon af penge"><p>Organisk<br>0/15</p></a> 
 
          </div> 
          <!------------------>   

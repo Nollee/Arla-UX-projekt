@@ -13,32 +13,32 @@ export default class DataPage {
         <div class="data-nav first-nav">
         <div class="data-category">
         <h3>Dyrefoder</h3>
-        <img src="images/icons/dyrefoder.svg" alt="dyrefoder">
+        <img src="./images/cow-food.svg" alt="dyrefoder">
         </div>
         <div class="data-category">
         <h3>Energi</h3>
-        <img src="images/icons/elektricitet.svg" alt="elektricitet">
+        <img src="./images/energy.svg" alt="elektricitet">
         </div>
         <div class="data-category" onclick="cowData()">
         <h3>Kvæg</h3>
-        <img src="images/icons/cows.svg" alt="køer">
+        <img src="./images/animals.svg" alt="køer">
 
         </div>
         <div class="data-category">
         <h3>Ressourcer</h3>
-        <img src="images/icons/ressourcer.svg" alt="ressourcer">
+        <img src="./images/recycle.svg" alt="ressourcer">
         </div>
         <div class="data-category">
         <h3>Vand</h3>
-        <img src="images/icons/vand.svg" alt="vand">
+        <img src="./images/water.svg" alt="vand">
         </div>
         <div class="data-category">
         <h3>Mejeri</h3>
-        <img src="images/icons/mejeri.svg" alt="mejeri">
+        <img src="./images/cheese.svg" alt="mejeri">
         </div>
         <div class="data-category">
         <h3>Organisk</h3>
-        <img src="images/icons/organisk.svg" alt="organisk">
+        <img src="./images/organic.svg" alt="organisk">
         </div>
         </div>
 
