@@ -7,7 +7,7 @@ export default class LoginPage {
     document.querySelector('#app').innerHTML += /*html*/ `
       <section id="login" class="page">
       <div class="login-wrapper">
-      <img src="../images/login-logo.svg" alt="logo">
+      <img src="./images/login-logo.svg" alt="logo">
       <div class="login-h1">
       <h1 id="h1-login">Farm pin</h1>
       </div>

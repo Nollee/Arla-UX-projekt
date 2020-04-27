@@ -15,7 +15,7 @@ export default class YourPage {
          <div id="yourpage__content--farming">
 
          <div id="yourpage__content--farming__header">
-         <h2>Dit landbrug</h2> <div class="header-item-wrapper"><img src="../images/light-bulb.svg" alt="lyspære ikon"><p>Du har 15 km2 pr ko</p>
+         <h2>Dit landbrug</h2> <div class="header-item-wrapper"><img src="./images/light-bulb.svg" alt="lyspære ikon"><p>Du har 15 km2 pr ko</p>
          </div>
          </div>  
 
@@ -49,7 +49,7 @@ export default class YourPage {
          <div id="yourpage__content--questions">
 
          <div id="yourpage__content--questions__header">
-         <h2>Spørgsmål</h2> <div class="header-item-wrapper"><img src="../images/clock.svg" alt="ur ikon"><p>Du har ca 4 timer tilbage af besvarelsen</p>
+         <h2>Spørgsmål</h2> <div class="header-item-wrapper"><img src="./images/clock.svg" alt="ur ikon"><p>Du har ca 4 timer tilbage af besvarelsen</p>
          </div>
          </div>
          <!--questions tabs --->
@@ -58,7 +58,7 @@ export default class YourPage {
 
          <a href="#"><img src="./images/energy.svg" alt="ikon af data"><p>Energi<br>0/15</p></a>
 
-         <a class="cow-question" href="#questions"><img src="../images/animals.svg" alt="ikon af penge"><img class="done" src="images/checkmark-circle.svg" alt="done"> <p>Kvæg<br><span id="cow-number-questions">0</span>/15</p></a>
+         <a class="cow-question" href="#questions"><img src="./images/animals.svg" alt="ikon af penge"><img class="done" src="images/checkmark-circle.svg" alt="done"> <p>Kvæg<br><span id="cow-number-questions">0</span>/15</p></a>
 
          <a href="#"><img src="./images/recycle.svg" alt="ikon af mælk"><p>Ressourcer<br>0/15</p></a>
 

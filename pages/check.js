@@ -13,13 +13,13 @@ export default class CheckPage {
 
             <div id="check__content--left">
                 <a class="check__go-back" href="#thankyou">
-                    <img src="../images/arrow-left.svg" alt="tilbage pil"> Tilbage  
+                    <img src="./images/arrow-left.svg" alt="tilbage pil"> Tilbage  
                  </a> 
                  <div class="check__content--left--wrapper">
                     
                  <div class="dropdown" id="check__content--left__question" onclick="dropDown1()">
                          <h3 class="sub-question">1. Hvor mange kvæg er der på din gård?</h3> 
-                         <img id="arrow-down" class="arrow-down1" src="../images/arrow-down.svg" alt="se mere pil">  
+                         <img id="arrow-down" class="arrow-down1" src="./images/arrow-down.svg" alt="se mere pil">  
                      </div>
                      <div class="question-indicators-container">
                          <div class="question-indicator">
@@ -74,7 +74,7 @@ export default class CheckPage {
                     
                  <div class="dropdown" id="check__content--left__question" onclick="dropDown2()">
                          <h3 class="sub-question">2. Hvor mange kvæg er der på din gård?</h3> 
-                         <img id="arrow-down" class="arrow-down2" src="../images/arrow-down.svg" alt="se mere pil">  
+                         <img id="arrow-down" class="arrow-down2" src="./images/arrow-down.svg" alt="se mere pil">  
                      </div>
                      <div class="question-indicators-container">
                          <div class="question-indicator">
@@ -129,7 +129,7 @@ export default class CheckPage {
                     
                  <div class="dropdown" id="check__content--left__question" onclick="dropDown3()">
                          <h3 class="sub-question">3. Hvordan er dine kvægs helbred?</h3> 
-                         <img id="arrow-down" class="arrow-down3" src="../images/arrow-down.svg" alt="se mere pil">  
+                         <img id="arrow-down" class="arrow-down3" src="./images/arrow-down.svg" alt="se mere pil">  
                      </div>
                      <div class="question-indicators-container">
                          <div class="question-indicator">
@@ -314,7 +314,7 @@ export default class CheckPage {
             <!-- right side content; illustration -->
             <div id="check__content--right">
             <h1>Ret eller gennemgå</h1>
-                <img src="../images/cow-icon.svg" alt="ikon af arla ko"> 
+                <img src="./images/cow-icon.svg" alt="ikon af arla ko"> 
                 <a class="accept-btn" href="#thankyou" onclick="updateData()"><p>Godkend</p>
                 <img src="images/checkmark.svg" alt="check">
                 </a>
@@ -325,7 +325,7 @@ export default class CheckPage {
             <div id="help-box-container">
             <div id="help-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut quam pellentesque enim laoreet iaculis. Vestibulum ullamcorper nulla sed condimentum scelerisque. Nam at metus eget neque tincidunt mattis eget a arcu. Nulla vel tellus hendrerit dolor efficitur viverra vitae vel dolor. Duis maximus justo vitae elit luctus vestibulum. Aenean convallis condimentum sodales.</p>
-            <img src="../images/questionmark.svg" alt="spørgsmåltegn ikon"> 
+            <img src="./images/questionmark.svg" alt="spørgsmåltegn ikon"> 
             </div>
             </div> 
         

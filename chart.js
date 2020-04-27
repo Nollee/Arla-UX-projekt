@@ -376,16 +376,14 @@ function appendCattles(sustainabilityData) {
         yAxes: [
           {
             ticks: {
-              max: Math.max(...data.cattles) + 1,
               beginAtZero: true,
+              max: Math.max(...data.cattles) + 4,
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
             },
           },
         ],
-      },
-      legend: {
-        display: false,
-      },
-      scales: {
         xAxes: [
           {
             gridLines: {
@@ -393,13 +391,9 @@ function appendCattles(sustainabilityData) {
             },
           },
         ],
-        yAxes: [
-          {
-            gridLines: {
-              color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
+      },
+      legend: {
+        display: false,
       },
     },
   });
