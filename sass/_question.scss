@@ -150,7 +150,7 @@
 
 .show-list {
   position: fixed;
-  top: 13%;
+  top: 15%;
   left: 5%;
   display: flex;
   justify-content: center;
@@ -216,6 +216,26 @@
 
 .food-btn{
   display: none;
+}
+
+
+.progress{
+  height: 20px;
+  width: 33%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: $green;
+  display: flex;
+  justify-content: flex-end;
+  -webkit-transition: 1s ease-in;
+  -o-transition: 1s ease-in;
+  transition: 1s ease-in;
+  p{
+    margin-right: 2%;
+    font-size: 18px;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 840px) {

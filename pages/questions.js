@@ -6,6 +6,9 @@ export default class QuestionPage {
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
     <section id="questions" class="page questions">
+    <div class="progress">
+    <p><span id="progress-number">33</span> % </p>
+    </div>
   
     <div class="question-section">
 

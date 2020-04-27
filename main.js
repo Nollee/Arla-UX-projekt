@@ -74,11 +74,17 @@ function plusSlides(n) {
     document.querySelector(".food-btn").style.display ="flex"
     document.querySelector(".question-button-prev").style.display ="flex"
     document.querySelector(".question-button-done").style.display ="none"
+    document.querySelector(".progress").style.width = "66%";
+    document.querySelector("#progress-number").innerHTML = "66"
   }
 
   if(slideIndex === 3){
     document.querySelector(".food-btn").style.display ="none"
     document.querySelector(".question-button-done").style.display ="flex"
+    document.querySelector(".progress").style.width = "100%";
+    document.querySelector("#progress-number").innerHTML = "100"
+
+
   }
 
   if(slideIndex === 1){
@@ -86,6 +92,9 @@ function plusSlides(n) {
     document.querySelector(".cattle-btn").style.display ="flex"
     document.querySelector(".question-button-done").style.display ="none"
     document.querySelector(".question-button-prev").style.display ="none"
+    document.querySelector(".progress").style.width = "33%";
+    document.querySelector("#progress-number").innerHTML = "33"
+
 
 
   }
